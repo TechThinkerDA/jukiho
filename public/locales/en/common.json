@@ -1,0 +1,21 @@
+{
+  "navigation": {
+    "title": "Navigation",
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "stack": "Tech Stack",
+    "lab": "Lab",
+    "contact": "Contact",
+    "sitemap": "Sitemap"
+  },
+  "email": {
+    "copyToClipboard": "Copy email to clipboard"
+  },
+  "footer": {
+    "copyright": "© 2025 Juraj Kicko Horbaľ. All rights reserved.",
+    "philosophyTitle1": "Technology makes sense",
+    "philosophyTitle2": "when it solves real problems.",
+    "contactText": "Have a project or need assistance? Don't hesitate to reach out."
+  }
+}

@@ -39,3 +39,21 @@ netlify dev
 ```
 
 If your browser doesn't navigate to the site automatically, visit [localhost:8888](http://localhost:8888).
+
+## Running on Port 3000
+
+If you want to run the application directly using Next.js on port 3000 (without Netlify CLI):
+
+```
+npm run dev
+```
+
+This will start the development server on [localhost:3000](http://localhost:3000).
+
+You can also specify a different port if needed:
+
+```
+npm run dev -- -p 3001
+```
+
+This would start the server on port 3001 instead.

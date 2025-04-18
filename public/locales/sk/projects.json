@@ -1,0 +1,52 @@
+{
+  "title": "Moje projekty",
+  "subtitle": "Ukážka mojej nedávnej práce",
+  "featured": "Vybrané projekty",
+  "explore": "Prezrite si niektoré z mojich nedávnych prác a projektov",
+  "viewAll": "Zobraziť všetky projekty",
+  "noProjectsFound": "Pre túto kategóriu neboli nájdené žiadne projekty.",
+  "filterByTechnology": "Filtrovať podľa technológie",
+  "filters": {
+    "all": "Všetky",
+    "web": "Web",
+    "mobile": "Mobilné",
+    "backend": "Backend"
+  },
+  "categories": {
+    "backend": "Backend vývoj",
+    "web": "Webový vývoj",
+    "desktop": "Desktopové aplikácie"
+  },
+  "projectTypes": {
+    "personal": "Osobný projekt",
+    "work": "Pracovný projekt"
+  },
+  "detail": {
+    "projectNotFound": "Projekt nenájdený",
+    "projectNotFoundDesc": "Projekt, ktorý hľadáte, neexistuje alebo bol odstránený.",
+    "backToProjects": "Späť na projekty",
+    "projectOverview": "Prehľad projektu",
+    "features": "Funkcie",
+    "feature1": "Funkcia 1: Pokročilá implementácia základnej funkcionality",
+    "feature2": "Funkcia 2: Optimalizovaný výkon a škálovateľnosť",
+    "feature3": "Funkcia 3: Komplexná integrácia s externými systémami",
+    "feature4": "Funkcia 4: Používateľsky prívetivé rozhranie s intuitívnym ovládaním",
+    "technologiesUsed": "Použité technológie",
+    "technologiesUsedIntro": "Tento projekt bol vytvorený pomocou rôznych technológií vrátane",
+    "projectLinks": "Odkazy projektu",
+    "liveDemo": "Živá ukážka",
+    "githubRepository": "GitHub repozitár",
+    "projectDetails": "Detaily projektu",
+    "category": "Kategória",
+    "date": "Dátum",
+    "client": "Klient",
+    "personalProject": "Osobný projekt",
+    "moreProjects": "Ďalšie projekty",
+    "projectType": "Typ projektu",
+    "work": "Pracovný",
+    "personal": "Osobný",
+    "screenshots": "Snímky obrazovky",
+    "testimonial": "Referencie",
+    "demoCredentials": "Prihlasovacie údaje pre demo"
+  }
+}

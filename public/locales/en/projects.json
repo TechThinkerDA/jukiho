@@ -1,0 +1,52 @@
+{
+  "title": "My Projects",
+  "subtitle": "A showcase of my recent work",
+  "featured": "Featured Projects",
+  "explore": "Explore some of my recent work and projects",
+  "viewAll": "View All Projects",
+  "noProjectsFound": "No projects found for this category.",
+  "filterByTechnology": "Filter by Technology",
+  "filters": {
+    "all": "All",
+    "web": "Web",
+    "mobile": "Mobile",
+    "backend": "Backend"
+  },
+  "categories": {
+    "backend": "Backend Development",
+    "web": "Web Development",
+    "desktop": "Desktop Applications"
+  },
+  "projectTypes": {
+    "personal": "Personal Project",
+    "work": "Work Project"
+  },
+  "detail": {
+    "projectNotFound": "Project Not Found",
+    "projectNotFoundDesc": "The project you're looking for doesn't exist or has been removed.",
+    "backToProjects": "Back to Projects",
+    "projectOverview": "Project Overview",
+    "features": "Features",
+    "feature1": "Feature 1: Advanced implementation of core functionality",
+    "feature2": "Feature 2: Optimized performance and scalability",
+    "feature3": "Feature 3: Comprehensive integration with external systems",
+    "feature4": "Feature 4: User-friendly interface with intuitive controls",
+    "technologiesUsed": "Technologies Used",
+    "projectLinks": "Project Links",
+    "liveDemo": "Live Demo",
+    "githubRepository": "GitHub Repository",
+    "projectDetails": "Project Details",
+    "category": "Category",
+    "date": "Date",
+    "client": "Client",
+    "personalProject": "Personal Project",
+    "moreProjects": "More Projects",
+    "projectType": "Project Type",
+    "work": "Work",
+    "personal": "Personal",
+    "screenshots": "Screenshots",
+    "testimonial": "Testimonial",
+    "demoCredentials": "Demo Credentials",
+    "technologiesUsedIntro": "This project was built using a variety of technologies including"
+  }
+}

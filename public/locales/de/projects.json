@@ -1,0 +1,42 @@
+{
+  "title": "Meine Projekte",
+  "subtitle": "Eine Präsentation meiner neuesten Arbeiten",
+  "featured": "Ausgewählte Projekte",
+  "explore": "Entdecken Sie einige meiner neuesten Arbeiten und Projekte",
+  "viewAll": "Alle Projekte anzeigen",
+  "noProjectsFound": "Für diese Kategorie wurden keine Projekte gefunden.",
+  "filterByTechnology": "Nach Technologie filtern",
+  "filters": {
+    "all": "Alle",
+    "web": "Web",
+    "mobile": "Mobil",
+    "backend": "Backend"
+  },
+  "detail": {
+    "projectNotFound": "Projekt nicht gefunden",
+    "projectNotFoundDesc": "Das gesuchte Projekt existiert nicht oder wurde entfernt.",
+    "backToProjects": "Zurück zu den Projekten",
+    "projectOverview": "Projektübersicht",
+    "features": "Funktionen",
+    "feature1": "Funktion 1: Fortgeschrittene Implementierung der Kernfunktionalität",
+    "feature2": "Funktion 2: Optimierte Leistung und Skalierbarkeit",
+    "feature3": "Funktion 3: Umfassende Integration mit externen Systemen",
+    "feature4": "Funktion 4: Benutzerfreundliche Oberfläche mit intuitiver Bedienung",
+    "technologiesUsed": "Verwendete Technologien",
+    "projectLinks": "Projekt-Links",
+    "liveDemo": "Live-Demo",
+    "githubRepository": "GitHub-Repository",
+    "projectDetails": "Projektdetails",
+    "category": "Kategorie",
+    "date": "Datum",
+    "client": "Kunde",
+    "personalProject": "Persönliches Projekt",
+    "moreProjects": "Weitere Projekte",
+    "projectType": "Projekttyp",
+    "work": "Beruflich",
+    "personal": "Persönlich",
+    "screenshots": "Screenshots",
+    "testimonial": "Referenz",
+    "demoCredentials": "Demo-Anmeldedaten"
+  }
+}

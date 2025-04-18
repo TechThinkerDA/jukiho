@@ -1,0 +1,36 @@
+{
+  "title": "Fázy vývoja systému",
+  "finalNote": "Každý projekt je jedinečný, ale tento proces zabezpečuje, že výsledné riešenie bude presne zodpovedať potrebám vášho biznisu.",
+  "phases": [
+    {
+      "title": "Analýza & pochopenie problému",
+      "items": [
+        "Rozhovory s tímom",
+        "Mapa procesov a identifikácia fliaš v systéme"
+      ]
+    },
+    {
+      "title": "Návrh architektúry riešenia",
+      "items": [
+        "Vyber technológií (napr. Odoo ako core ERP)",
+        "Integrácie, dátové toky, microservices vs monolit",
+        "Bezpečnosť, škálovateľnosť, udržateľnosť"
+      ]
+    },
+    {
+      "title": "Iteratívna implementácia",
+      "items": [
+        "Modulárny vývoj: napr. najprv objednávky, potom sklad",
+        "Priebežné testovanie a úpravy"
+      ]
+    },
+    {
+      "title": "Nasadenie & monitoring",
+      "items": [
+        "Docker/CI/CD, dokumentácia",
+        "Zaučenie používateľov",
+        "Zber spätnej väzby a úpravy"
+      ]
+    }
+  ]
+}

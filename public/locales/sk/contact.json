@@ -1,0 +1,19 @@
+{
+  "title": "Kontaktujte ma",
+  "subtitle": "Poďme spolupracovať",
+  "cta": {
+    "title": "Pracujme spolu",
+    "subtitle": "Momentálne som k dispozícii pre freelance projekty, prácu na plný úväzok alebo konzultácie.",
+    "button": "Kontaktujte ma"
+  },
+  "name": "Meno",
+  "email": "Email",
+  "message": "Správa",
+  "send": "Odoslať správu",
+  "success": "Vaša správa bola úspešne odoslaná!",
+  "error": "Pri odosielaní vašej správy sa vyskytla chyba. Skúste to prosím znova.",
+  "messagePlaceholder": "Napíšte svoju správu tu...",
+  "messageRequired": "Prosím, zadajte správu",
+  "contactInfo": "Kontaktné informácie",
+  "connectWithMe": "Spojte sa so mnou"
+}

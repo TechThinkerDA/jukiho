@@ -1,0 +1,281 @@
+{
+  "title": "Tech Stack",
+  "subtitle": "Technologies I work with",
+  "viewFull": "View Full Tech Stack",
+  "proficiency": "Proficiency",
+  "experience": "Experience",
+  "keyFeatures": "Key Features",
+  "learnMore": "Learn more",
+  "sections": {
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "devops": "DevOps",
+    "tools": "Tools & Practices"
+  },
+  "technologies": {
+    "python": {
+      "name": "Python / Odoo",
+      "description": "Python development with Odoo ERP framework",
+      "experience": "2+ years working with Python and Odoo ERP",
+      "features": [
+        "Custom extensions for manufacturing, HR, purchasing, sales",
+        "Inventory valuation and invoicing modules",
+        "Integration with external services and APIs",
+        "Business process automation and workflow optimization"
+      ]
+    },
+    "java": {
+      "name": "Java / Spring Boot",
+      "description": "Enterprise-grade backend development with Spring ecosystem",
+      "experience": "10+ years of Java development, 7+ years with Spring Boot",
+      "features": [
+        "Microservices architecture with Spring Boot",
+        "RESTful API development",
+        "Dependency injection and inversion of control",
+        "Integration with various data sources and services"
+      ]
+    },
+    "jpa": {
+      "name": "JPA / Hibernate",
+      "description": "Object-relational mapping for Java applications",
+      "experience": "8+ years working with JPA and Hibernate in production applications",
+      "features": [
+        "Entity mapping and relationship management",
+        "JPQL and Criteria API for complex queries",
+        "Transaction management",
+        "Performance optimization and caching"
+      ]
+    },
+    "csharp": {
+      "name": "C# / ASP.NET Core",
+      "description": "Building robust backend systems with Microsoft's framework",
+      "experience": "7+ years of C# development, 5+ years with ASP.NET Core",
+      "features": [
+        "Web API development with ASP.NET Core",
+        "MVC architecture implementation",
+        "Entity Framework Core for data access",
+        "Dependency injection and middleware pipeline"
+      ]
+    },
+    "rest": {
+      "name": "REST APIs",
+      "description": "Designing and implementing RESTful web services",
+      "experience": "8+ years designing and implementing RESTful APIs",
+      "features": [
+        "RESTful architecture principles",
+        "API versioning and documentation",
+        "Authentication and authorization",
+        "Rate limiting and caching strategies"
+      ]
+    },
+    "microservices": {
+      "name": "Microservices",
+      "description": "Building distributed systems with microservices architecture",
+      "experience": "5+ years designing and implementing microservices architectures",
+      "features": [
+        "Service decomposition and domain-driven design",
+        "Inter-service communication patterns",
+        "Service discovery and API gateways",
+        "Resilience patterns (circuit breakers, retries, etc.)"
+      ]
+    },
+    "react": {
+      "name": "React",
+      "description": "Building interactive user interfaces with React and its ecosystem",
+      "experience": "5+ years of experience building responsive and interactive web applications with React",
+      "features": [
+        "Component-based architecture for reusable UI elements",
+        "State management with hooks and context API",
+        "Integration with various backend APIs",
+        "Custom hooks and optimized rendering"
+      ]
+    },
+    "nextjs": {
+      "name": "Next.js",
+      "description": "Creating server-rendered and static React applications",
+      "experience": "3+ years working with Next.js for production applications",
+      "features": [
+        "Server-side rendering for improved SEO and performance",
+        "Static site generation for blazing fast websites",
+        "API routes for backend functionality",
+        "File-based routing system"
+      ]
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "description": "Core language for frontend development and browser interactions",
+      "experience": "10+ years of JavaScript development experience",
+      "features": [
+        "ES6+ features and modern syntax",
+        "Asynchronous programming with Promises and async/await",
+        "DOM manipulation and event handling",
+        "Functional programming concepts"
+      ]
+    },
+    "htmlcss": {
+      "name": "HTML/CSS",
+      "description": "Fundamental web technologies for structure and styling",
+      "experience": "10+ years of experience with HTML5 and CSS3",
+      "features": [
+        "Semantic HTML for accessibility and SEO",
+        "Responsive design with media queries",
+        "CSS Grid and Flexbox layouts",
+        "CSS animations and transitions"
+      ]
+    },
+    "ssrspa": {
+      "name": "SSR & SPA",
+      "description": "Server-Side Rendering and Single-Page Application approaches",
+      "experience": "5+ years building both SSR and SPA applications",
+      "features": [
+        "Server-side rendering for improved initial load time",
+        "Single-page applications for smooth user experience",
+        "Hybrid approaches combining benefits of both",
+        "SEO optimization techniques for JavaScript applications"
+      ]
+    },
+    "uiux": {
+      "name": "UI/UX Implementation",
+      "description": "Translating designs into functional user interfaces",
+      "experience": "5+ years implementing UI/UX designs in web applications",
+      "features": [
+        "Pixel-perfect implementation of design mockups",
+        "Responsive layouts that work across all devices",
+        "Accessible interfaces following WCAG guidelines",
+        "Interactive elements with smooth animations"
+      ]
+    },
+    "gitgithub": {
+      "name": "Git & GitHub",
+      "description": "Version control and collaboration platform",
+      "experience": "10+ years using Git for version control and GitHub for collaboration",
+      "features": [
+        "Advanced Git workflows (rebasing, cherry-picking, etc.)",
+        "GitHub Actions for CI/CD",
+        "Pull request reviews and code collaboration",
+        "Branch management strategies"
+      ]
+    },
+    "jenkins": {
+      "name": "Jenkins",
+      "description": "CI/CD automation server for build and deployment",
+      "experience": "6+ years working with Jenkins for CI/CD pipelines",
+      "features": [
+        "Pipeline as code with Jenkinsfile",
+        "Automated build, test, and deployment processes",
+        "Integration with version control systems",
+        "Plugin ecosystem for extended functionality"
+      ]
+    },
+    "docker": {
+      "name": "Docker",
+      "description": "Containerization platform for applications",
+      "experience": "5+ years containerizing applications with Docker",
+      "features": [
+        "Container creation and management",
+        "Multi-container applications with Docker Compose",
+        "Custom image building with Dockerfile",
+        "Container orchestration fundamentals"
+      ]
+    },
+    "linux": {
+      "name": "Linux",
+      "description": "Operating system for servers and development",
+      "experience": "8+ years working with Linux for server administration and development",
+      "features": [
+        "Server administration and configuration",
+        "Bash scripting for automation",
+        "Service management and monitoring",
+        "Security hardening and best practices"
+      ]
+    },
+    "gradle": {
+      "name": "Gradle",
+      "description": "Build automation tool for Java projects",
+      "experience": "6+ years using Gradle for Java project builds",
+      "features": [
+        "Build script development with Groovy DSL",
+        "Dependency management",
+        "Custom task creation and configuration",
+        "Multi-project builds and modularization"
+      ]
+    },
+    "aws": {
+      "name": "AWS",
+      "description": "Cloud computing services for applications",
+      "experience": "3+ years working with AWS cloud services",
+      "features": [
+        "EC2 for virtual servers in the cloud",
+        "S3 for object storage",
+        "RDS for managed relational databases",
+        "Lambda for serverless computing"
+      ]
+    },
+    "sqldatabases": {
+      "name": "SQL Databases",
+      "description": "MySQL and PostgreSQL for data storage and retrieval",
+      "experience": "10+ years working with relational databases",
+      "features": [
+        "Database design and normalization",
+        "Complex SQL queries and stored procedures",
+        "Performance optimization and indexing",
+        "Database administration and maintenance"
+      ]
+    },
+    "phpsymfony": {
+      "name": "PHP / Symfony",
+      "description": "PHP development with Symfony framework",
+      "experience": "5+ years of PHP development with Symfony framework",
+      "features": [
+        "MVC architecture implementation",
+        "Doctrine ORM for database operations",
+        "Twig templating engine",
+        "Symfony components and bundles"
+      ]
+    },
+    "xmljson": {
+      "name": "XML / JSON",
+      "description": "Data serialization and interchange formats",
+      "experience": "10+ years working with XML and JSON for data interchange",
+      "features": [
+        "XML schema design and validation",
+        "XSLT transformations",
+        "JSON schema and validation",
+        "RESTful API data formatting"
+      ]
+    },
+    "kotlincorda": {
+      "name": "Kotlin / Corda",
+      "description": "Blockchain development with R3 Corda",
+      "experience": "2+ years exploring blockchain development with Corda",
+      "features": [
+        "Smart contract development",
+        "Distributed ledger concepts",
+        "Kotlin programming language",
+        "Blockchain network architecture"
+      ]
+    },
+    "pythonai": {
+      "name": "Python AI",
+      "description": "Neural networks and data analysis with Python",
+      "experience": "1+ years exploring AI and machine learning with Python",
+      "features": [
+        "Neural network fundamentals",
+        "Data preprocessing and analysis",
+        "TensorFlow and PyTorch basics",
+        "Natural language processing concepts"
+      ]
+    },
+    "teamleadership": {
+      "name": "Team Leadership",
+      "description": "Leading development teams and projects",
+      "experience": "5+ years leading development teams of 2-5 people",
+      "features": [
+        "Agile project management",
+        "Technical mentoring and knowledge sharing",
+        "Sprint planning and task prioritization",
+        "Code reviews and quality assurance"
+      ]
+    }
+  }
+}

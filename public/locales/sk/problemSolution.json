@@ -1,0 +1,28 @@
+{
+  "title": "Problém → Riešenie",
+  "subtitle": "(Príbeh jedného systému)",
+  "problemTitle": "Problém",
+  "problemDescription": "Firma s e-shopom + výrobou rastie → zlyháva evidencia objednávok, sklad, CRM, fakturácia.",
+  "problemSummary": "5 rôznych systémov, ktoré nekomunikujú → strata času a peňazí.",
+  "problemPoints": [
+    "Nekonzistentné dáta medzi systémami",
+    "Manuálne prepisovanie údajov",
+    "Chýbajúci prehľad o stave objednávok",
+    "Neefektívne riadenie skladu",
+    "Zdĺhavý proces fakturácie"
+  ],
+  "solutionTitle": "Riešenie",
+  "solutionDescription": "Integrovaný systém postavený na Odoo s vlastnými modulmi pre špecifické potreby firmy.",
+  "solutionSummary": "➡️ Tu sa začína moja práca.",
+  "solutionPoints": [
+    "Jednotný systém pre všetky procesy",
+    "Automatizácia rutinných úloh",
+    "Real-time prehľad o stave objednávok",
+    "Optimalizácia skladových zásob",
+    "Rýchla a presná fakturácia"
+  ],
+  "resultsTitle": "Výsledky",
+  "timeReduction": "Úspora času pri spracovaní objednávok",
+  "costReduction": "Zníženie skladových nákladov",
+  "satisfactionIncrease": "Nárast spokojnosti zákazníkov"
+}

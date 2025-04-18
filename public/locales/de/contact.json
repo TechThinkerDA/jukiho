@@ -1,0 +1,19 @@
+{
+  "title": "Kontaktiere mich",
+  "subtitle": "Lass uns zusammenarbeiten",
+  "cta": {
+    "title": "Lassen Sie uns zusammenarbeiten",
+    "subtitle": "Ich bin derzeit verfügbar für Freiberufliche Projekte, Vollzeitpositionen oder Beratungsarbeit.",
+    "button": "Kontakt aufnehmen"
+  },
+  "name": "Name",
+  "email": "E-Mail",
+  "message": "Nachricht",
+  "send": "Nachricht senden",
+  "success": "Ihre Nachricht wurde erfolgreich gesendet!",
+  "error": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
+  "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier...",
+  "messageRequired": "Bitte geben Sie eine Nachricht ein",
+  "contactInfo": "Kontaktinformationen",
+  "connectWithMe": "Verbinde dich mit mir"
+}

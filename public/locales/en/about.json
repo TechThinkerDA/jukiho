@@ -1,0 +1,149 @@
+{
+  "title": "About Me",
+  "subtitle": "My journey in software development",
+  "bio": "I am a passionate software developer with expertise in modern web technologies. I love building scalable and performant applications that provide great user experiences.",
+  "experience": "Experience",
+  "education": "Education",
+  "skills": "Skills",
+  "whoIAm": "Who I Am",
+  "bioLine1": "A skilled Software Architect and Full stack Developer with background in Python, Java, C# and React. Specializing in backend systems, data mining, and platform module development.",
+  "bioLine2": "Deeply passionate about enhancing and innovating systems. Always eager to integrate the latest technologies and tackle complex challenges, combine an analytical approach with attention to detail.",
+  "softSkillsLabel": "Soft skills",
+  "softSkills": "innovative, team-oriented, analytical, adaptable, critical thinking",
+  "interestsLabel": "Interests",
+  "interests": "fintech, AI",
+  "techStackLabel": "Tech stack",
+  "techStack": "Python, Java (Spring Boot, JPA/Hibernate), C# (.NET), JS (React), SQL, PHP",
+  "experienceWithLabel": "Experience with",
+  "experienceWith": "REST, Jenkins (CI/CD, build/deployment-automation), Gradle, Docker, Linux, Microservices, JSON and XML serialization",
+  "workExperience": "Work Experience",
+  "personalProjects": "Personal Projects",
+  "clickForDetails": "Click for details",
+  "proficiencyLevel": "Proficiency Level",
+  "notableProjects": "Notable Projects",
+  "librariesFrameworks": "Libraries & Frameworks",
+  "downloadCV": "Download CV",
+  "experienceTitle": "Professional Experience",
+  "educationTitle": "Education",
+  "skillsTitle": "Technical Skills",
+  "projectsTitle": "Key Projects",
+
+  "workExperienceItems": {
+    "odoo": {
+      "title": "Odoo Developer",
+      "period": "2024 - Present",
+      "description": "Developing and extending Odoo functionalities for HR, manufacturing, and manufacturing, including process automation:",
+      "responsibilities": [
+        "Managing and generating/signing documents in the HR module.",
+        "Implementing a product cost calculator for warehouse inventory valuation using Amazon SQS.",
+        "Modifying existing manufacturing addons.",
+        "Procurement claims."
+      ],
+      "technologies": ["Python", "Odoo", "AWS", "XML", "JSON", "PostgreSQL"]
+    },
+    "java": {
+      "title": "Java + React Developer",
+      "period": "2021 - 2024",
+      "teamRole": "Team Leader (2P)",
+      "description": "Complete redesign of Bloomreach.com using the Bloomreach Content CMS. The project centered around enhancing the website's backend infrastructure to provide a seamless user experience and support its vast content management needs.",
+      "responsibilities": [
+        "Spearheaded the development and optimization of the backend systems, ensuring robust performance and scalability.",
+        "Proposed a foundational structure for components and implemented both Server-Side Rendering (SSR) and Single-Page Application (SPA) approaches and collaborated with front-end developers.",
+        "Designed and integrated Java extensions on the backend to enhance the website's capabilities with sophisticated features and functionalities.",
+        "Ensured compatibility with the Vercel hosting platform, optimizing deployment processes."
+      ],
+      "technologies": ["Java", "Spring", "Apache Jackrabbit", "Bloomreach Content", "React"]
+    },
+    "aspnet": {
+      "title": "ASP.NET Core Developer / Architect",
+      "period": "2020 - 2024",
+      "teamRole": "Team Leader (3P)",
+      "description": "The developed application offers comprehensive financial solutions, including leasing options for its customers:",
+      "responsibilities": [
+        "Integrated multiple bank APIs seamlessly using a custom-developed API gateway to streamline data retrieval and enhance application reliability.",
+        "Designed and implemented configurable report dashboards, enabling stakeholders to obtain diverse views on historical financial data and track key metrics effectively.",
+        "Architect of a system for dynamic rendering of UI elements tailored to specific configurations for individual banking institutions, optimizing user experience and ensuring compliance with varied bank requirements."
+      ],
+      "technologies": ["ASP.NET Core 3", "C#", "REST API", "SOAP"]
+    },
+    "wpf": {
+      "title": ".NET WPF Developer",
+      "period": "2018 - 2020",
+      "description": "Management and development of WPF for PLC Configuration Modeling Software:",
+      "responsibilities": [
+        "Configuration of a component library representing real devices — loading structures in XML format.",
+        "Connection with real devices, uploading created configurations, reading device statuses.",
+        "Solving the rendering of complex arrangements of many elements.",
+        "Creation of an emulator for testing configurations without the need for actual devices."
+      ],
+      "technologies": ["C#", ".NET WPF"]
+    },
+    "javafx": {
+      "title": "JavaFX Developer",
+      "period": "2018 - 2021",
+      "description": "Development of a specialized ERP system for a waste management company. This project was aimed at streamlining garbage collection logistics, warehouse management, invoicing, and reporting in compliance with legislative standards, ensuring flexibility to accommodate new changes.",
+      "responsibilities": [
+        "Development of the waste logistics and warehouse management modules, ensuring efficient logistics processes.",
+        "Collaborated closely with the invoicing and reporting teams to ensure seamless integration of modules, providing a unified system experience.",
+        "Addressed issues stemming from strict legislative standards and evolving waste management practices, updating the ERP system as needed.",
+        "Development PHP server to synchronize data between users / services.",
+        "Implemented an offline accessibility feature, allowing users to access and interact with the system even without an internet connection.",
+        "Designed a customizable reporting tool, enabling users to tailor reports according to their needs while ensuring optimized system performance."
+      ],
+      "technologies": ["Java FX", "PHP Symfony", "MySQL", "DevOps"]
+    }
+  },
+  "educationItems": {
+    "engineer": {
+      "title": "Engineer degree",
+      "period": "2015 - 2017",
+      "institution": "Technical University of Košice, Slovakia",
+      "description": "Advanced studies in computer science and software engineering, building on the foundation established during the bachelor's program."
+    },
+    "bachelor": {
+      "title": "Bachelor's degree",
+      "period": "2012 - 2015",
+      "institution": "Technical University of Košice, Slovakia",
+      "description": "Studied computer science with a focus on software engineering and development."
+    }
+  },
+  "personalProjectsItems": {
+    "odoo": {
+      "title": "Odoo Development",
+      "description": "Development of custom Odoo extensions for manufacturing, HR, purchasing, sales, invoicing, inventory valuation, and integration with external services.",
+      "technologies": ["Python", "Odoo", "XML", "API Integration"]
+    },
+    "corda": {
+      "title": "Corda Blockchain Development",
+      "description": "Explored distributed ledger technology using Corda, creating a CorDapp for supply chain tracking.",
+      "technologies": ["Kotlin", "Corda", "Blockchain"]
+    },
+    "python": {
+      "title": "Python AI Development",
+      "description": "Explored neural networks in Python, creating scripts for stock exchange data analysis and model training.",
+      "technologies": ["Python", "AI", "Data Analysis"]
+    }
+  },
+  "skillsItems": {
+    "python": {
+      "title": "Python / Odoo",
+      "description": "ERP customization, module development, API integration",
+      "items": ["Odoo ERP", "Module Development", "PostgreSQL", "XML/JSON", "API Integration"]
+    },
+    "java": {
+      "title": "Java",
+      "description": "Enterprise applications, backend systems, microservices",
+      "items": ["Spring Boot", "JPA / Hibernate", "JavaFX", "Apache Jackrabbit", "Microservices"]
+    },
+    "csharp": {
+      "title": "C#",
+      "description": "Backend systems, desktop applications, APIs",
+      "items": ["ASP.NET Core", ".NET WPF", "Entity Framework", "LINQ", "REST APIs"]
+    },
+    "javascript": {
+      "title": "JavaScript / React",
+      "description": "Frontend development, responsive UIs, modern frameworks",
+      "items": ["React", "Next.js", "Server-Side Rendering (SSR)", "Single-Page Applications (SPA)", "UI/UX Implementation"]
+    }
+  }
+}

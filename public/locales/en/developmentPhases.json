@@ -1,0 +1,36 @@
+{
+  "title": "System Development Phases",
+  "finalNote": "Each project is unique, but this process ensures that the resulting solution will precisely meet the needs of your business.",
+  "phases": [
+    {
+      "title": "Analysis & Problem Understanding",
+      "items": [
+        "Team interviews",
+        "Process mapping and bottleneck identification"
+      ]
+    },
+    {
+      "title": "Solution Architecture Design",
+      "items": [
+        "Technology selection (e.g., Odoo as core ERP)",
+        "Integrations, data flows, microservices vs monolith",
+        "Security, scalability, maintainability"
+      ]
+    },
+    {
+      "title": "Iterative Implementation",
+      "items": [
+        "Modular development: e.g., orders first, then inventory",
+        "Continuous testing and adjustments"
+      ]
+    },
+    {
+      "title": "Deployment & Monitoring",
+      "items": [
+        "Docker/CI/CD, documentation",
+        "User training",
+        "Feedback collection and adjustments"
+      ]
+    }
+  ]
+}

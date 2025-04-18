@@ -1,10 +1,23 @@
 <html>
     <head></head>
     <body>
+        <!-- Original feedback form -->
         <form name="feedback" data-netlify="true" hidden>
             <input type="hidden" name="form-name" value="feedback" />
             <input name="name" type="text" />
             <input name="email" type="text" />
+            <input name="message" type="text" />
+        </form>
+
+        <!-- Contact form for the contact page -->
+        <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="message-format" value="html" />
+            <div hidden>
+                <input name="bot-field" />
+            </div>
+            <input name="name" type="text" />
+            <input name="email" type="email" />
             <input name="message" type="text" />
         </form>
     </body>

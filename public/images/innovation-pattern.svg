@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="innovation-pattern" patternUnits="userSpaceOnUse" width="200" height="200">
+      <!-- Network nodes (innovation) -->
+      <circle cx="40" cy="40" r="5" fill="#4f46e5" />
+      <circle cx="100" cy="30" r="5" fill="#14b8a6" />
+      <circle cx="160" cy="50" r="5" fill="#4f46e5" />
+      <circle cx="30" cy="100" r="5" fill="#14b8a6" />
+      <circle cx="100" cy="100" r="5" fill="#4f46e5" />
+      <circle cx="170" cy="110" r="5" fill="#14b8a6" />
+      <circle cx="50" cy="160" r="5" fill="#4f46e5" />
+      <circle cx="120" cy="170" r="5" fill="#14b8a6" />
+      <circle cx="180" cy="150" r="5" fill="#4f46e5" />
+      
+      <!-- Connection lines -->
+      <line x1="40" y1="40" x2="100" y2="30" stroke="#4f46e5" stroke-width="1" />
+      <line x1="100" y1="30" x2="160" y2="50" stroke="#14b8a6" stroke-width="1" />
+      <line x1="40" y1="40" x2="30" y2="100" stroke="#14b8a6" stroke-width="1" />
+      <line x1="100" y1="30" x2="100" y2="100" stroke="#4f46e5" stroke-width="1" />
+      <line x1="160" y1="50" x2="170" y2="110" stroke="#14b8a6" stroke-width="1" />
+      <line x1="30" y1="100" x2="50" y2="160" stroke="#4f46e5" stroke-width="1" />
+      <line x1="100" y1="100" x2="120" y2="170" stroke="#14b8a6" stroke-width="1" />
+      <line x1="170" y1="110" x2="180" y2="150" stroke="#4f46e5" stroke-width="1" />
+      <line x1="30" y1="100" x2="100" y2="100" stroke="#14b8a6" stroke-width="1" />
+      <line x1="100" y1="100" x2="170" y2="110" stroke="#4f46e5" stroke-width="1" />
+      <line x1="50" y1="160" x2="120" y2="170" stroke="#14b8a6" stroke-width="1" />
+      <line x1="120" y1="170" x2="180" y2="150" stroke="#4f46e5" stroke-width="1" />
+      <line x1="40" y1="40" x2="100" y2="100" stroke="#4f46e5" stroke-width="1" />
+      <line x1="100" y1="30" x2="170" y2="110" stroke="#14b8a6" stroke-width="1" />
+      <line x1="30" y1="100" x2="120" y2="170" stroke="#4f46e5" stroke-width="1" />
+      <line x1="100" y1="100" x2="180" y2="150" stroke="#14b8a6" stroke-width="1" />
+      
+      <!-- Gears (innovation mechanism) -->
+      <circle cx="60" cy="70" r="15" stroke="#4f46e5" stroke-width="1" fill="none" />
+      <circle cx="60" cy="70" r="10" stroke="#4f46e5" stroke-width="1" fill="none" />
+      <path d="M60,55 L60,50 M67,57 L70,52 M75,70 L80,70 M67,83 L70,88 M60,85 L60,90 M53,83 L50,88 M45,70 L40,70 M53,57 L50,52" stroke="#4f46e5" stroke-width="1" />
+      
+      <circle cx="140" cy="130" r="15" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <circle cx="140" cy="130" r="10" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <path d="M140,115 L140,110 M147,117 L150,112 M155,130 L160,130 M147,143 L150,148 M140,145 L140,150 M133,143 L130,148 M125,130 L120,130 M133,117 L130,112" stroke="#14b8a6" stroke-width="1" />
+    </pattern>
+  </defs>
+  
+  <!-- Apply the pattern to the entire SVG -->
+  <rect width="800" height="800" fill="url(#innovation-pattern)" />
+</svg>

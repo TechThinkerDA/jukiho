@@ -1,0 +1,19 @@
+{
+  "title": "Stack & Experience",
+  "subtitle": "Technologies I work with and use in designing and implementing solutions.",
+  "note": "Technology is just a tool. The key is in the right architecture.",
+  "highlights": [
+    {
+      "title": "Business & Technology",
+      "description": "I can connect the technical world with real business problems and design solutions that bring value."
+    },
+    {
+      "title": "New & Legacy Systems",
+      "description": "I have experience with greenfield projects as well as refactoring legacy systems that need modernization."
+    },
+    {
+      "title": "Sustainable Solutions",
+      "description": "I focus on sustainable, extensible solutions that will work for years and adapt to changing requirements."
+    }
+  ]
+}

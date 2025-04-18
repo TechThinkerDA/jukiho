@@ -1,0 +1,22 @@
+{
+  "title": "Why Me?",
+  "reasons": [
+    {
+      "title": "Connecting Tech with Business",
+      "description": "I can connect the technical world with real business problems. I understand not only code but also business processes and user needs."
+    },
+    {
+      "title": "Experience with Various Projects",
+      "description": "I have experience with greenfield projects as well as refactoring legacy systems. I can design a solution tailored to your needs."
+    },
+    {
+      "title": "Sustainable and Extensible Solutions",
+      "description": "I focus on sustainable, extensible solutions that will work for years and adapt to changing requirements."
+    }
+  ],
+  "callToAction": {
+    "title": "Looking for a systems architect who understands your business?",
+    "description": "Let's create a solution together that will help you grow and streamline your processes.",
+    "button": "Contact Me"
+  }
+}

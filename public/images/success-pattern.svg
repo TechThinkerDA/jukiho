@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="success-pattern" patternUnits="userSpaceOnUse" width="200" height="200">
+      <!-- Mountain peaks (success) -->
+      <path d="M0,150 L40,80 L80,120 L120,60 L160,100 L200,40" stroke="#4f46e5" stroke-width="2" fill="none" />
+      
+      <!-- Trophy -->
+      <path d="M90,40 L110,40 L110,50 C120,50 130,55 130,70 C130,85 120,90 110,90 L110,100 L90,100 L90,90 C80,90 70,85 70,70 C70,55 80,50 90,50 Z" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <rect x="95" y="100" width="10" height="10" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <rect x="90" y="110" width="20" height="5" stroke="#14b8a6" stroke-width="1" fill="none" />
+      
+      <!-- Target/Goal -->
+      <circle cx="160" cy="160" r="20" stroke="#4f46e5" stroke-width="1" fill="none" />
+      <circle cx="160" cy="160" r="15" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <circle cx="160" cy="160" r="10" stroke="#4f46e5" stroke-width="1" fill="none" />
+      <circle cx="160" cy="160" r="5" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <circle cx="160" cy="160" r="2" fill="#4f46e5" />
+      
+      <!-- Lightbulb (idea) -->
+      <circle cx="40" cy="40" r="10" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <path d="M40,50 L40,60" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <path d="M35,55 L45,55" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <path d="M33,52 L47,58" stroke="#14b8a6" stroke-width="1" fill="none" />
+      <path d="M33,58 L47,52" stroke="#14b8a6" stroke-width="1" fill="none" />
+      
+      <!-- Checkmarks (completion) -->
+      <path d="M30,120 L40,130 L55,110" stroke="#4f46e5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M130,130 L140,140 L155,120" stroke="#14b8a6" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+    </pattern>
+  </defs>
+  
+  <!-- Apply the pattern to the entire SVG -->
+  <rect width="800" height="800" fill="url(#success-pattern)" />
+</svg>

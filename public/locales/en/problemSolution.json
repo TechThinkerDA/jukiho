@@ -1,0 +1,28 @@
+{
+  "title": "Problem → Solution",
+  "subtitle": "(Story of a System)",
+  "problemTitle": "Problem",
+  "problemDescription": "A company with e-commerce + manufacturing is growing → order tracking, inventory, CRM, and invoicing systems are failing.",
+  "problemSummary": "5 different systems that don't communicate → loss of time and money.",
+  "problemPoints": [
+    "Inconsistent data between systems",
+    "Manual data entry",
+    "Lack of order status visibility",
+    "Inefficient inventory management",
+    "Time-consuming invoicing process"
+  ],
+  "solutionTitle": "Solution",
+  "solutionDescription": "Integrated system built on Odoo with custom modules for the company's specific needs.",
+  "solutionSummary": "➡️ This is where my work begins.",
+  "solutionPoints": [
+    "Unified system for all processes",
+    "Automation of routine tasks",
+    "Real-time order status tracking",
+    "Inventory optimization",
+    "Fast and accurate invoicing"
+  ],
+  "resultsTitle": "Results",
+  "timeReduction": "Time savings in order processing",
+  "costReduction": "Reduction in inventory costs",
+  "satisfactionIncrease": "Increase in customer satisfaction"
+}

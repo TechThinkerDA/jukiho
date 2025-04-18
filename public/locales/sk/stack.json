@@ -1,0 +1,281 @@
+{
+  "title": "Tech Stack",
+  "subtitle": "Technológie, s ktorými pracujem",
+  "viewFull": "Zobraziť celý Tech Stack",
+  "proficiency": "Zručnosť",
+  "experience": "Skúsenosti",
+  "keyFeatures": "Kľúčové funkcie",
+  "learnMore": "Dozvedieť sa viac",
+  "sections": {
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "devops": "DevOps",
+    "tools": "Nástroje a Praktiky"
+  },
+  "technologies": {
+    "python": {
+      "name": "Python / Odoo",
+      "description": "Vývoj v Pythone s Odoo ERP frameworkom",
+      "experience": "2+ rokov práce s Pythonom a Odoo ERP",
+      "features": [
+        "Vlastné rozšírenia pre výrobu, HR, nákup, predaj",
+        "Moduly pre oceňovanie zásob a fakturáciu",
+        "Integrácia s externými službami a API",
+        "Automatizácia obchodných procesov a optimalizácia workflow"
+      ]
+    },
+    "java": {
+      "name": "Java / Spring Boot",
+      "description": "Vývoj podnikových backendov s ekosystémom Spring",
+      "experience": "10+ rokov vývoja v Jave, 7+ rokov so Spring Boot",
+      "features": [
+        "Mikroslužbová architektúra so Spring Boot",
+        "Vývoj RESTful API",
+        "Dependency injection a inversion of control",
+        "Integrácia s rôznymi zdrojmi dát a službami"
+      ]
+    },
+    "jpa": {
+      "name": "JPA / Hibernate",
+      "description": "Objektovo-relačné mapovanie pre Java aplikácie",
+      "experience": "8+ rokov práce s JPA a Hibernate v produkčných aplikáciách",
+      "features": [
+        "Mapovanie entít a správa vzťahov",
+        "JPQL a Criteria API pre komplexné dotazy",
+        "Správa transakcií",
+        "Optimalizácia výkonu a caching"
+      ]
+    },
+    "csharp": {
+      "name": "C# / ASP.NET Core",
+      "description": "Budovanie robustných backendových systémov s frameworkom Microsoftu",
+      "experience": "7+ rokov vývoja v C#, 5+ rokov s ASP.NET Core",
+      "features": [
+        "Vývoj Web API s ASP.NET Core",
+        "Implementácia MVC architektúry",
+        "Entity Framework Core pre prístup k dátam",
+        "Dependency injection a middleware pipeline"
+      ]
+    },
+    "rest": {
+      "name": "REST APIs",
+      "description": "Návrh a implementácia RESTful webových služieb",
+      "experience": "8+ rokov návrhu a implementácie RESTful API",
+      "features": [
+        "Princípy RESTful architektúry",
+        "Verziovanie a dokumentácia API",
+        "Autentifikácia a autorizácia",
+        "Rate limiting a stratégie cachovania"
+      ]
+    },
+    "microservices": {
+      "name": "Mikroslužby",
+      "description": "Budovanie distribuovaných systémov s mikroslužbovou architektúrou",
+      "experience": "5+ rokov návrhu a implementácie mikroslužbových architektúr",
+      "features": [
+        "Dekompozícia služieb a domain-driven design",
+        "Vzory komunikácie medzi službami",
+        "Service discovery a API brány",
+        "Vzory odolnosti (circuit breakers, retries, atď.)"
+      ]
+    },
+    "react": {
+      "name": "React",
+      "description": "Budovanie interaktívnych používateľských rozhraní s Reactom a jeho ekosystémom",
+      "experience": "5+ rokov skúseností s budovaním responzívnych a interaktívnych webových aplikácií s Reactom",
+      "features": [
+        "Komponentová architektúra pre znovupoužiteľné UI elementy",
+        "Správa stavu s hooks a context API",
+        "Integrácia s rôznymi backendovými API",
+        "Vlastné hooks a optimalizované renderovanie"
+      ]
+    },
+    "nextjs": {
+      "name": "Next.js",
+      "description": "Vytváranie serverovo renderovaných a statických React aplikácií",
+      "experience": "3+ roky práce s Next.js pre produkčné aplikácie",
+      "features": [
+        "Server-side rendering pre lepšie SEO a výkon",
+        "Generovanie statických stránok pre bleskurýchle weby",
+        "API routes pre backendovú funkcionalitu",
+        "Systém smerovania založený na súboroch"
+      ]
+    },
+    "javascript": {
+      "name": "JavaScript",
+      "description": "Základný jazyk pre frontend vývoj a interakcie v prehliadači",
+      "experience": "10+ rokov skúseností s vývojom v JavaScripte",
+      "features": [
+        "ES6+ funkcie a moderná syntax",
+        "Asynchrónne programovanie s Promises a async/await",
+        "Manipulácia s DOM a spracovanie udalostí",
+        "Koncepty funkcionálneho programovania"
+      ]
+    },
+    "htmlcss": {
+      "name": "HTML/CSS",
+      "description": "Základné webové technológie pre štruktúru a štýlovanie",
+      "experience": "10+ rokov skúseností s HTML5 a CSS3",
+      "features": [
+        "Sémantické HTML pre prístupnosť a SEO",
+        "Responzívny dizajn s media queries",
+        "CSS Grid a Flexbox layouty",
+        "CSS animácie a prechody"
+      ]
+    },
+    "ssrspa": {
+      "name": "SSR & SPA",
+      "description": "Server-Side Rendering a Single-Page Application prístupy",
+      "experience": "5+ rokov budovania SSR aj SPA aplikácií",
+      "features": [
+        "Server-side rendering pre zlepšenie počiatočnej doby načítania",
+        "Single-page aplikácie pre plynulý používateľský zážitok",
+        "Hybridné prístupy kombinujúce výhody oboch",
+        "SEO optimalizácia pre JavaScript aplikácie"
+      ]
+    },
+    "uiux": {
+      "name": "UI/UX Implementácia",
+      "description": "Prenos dizajnov do funkčných používateľských rozhraní",
+      "experience": "5+ rokov implementácie UI/UX dizajnov vo webových aplikáciách",
+      "features": [
+        "Implementácia dizajnových návrhov na pixel presne",
+        "Responzívne layouty fungujúce na všetkých zariadeniach",
+        "Prístupné rozhrania podľa WCAG smernic",
+        "Interaktívne prvky s plynulými animáciami"
+      ]
+    },
+    "gitgithub": {
+      "name": "Git & GitHub",
+      "description": "Systém pre správu verzií a platforma pre spoluprácu",
+      "experience": "10+ rokov používania Gitu pre správu verzií a GitHubu pre spoluprácu",
+      "features": [
+        "Pokročilé Git workflow (rebasing, cherry-picking, atď.)",
+        "GitHub Actions pre CI/CD",
+        "Revízie pull requestov a spolupráca na kóde",
+        "Stratégie správy vetiev"
+      ]
+    },
+    "jenkins": {
+      "name": "Jenkins",
+      "description": "CI/CD automatizačný server pre build a nasadenie",
+      "experience": "6+ rokov práce s Jenkinsom pre CI/CD pipeline",
+      "features": [
+        "Pipeline ako kód s Jenkinsfile",
+        "Automatizované procesy buildu, testovania a nasadenia",
+        "Integrácia so systémami pre správu verzií",
+        "Ekosystém pluginov pre rozšírenú funkcionalitu"
+      ]
+    },
+    "docker": {
+      "name": "Docker",
+      "description": "Kontajnerizačná platforma pre aplikácie",
+      "experience": "5+ rokov kontajnerizácie aplikácií s Dockerom",
+      "features": [
+        "Vytváranie a správa kontajnerov",
+        "Multi-kontajnerové aplikácie s Docker Compose",
+        "Budovanie vlastných obrazov s Dockerfile",
+        "Základy orchestrácie kontajnerov"
+      ]
+    },
+    "linux": {
+      "name": "Linux",
+      "description": "Operačný systém pre servery a vývoj",
+      "experience": "8+ rokov práce s Linuxom pre správu serverov a vývoj",
+      "features": [
+        "Administrácia a konfigurácia serverov",
+        "Bash scripting pre automatizáciu",
+        "Správa a monitorovanie služieb",
+        "Bezpečnostné opatrenia a najlepšie praktiky"
+      ]
+    },
+    "gradle": {
+      "name": "Gradle",
+      "description": "Nástroj pre automatizáciu buildu pre Java projekty",
+      "experience": "6+ rokov používania Gradle pre buildy Java projektov",
+      "features": [
+        "Vývoj build skriptov s Groovy DSL",
+        "Správa závislostí",
+        "Vytváranie a konfigurácia vlastných taskov",
+        "Multi-projektové buildy a modularizácia"
+      ]
+    },
+    "aws": {
+      "name": "AWS",
+      "description": "Cloudové výpočtové služby pre aplikácie",
+      "experience": "3+ roky práce s AWS cloudovými službami",
+      "features": [
+        "EC2 pre virtuálne servery v cloude",
+        "S3 pre objektové úložisko",
+        "RDS pre spravované relačné databázy",
+        "Lambda pre serverless computing"
+      ]
+    },
+    "sqldatabases": {
+      "name": "SQL Databázy",
+      "description": "MySQL a PostgreSQL pre ukladanie a získavanie dát",
+      "experience": "10+ rokov práce s relačnými databázami",
+      "features": [
+        "Návrh databáz a normalizácia",
+        "Komplexné SQL dotazy a uložené procedúry",
+        "Optimalizácia výkonu a indexovanie",
+        "Administrácia a údržba databáz"
+      ]
+    },
+    "phpsymfony": {
+      "name": "PHP / Symfony",
+      "description": "PHP vývoj so Symfony frameworkom",
+      "experience": "5+ rokov PHP vývoja so Symfony frameworkom",
+      "features": [
+        "Implementácia MVC architektúry",
+        "Doctrine ORM pre databázové operácie",
+        "Twig šablónovací systém",
+        "Symfony komponenty a balíčky"
+      ]
+    },
+    "xmljson": {
+      "name": "XML / JSON",
+      "description": "Formáty pre serializáciu a výmenu dát",
+      "experience": "10+ rokov práce s XML a JSON pre výmenu dát",
+      "features": [
+        "Návrh a validácia XML schémy",
+        "XSLT transformácie",
+        "JSON schéma a validácia",
+        "Formátovanie dát pre RESTful API"
+      ]
+    },
+    "kotlincorda": {
+      "name": "Kotlin / Corda",
+      "description": "Blockchain vývoj s R3 Corda",
+      "experience": "2+ roky skúmanie blockchain vývoja s Corda",
+      "features": [
+        "Vývoj smart kontraktov",
+        "Koncepty distribuovanej účtovnej knihy",
+        "Programovací jazyk Kotlin",
+        "Architektúra blockchain siete"
+      ]
+    },
+    "pythonai": {
+      "name": "Python AI",
+      "description": "Neurónové siete a analýza dát s Pythonom",
+      "experience": "1+ rok skúmanie AI a strojového učenia s Pythonom",
+      "features": [
+        "Základy neurónových sietí",
+        "Predspracovanie a analýza dát",
+        "Základy TensorFlow a PyTorch",
+        "Koncepty spracovania prirodzeného jazyka"
+      ]
+    },
+    "teamleadership": {
+      "name": "Vedenie tímu",
+      "description": "Vedenie vývojových tímov a projektov",
+      "experience": "5+ rokov vedenia vývojových tímov s 2-5 ľudí",
+      "features": [
+        "Agilné riadenie projektov",
+        "Technický mentoring a zdieľanie znalostí",
+        "Plánovanie sprintov a prioritizácia úloh",
+        "Revízie kódu a zabezpečenie kvality"
+      ]
+    }
+  }
+}

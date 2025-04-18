@@ -1,0 +1,19 @@
+{
+  "title": "Contact Me",
+  "subtitle": "Let's work together",
+  "cta": {
+    "title": "Let's Work Together",
+    "subtitle": "I'm currently available for freelance projects, full-time positions, or consulting work.",
+    "button": "Get in Touch"
+  },
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "send": "Send Message",
+  "success": "Your message has been sent successfully!",
+  "error": "There was an error sending your message. Please try again.",
+  "messagePlaceholder": "Write your message here...",
+  "messageRequired": "Please enter a message",
+  "contactInfo": "Contact Information",
+  "connectWithMe": "Connect With Me"
+}

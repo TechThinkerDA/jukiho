@@ -1,0 +1,21 @@
+{
+  "navigation": {
+    "title": "Navigácia",
+    "home": "Domov",
+    "about": "O mne",
+    "projects": "Projekty",
+    "stack": "Technológie",
+    "lab": "Lab",
+    "contact": "Kontakt",
+    "sitemap": "Mapa stránky"
+  },
+  "email": {
+    "copyToClipboard": "Kopírovať email do schránky"
+  },
+  "footer": {
+    "copyright": "© 2025 Juraj Kicko Horbaľ. Všetky práva vyhradené.",
+    "philosophyTitle1": "Technológia má zmysel,",
+    "philosophyTitle2": "keď rieši reálne problémy.",
+    "contactText": "Máte projekt alebo potrebujete pomoc? Nehezítajte ma kontaktovať."
+  }
+}

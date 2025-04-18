@@ -1,0 +1,149 @@
+{
+  "title": "O mne",
+  "subtitle": "Moja cesta vo vývoji softvéru",
+  "bio": "Som vášnivý vývojár softvéru s odbornosťou v moderných webových technológiách. Rád vytváram škálovateľné a výkonné aplikácie, ktoré poskytujú skvelé používateľské zážitky.",
+  "experience": "Skúsenosti",
+  "education": "Vzdelanie",
+  "skills": "Zručnosti",
+  "whoIAm": "Kto som",
+  "bioLine1": "Skúsený softvérový architekt a full stack vývojár so zameraním na Python, Java, C# a React. Špecializujem sa na backendové systémy, data mining a vývoj modulov pre platformy.",
+  "bioLine2": "Hlboko zapálený pre vylepšovanie a inováciu systémov. Vždy dychtivý integrovať najnovšie technológie a riešiť komplexné výzvy, kombinujem analytický prístup s pozornosťou k detailom.",
+  "softSkillsLabel": "Mäkké zručnosti",
+  "softSkills": "inovatívny, tímovo orientovaný, analytický, adaptabilný, kritické myslenie",
+  "interestsLabel": "Záujmy",
+  "interests": "fintech, AI",
+  "techStackLabel": "Technologický stack",
+  "techStack": "Python, Java (Spring Boot, JPA/Hibernate), C# (.NET), JS (React), SQL, PHP",
+  "experienceWithLabel": "Skúsenosti s",
+  "experienceWith": "REST, Jenkins (CI/CD, automatizácia buildov/nasadenia), Gradle, Docker, Linux, Mikroslužby, JSON a XML serializácia",
+  "workExperience": "Pracovné skúsenosti",
+  "personalProjects": "Osobné projekty",
+  "clickForDetails": "Kliknite pre detaily",
+  "proficiencyLevel": "Úroveň znalostí",
+  "notableProjects": "Významné projekty",
+  "librariesFrameworks": "Knižnice a frameworky",
+  "downloadCV": "Stiahnuť CV",
+  "experienceTitle": "Profesionálne skúsenosti",
+  "educationTitle": "Vzdelanie",
+  "skillsTitle": "Technické zručnosti",
+  "projectsTitle": "Kľúčové projekty",
+
+  "workExperienceItems": {
+    "odoo": {
+      "title": "Odoo Developer",
+      "period": "2024 - Present",
+      "description": "Vývoj a rozširovanie funkcionalít Odoo pre HR, výrobu a nákup, vrátane automatizácie procesov:",
+      "responsibilities": [
+        "Správa a generovanie/podpisovanie dokumentov v HR module.",
+        "Implementácia kalkulačky nákladov produktov pre oceňovanie skladových zásob pomocou Amazon SQS.",
+        "Úprava existujúcich výrobných doplnkov.",
+        "Reklamácie nákupu."
+      ],
+      "technologies": ["Python", "Odoo", "AWS", "XML", "JSON", "PostgreSQL"]
+    },
+    "java": {
+      "title": "Java + React Developer",
+      "period": "2021 - 2024",
+      "teamRole": "Team Leader (2P)",
+      "description": "Kompletný redizajn Bloomreach.com pomocou Bloomreach Content CMS. Projekt sa zameriaval na vylepšenie backendovej infraštruktúry webstránky pre zabezpečenie plynulého používateľského zážitku a podporu jej rozsiahlych potrieb správy obsahu.",
+      "responsibilities": [
+        "Vedenie vývoja a optimalizácie backendových systémov, zabezpečenie robustného výkonu a škálovateľnosti.",
+        "Navrhnutie základnej štruktúry pre komponenty a implementácia prístupov Server-Side Rendering (SSR) a Single-Page Application (SPA) v spolupráci s frontend vývojármi.",
+        "Návrh a integrácia Java rozšírení na backende pre vylepšenie možností webstránky pomocou sofistikovaných funkcií.",
+        "Zabezpečenie kompatibility s platformou Vercel, optimalizácia procesov nasadenia."
+      ],
+      "technologies": ["Java", "Spring", "Apache Jackrabbit", "Bloomreach Content", "React"]
+    },
+    "aspnet": {
+      "title": "ASP.NET Core Developer / Architect",
+      "period": "2020 - 2024",
+      "teamRole": "Team Leader (3P)",
+      "description": "Vyvinutá aplikácia ponúka komplexné finančné riešenia vrátane možností lízingu pre svojich zákazníkov:",
+      "responsibilities": [
+        "Bezproblémová integrácia viacerých bankových API pomocou vlastného API gateway pre zjednodušenie získavania údajov a zvýšenie spoľahlivosti aplikácie.",
+        "Návrh a implementácia konfigurovateľných reportovacích dashboardov, umožňujúcich zainteresovaným stranám získať rôzne pohľady na historické finančné údaje a efektívne sledovať kľúčové metriky.",
+        "Architekt systému pre dynamické renderovanie UI prvkov prispôsobených špecifickým konfiguráciám pre jednotlivé bankové inštitúcie, optimalizácia používateľského zážitku a zabezpečenie súladu s rôznymi bankovými požiadavkami."
+      ],
+      "technologies": ["ASP.NET Core 3", "C#", "REST API", "SOAP"]
+    },
+    "wpf": {
+      "title": ".NET WPF Developer",
+      "period": "2018 - 2020",
+      "description": "Správa a vývoj WPF pre softvér na modelovanie konfigurácie PLC:",
+      "responsibilities": [
+        "Konfigurácia knižnice komponentov reprezentujúcich reálne zariadenia — načítavanie štruktúr vo formáte XML.",
+        "Pripojenie k reálnym zariadeniam, nahrávanie vytvorených konfigurácií, čítanie stavov zariadení.",
+        "Riešenie renderovania komplexných usporiadaní mnohých prvkov.",
+        "Vytvorenie emulátora pre testovanie konfigurácií bez potreby skutočných zariadení."
+      ],
+      "technologies": ["C#", ".NET WPF"]
+    },
+    "javafx": {
+      "title": "JavaFX Developer",
+      "period": "2018 - 2021",
+      "description": "Vývoj špecializovaného ERP systému pre spoločnosť zaoberajúcu sa odpadovým hospodárstvom. Tento projekt bol zameraný na zefektívnenie logistiky zberu odpadu, správy skladu, fakturácie a reportingu v súlade s legislatívnymi normami, zabezpečujúc flexibilitu pre prispôsobenie sa novým zmenám.",
+      "responsibilities": [
+        "Vývoj modulov pre logistiku odpadu a správu skladu, zabezpečenie efektívnych logistických procesov.",
+        "Úzka spolupráca s tímami pre fakturáciu a reporting na zabezpečenie bezproblémovej integrácie modulov, poskytujúc jednotný systémový zážitok.",
+        "Riešenie problémov vyplývajúcich z prísnych legislatívnych noriem a vyvíjajúcich sa postupov odpadového hospodárstva, aktualizácia ERP systému podľa potreby.",
+        "Vývoj PHP servera na synchronizáciu údajov medzi používateľmi/službami.",
+        "Implementácia funkcie offline prístupu, umožňujúcej používateľom pristupovať k systému a pracovať s ním aj bez internetového pripojenia.",
+        "Návrh prispôsobiteľného nástroja na reporting, umožňujúceho používateľom prispôsobiť reporty podľa ich potrieb pri zabezpečení optimalizovaného výkonu systému."
+      ],
+      "technologies": ["Java FX", "PHP Symfony", "MySQL", "DevOps"]
+    }
+  },
+  "educationItems": {
+    "engineer": {
+      "title": "Inžiniersky titul",
+      "period": "2015 - 2017",
+      "institution": "Technická univerzita v Košiciach, Slovensko",
+      "description": "Pokročilé štúdium informatiky a softvérového inžinierstva, nadväzujúce na základy položené počas bakalárskeho programu."
+    },
+    "bachelor": {
+      "title": "Bakalársky titul",
+      "period": "2012 - 2015",
+      "institution": "Technická univerzita v Košiciach, Slovensko",
+      "description": "Štúdium informatiky so zameraním na softvérové inžinierstvo a vývoj."
+    }
+  },
+  "personalProjectsItems": {
+    "odoo": {
+      "title": "Vývoj v Odoo",
+      "description": "Vývoj vlastných rozšírení Odoo pre výrobu, HR, nákup, predaj, fakturáciu, oceňovanie zásob a integráciu s externými službami.",
+      "technologies": ["Python", "Odoo", "XML", "API Integration"]
+    },
+    "corda": {
+      "title": "Vývoj na Corda Blockchain",
+      "description": "Skúmanie technológie distribuovanej účtovnej knihy pomocou Corda, vytvorenie CorDapp pre sledovanie dodávateľského reťazca.",
+      "technologies": ["Kotlin", "Corda", "Blockchain"]
+    },
+    "python": {
+      "title": "Vývoj AI v Pythone",
+      "description": "Skúmanie neurónových sietí v Pythone, vytvorenie skriptov pre analýzu dát z burzy a trénovanie modelov.",
+      "technologies": ["Python", "AI", "Analýza dát"]
+    }
+  },
+  "skillsItems": {
+    "python": {
+      "title": "Python / Odoo",
+      "description": "Prispôsobenie ERP, vývoj modulov, integrácia API",
+      "items": ["Odoo ERP", "Vývoj modulov", "PostgreSQL", "XML/JSON", "API Integrácia"]
+    },
+    "java": {
+      "title": "Java",
+      "description": "Podnikové aplikácie, backendové systémy, mikroslužby",
+      "items": ["Spring Boot", "JPA / Hibernate", "JavaFX", "Apache Jackrabbit", "Mikroslužby"]
+    },
+    "csharp": {
+      "title": "C#",
+      "description": "Backendové systémy, desktopové aplikácie, API",
+      "items": ["ASP.NET Core", ".NET WPF", "Entity Framework", "LINQ", "REST API"]
+    },
+    "javascript": {
+      "title": "JavaScript / React",
+      "description": "Frontend vývoj, responzívne UI, moderné frameworky",
+      "items": ["React", "Next.js", "Server-Side Rendering (SSR)", "Single-Page Applications (SPA)", "UI/UX Implementácia"]
+    }
+  }
+}

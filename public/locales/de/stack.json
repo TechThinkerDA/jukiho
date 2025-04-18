@@ -1,0 +1,105 @@
+{
+  "title": "Tech Stack",
+  "subtitle": "Technologien, mit denen ich arbeite",
+  "viewFull": "Vollständigen Tech Stack anzeigen",
+  "proficiency": "Kenntnisse",
+  "experience": "Erfahrung",
+  "keyFeatures": "Hauptmerkmale",
+  "learnMore": "Mehr erfahren",
+  "sections": {
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "devops": "DevOps",
+    "tools": "Tools & Praktiken"
+  },
+  "technologies": {
+    "python": {
+      "name": "Python / Odoo",
+      "description": "Python-Entwicklung mit Odoo ERP-Framework",
+      "experience": "2+ Jahre Arbeit mit Python und Odoo ERP",
+      "features": [
+        "Benutzerdefinierte Erweiterungen für Fertigung, HR, Einkauf, Vertrieb",
+        "Module für Bestandsbewertung und Rechnungsstellung",
+        "Integration mit externen Diensten und APIs",
+        "Automatisierung von Geschäftsprozessen und Workflow-Optimierung"
+      ]
+    },
+    "java": {
+      "name": "Java / Spring Boot",
+      "description": "Enterprise-Backend-Entwicklung mit dem Spring-Ökosystem",
+      "experience": "10+ Jahre Java-Entwicklung, 7+ Jahre mit Spring Boot",
+      "features": [
+        "Microservices-Architektur mit Spring Boot",
+        "RESTful API-Entwicklung",
+        "Dependency Injection und Inversion of Control",
+        "Integration mit verschiedenen Datenquellen und Diensten"
+      ]
+    },
+    "jpa": {
+      "name": "JPA / Hibernate",
+      "description": "Objekt-relationales Mapping für Java-Anwendungen",
+      "experience": "8+ Jahre Arbeit mit JPA und Hibernate in Produktionsanwendungen",
+      "features": [
+        "Entity-Mapping und Beziehungsmanagement",
+        "JPQL und Criteria API für komplexe Abfragen",
+        "Transaktionsmanagement",
+        "Leistungsoptimierung und Caching"
+      ]
+    },
+    "csharp": {
+      "name": "C# / ASP.NET Core",
+      "description": "Aufbau robuster Backend-Systeme mit Microsofts Framework",
+      "experience": "7+ Jahre C#-Entwicklung, 5+ Jahre mit ASP.NET Core",
+      "features": [
+        "Web API-Entwicklung mit ASP.NET Core",
+        "Implementierung der MVC-Architektur",
+        "Entity Framework Core für Datenzugriff",
+        "Dependency Injection und Middleware-Pipeline"
+      ]
+    },
+    "rest": {
+      "name": "REST APIs",
+      "description": "Entwurf und Implementierung von RESTful-Webdiensten",
+      "experience": "8+ Jahre Entwurf und Implementierung von RESTful APIs",
+      "features": [
+        "RESTful-Architekturprinzipien",
+        "API-Versionierung und Dokumentation",
+        "Authentifizierung und Autorisierung",
+        "Rate Limiting und Caching-Strategien"
+      ]
+    },
+    "microservices": {
+      "name": "Microservices",
+      "description": "Aufbau verteilter Systeme mit Microservices-Architektur",
+      "experience": "5+ Jahre Entwurf und Implementierung von Microservices-Architekturen",
+      "features": [
+        "Service-Dekomposition und Domain-Driven Design",
+        "Kommunikationsmuster zwischen Diensten",
+        "Service Discovery und API-Gateways",
+        "Resilienz-Muster (Circuit Breakers, Retries, usw.)"
+      ]
+    },
+    "react": {
+      "name": "React",
+      "description": "Erstellung interaktiver Benutzeroberflächen mit React und seinem Ökosystem",
+      "experience": "5+ Jahre Erfahrung im Aufbau responsiver und interaktiver Webanwendungen mit React",
+      "features": [
+        "Komponentenbasierte Architektur für wiederverwendbare UI-Elemente",
+        "Zustandsverwaltung mit Hooks und Context API",
+        "Integration mit verschiedenen Backend-APIs",
+        "Benutzerdefinierte Hooks und optimiertes Rendering"
+      ]
+    },
+    "nextjs": {
+      "name": "Next.js",
+      "description": "Erstellung serverseitig gerenderter und statischer React-Anwendungen",
+      "experience": "3+ Jahre Arbeit mit Next.js für Produktionsanwendungen",
+      "features": [
+        "Server-Side Rendering für verbesserte SEO und Leistung",
+        "Statische Seitengenerierung für blitzschnelle Websites",
+        "API-Routen für Backend-Funktionalität",
+        "Dateibasiertes Routing-System"
+      ]
+    }
+  }
+}

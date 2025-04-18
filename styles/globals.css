@@ -2,44 +2,212 @@
 
 @import 'tailwindcss';
 
-@theme {
+/* Dark mode styles removed */
+
+/* Custom styles for SimpleRichTextEditor */
+[contenteditable] {
+  outline: none;
+}
+
+[contenteditable]:empty:before {
+  content: attr(placeholder);
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.simple-rich-text-editor a {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+.simple-rich-text-editor ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.simple-rich-text-editor ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+/* Base theme variables */
+:root {
     --background-image-noise: linear-gradient(
             to bottom,
             color-mix(in oklab, var(--color-neutral-950) 0%, transparent),
             color-mix(in oklab, var(--color-neutral-950) 100%, transparent)
         ),
         url('/images/noise.png');
-    --color-primary: #2bdcd2;
-    --color-primary-content: #171717;
-    --color-secondary: #016968;
     --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
 }
 
+
+
 @layer base {
     h1 {
-        @apply text-4xl font-bold tracking-tight sm:text-5xl;
+        @apply text-4xl font-bold tracking-tight sm:text-5xl text-gray-800 transition-colors duration-200;
     }
 
     h2 {
-        @apply text-2xl font-bold sm:text-3xl;
+        @apply text-2xl font-bold sm:text-3xl text-gray-800 transition-colors duration-200;
     }
 
     h3 {
-        @apply text-xl font-bold;
+        @apply text-xl font-bold text-gray-800 transition-colors duration-200;
     }
 
-    a:not(.btn) {
-        @apply underline transition hover:opacity-80;
+    a:not(.btn):not(.no-underline) {
+        @apply underline transition-all hover:opacity-80 text-[#4f46e5];
     }
 
     :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-neutral-900 text-yellow-200;
+        @apply px-1 py-0.5 font-mono rounded bg-gray-100 text-sky-700 transition-colors duration-200;
         font-size: 0.9em;
+    }
+
+    body {
+        @apply bg-gray-50 text-gray-700 transition-colors duration-200 text-base;
+        font-size: 1.125rem;
+    }
+
+    /* Pridajme základné štýly pre všetky komponenty */
+    * {
+        @apply border-gray-200;
     }
 }
 
 @layer components {
+    /* Custom animations for the interactive hero */
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes widthAnimation95 {
+        0% { width: 0; }
+        100% { width: 95%; }
+    }
+
+    @keyframes widthAnimation90 {
+        0% { width: 0; }
+        100% { width: 90%; }
+    }
+
+    @keyframes widthAnimation85 {
+        0% { width: 0; }
+        100% { width: 85%; }
+    }
+
+    @keyframes widthAnimation80 {
+        0% { width: 0; }
+        100% { width: 80%; }
+    }
+
+    @keyframes shimmer {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    .animate-fade-in-down {
+        animation: fadeInDown 0.8s ease-out forwards;
+    }
+
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out 0.2s forwards;
+        opacity: 0;
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 0.8s ease-out 0.4s forwards;
+        opacity: 0;
+    }
+
+    .animate-width-95 {
+        animation: widthAnimation95 1s ease-out forwards;
+    }
+
+    .animate-width-90 {
+        animation: widthAnimation90 1s ease-out forwards;
+    }
+
+    .animate-width-85 {
+        animation: widthAnimation85 1s ease-out forwards;
+    }
+
+    .animate-width-80 {
+        animation: widthAnimation80 1s ease-out forwards;
+    }
+
+    .animate-shimmer {
+        animation: shimmer 2s infinite linear;
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 20;
+        }
+    }
+
+    @keyframes dash-reverse {
+        to {
+            stroke-dashoffset: -20;
+        }
+    }
+
+    .animate-dash {
+        animation: dash 3s linear infinite;
+    }
+
+    .animate-dash-reverse {
+        animation: dash-reverse 3s linear infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 0.3;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.5;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0.3;
+        }
+    }
+
     .markdown {
         > * {
             @apply my-4;
@@ -59,17 +227,25 @@
     }
 
     .btn {
-        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-colors cursor-pointer bg-primary text-primary-content;
+        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-all duration-300 cursor-pointer bg-sky-500 text-white shadow-sm;
         padding: var(--btn-py, 0.875rem) var(--btn-px, 1.25rem);
         font-size: var(--btn-font-size, 0.875rem);
-        border-radius: var(--btn-border-radius, 0.25rem);
+        border-radius: var(--btn-border-radius, 0.5rem);
 
         &:hover {
-            @apply bg-primary/85;
+            @apply bg-sky-600 transform scale-[1.02] shadow-md;
+        }
+
+        &:active {
+            @apply transform scale-[0.98] shadow-inner;
+        }
+
+        &:focus-visible {
+            @apply outline-none ring-2 ring-sky-300 ring-offset-2 ring-offset-white;
         }
 
         &:disabled {
-            @apply cursor-default text-neutral-400 bg-neutral-700;
+            @apply cursor-default text-gray-400 bg-gray-700 transform-none opacity-70;
         }
     }
 
@@ -80,7 +256,7 @@
     }
 
     .input {
-        @apply px-4 py-3 text-sm border rounded-sm border-neutral-300 text-neutral-900 focus:border-primary focus:outline-3 focus:outline-primary/30;
+        @apply px-4 py-3 text-sm border rounded-sm border-neutral-300 text-neutral-900 focus:border-indigo-500 focus:outline-3 focus:outline-indigo-500/30;
     }
 
     .diff {
