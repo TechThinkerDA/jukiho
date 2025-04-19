@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { Language } from '../../types';
@@ -8,13 +8,11 @@ import { createLocalizedPath, defaultLanguage, languages } from '../../lib/i18n-
 
 const languageNames: Record<Language, string> = {
   en: 'English',
-  de: 'Deutsch',
   sk: 'Slovenčina'
 };
 
 const languageFlags: Record<Language, string> = {
   en: 'EN',
-  de: 'DE',
   sk: 'SK'
 };
 
@@ -24,8 +22,13 @@ export const LanguageSwitcher: React.FC = () => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [currentLanguage, setCurrentLanguage] = useState<Language>(defaultLanguage);
 
-  const currentLanguage = i18n.language as Language || defaultLanguage;
+  useEffect(() => {
+    // Ensure we have a valid language, defaulting to 'en' if not
+    const lang = (i18n.language as Language) || defaultLanguage;
+    setCurrentLanguage(languages.includes(lang as Language) ? lang as Language : defaultLanguage);
+  }, [i18n.language]);
 
   const handleLanguageChange = (language: Language) => {
     if (language === currentLanguage) {
@@ -33,16 +36,17 @@ export const LanguageSwitcher: React.FC = () => {
       return;
     }
 
-    const newPath = createLocalizedPath(pathname || '/', language);
-
-    const query = searchParams?.toString() || '';
+    const newPath = createLocalizedPath(pathname, language);
+    const query = searchParams.toString();
     const newUrl = query ? `${newPath}?${query}` : newPath;
 
     setIsOpen(false);
 
+    // Set cookie with longer expiration and proper attributes
     document.cookie = `i18next=${language}; path=/; max-age=${60 * 60 * 24 * 30}; SameSite=Lax`;
 
     i18n.changeLanguage(language);
+    setCurrentLanguage(language);
 
     router.replace(newUrl, { scroll: false });
   };
@@ -53,8 +57,8 @@ export const LanguageSwitcher: React.FC = () => {
         className="flex items-center space-x-1 p-1.5 rounded-md bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 transition-all duration-200 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 hover:border-gray-300 dark:hover:border-gray-500 text-sm"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span suppressHydrationWarning>{languageFlags[currentLanguage]}</span>
-        <span className="hidden" suppressHydrationWarning>{languageNames[currentLanguage]}</span>
+        <span>{languageFlags[currentLanguage] || languageFlags[defaultLanguage]}</span>
+        <span className="hidden">{languageNames[currentLanguage] || languageNames[defaultLanguage]}</span>
       </button>
 
       {isOpen && (
@@ -70,8 +74,8 @@ export const LanguageSwitcher: React.FC = () => {
                 }`}
                 onClick={() => handleLanguageChange(code)}
               >
-                <span className="mr-2" suppressHydrationWarning>{languageFlags[code]}</span>
-                <span suppressHydrationWarning>{languageNames[code]}</span>
+                <span className="mr-2">{languageFlags[code]}</span>
+                <span>{languageNames[code]}</span>
               </button>
             ))}
           </div>
