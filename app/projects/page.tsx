@@ -162,7 +162,7 @@ export default function ProjectsPage() {
                   <AnimatedCard
                     key={project.id}
                     title={project.title}
-                    href={`/projects/${project.id}`}
+                    href={currentLanguage === 'sk' ? `/sk/projects/${project.id}` : `/projects/${project.id}`}
                     className="h-full"
                     hoverEffect={true}
                   >

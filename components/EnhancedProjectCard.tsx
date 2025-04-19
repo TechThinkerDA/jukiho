@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { LocalizedLink } from './LocalizedLink';
 import { Tag } from './ui/Tag';
+import { useTranslation } from 'react-i18next';
 
 interface EnhancedProjectCardProps {
   id: string;
@@ -26,8 +27,11 @@ export function EnhancedProjectCard({
   image,
   className = ''
 }: EnhancedProjectCardProps) {
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
+
   return (
-    <LocalizedLink href={`/projects/${id}`} className="block no-underline">
+    <LocalizedLink href={currentLanguage === 'sk' ? `/sk/projects/${id}` : `/projects/${id}`} className="block no-underline">
       <div className={`bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-200 dark:border-gray-700 ${className}`}>
       <div className="relative">
         {image && (

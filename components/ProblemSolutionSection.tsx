@@ -85,13 +85,15 @@ export const ProblemSolutionSection: React.FC = () => {
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">{t('problemTitle')}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-3 text-base md:text-lg">
-                  {t('problemDescription')}
-                </p>
-                <p className="text-gray-600 dark:text-gray-300 font-semibold text-base md:text-lg">
-                  {t('problemSummary')}
-                </p>
+                <div className="pl-8 md:pl-0">
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">{t('problemTitle')}</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-3 text-base md:text-lg">
+                    {t('problemDescription')}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 font-semibold text-base md:text-lg">
+                    {t('problemSummary')}
+                  </p>
+                </div>
               </div>
 
               <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2">
@@ -150,13 +152,15 @@ export const ProblemSolutionSection: React.FC = () => {
                     </svg>
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">{t('solutionTitle')}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-3 text-base md:text-lg">
-                  {t('solutionDescription')}
-                </p>
-                <p className="text-gray-600 dark:text-gray-300 font-semibold text-base md:text-lg">
-                  {t('solutionSummary')}
-                </p>
+                <div className="pl-8 md:pl-0">
+                  <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">{t('solutionTitle')}</h3>
+                  <p className="text-gray-600 dark:text-gray-300 mb-3 text-base md:text-lg">
+                    {t('solutionDescription')}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300 font-semibold text-base md:text-lg">
+                    {t('solutionSummary')}
+                  </p>
+                </div>
               </div>
             </motion.div>
 
