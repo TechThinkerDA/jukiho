@@ -53,4 +53,4 @@ export interface NavItem {
 export type Theme = 'light' | 'dark';
 
 // Language type
-export type Language = 'en' | 'de' | 'sk';
+export type Language = 'en' | 'sk';

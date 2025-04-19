@@ -36,8 +36,10 @@ export const LanguageSwitcher: React.FC = () => {
       return;
     }
 
-    const newPath = createLocalizedPath(pathname, language);
-    const query = searchParams.toString();
+    // Ensure pathname is not null, default to '/' if it is
+    const currentPath = pathname || '/';
+    const newPath = createLocalizedPath(currentPath, language);
+    const query = searchParams ? searchParams.toString() : '';
     const newUrl = query ? `${newPath}?${query}` : newPath;
 
     setIsOpen(false);
