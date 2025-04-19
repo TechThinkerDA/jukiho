@@ -9,23 +9,18 @@ import { FiLinkedin, FiMail } from 'react-icons/fi';
 
 export default function ContactPage() {
   const [mounted, setMounted] = useState(false);
-
-
-
-  // Use i18n for translations
   const { t } = useTranslation('contact');
-
-  // Only run on client side
+  
   useEffect(() => {
     setMounted(true);
   }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
 
-  // State to track if the HTML editor has been modified
   const [editorTouched, setEditorTouched] = useState(false);
   const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
 
@@ -34,19 +29,22 @@ export default function ContactPage() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  // Handle rich text editor changes
   const handleEditorChange = (value: string) => {
-    // Only update if the value actually changed to prevent unnecessary re-renders
     if (formData.message !== value) {
       setFormData(prev => ({ ...prev, message: value }));
       if (!editorTouched) setEditorTouched(true);
     }
   };
 
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Check if the message is empty (Quill editor returns <p><br></p> when empty)
     if (formData.message === '' || formData.message === '<p><br></p>') {
       setEditorTouched(true);
       return;
@@ -55,11 +53,20 @@ export default function ContactPage() {
     setFormStatus('submitting');
 
     try {
-      // Simulate form submission for development
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Submit to Netlify
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "contact",
+          "message-format": "html",
+          ...formData
+        })
+      });
 
-      // In production, Netlify will handle the form submission automatically
-      // because we've added the data-netlify="true" attribute to the form
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
       setFormStatus('success');
       setFormData({ name: '', email: '', message: '' });
@@ -70,7 +77,6 @@ export default function ContactPage() {
     }
   };
 
-  // Don't render anything until the component is mounted on the client
   if (!mounted) {
     return <div className="flex flex-col gap-16 min-h-screen"><div className="animate-pulse h-screen w-full bg-gray-100 dark:bg-gray-800 rounded-lg"></div></div>;
   }
@@ -98,24 +104,13 @@ export default function ContactPage() {
               <div className="bg-white dark:bg-gray-800/30 rounded-lg p-8 shadow-md border border-[#e5e7eb] dark:border-gray-700">
                 <h2 className="text-2xl font-bold mb-6 text-[#111827] dark:text-[#f9fafb]">{t('form.reachOut')}</h2>
 
-                {formStatus === 'success' ? (
-                  <div className="bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 p-4 rounded-lg mb-6 border border-green-200 dark:border-green-800">
-                    <p className="font-medium">{t('form.successTitle')}</p>
-                    <p>{t('form.successMessage')}</p>
-                  </div>
-                ) : formStatus === 'error' ? (
-                  <div className="bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200 p-4 rounded-lg mb-6 border border-red-200 dark:border-red-800">
-                    <p className="font-medium">{t('form.errorTitle')}</p>
-                    <p>{t('form.errorMessage')}</p>
-                  </div>
-                ) : null}
-
                 <form
                   name="contact"
                   method="POST"
                   data-netlify="true"
                   netlify-honeypot="bot-field"
                   onSubmit={handleSubmit}
+                  className="relative"
                 >
                   {/* Hidden fields for Netlify form handling */}
                   <input type="hidden" name="form-name" value="contact" />
@@ -123,6 +118,7 @@ export default function ContactPage() {
                   <div hidden>
                     <input name="bot-field" />
                   </div>
+
                   <div className="mb-4">
                     <label htmlFor="name" className="block text-[#111827] dark:text-[#f9fafb] mb-2">
                       {t('name')}
@@ -157,7 +153,6 @@ export default function ContactPage() {
                     <label htmlFor="message" className="block text-[#111827] dark:text-[#f9fafb] mb-2">
                       {t('message')}
                     </label>
-                    {/* Key prop forces re-render when form is reset */}
                     <FixedRichTextEditor
                       key={`editor-${formStatus === 'success' ? 'reset' : 'active'}`}
                       id="message"
@@ -172,23 +167,52 @@ export default function ContactPage() {
                     )}
                   </div>
 
-                  <button
-                    type="submit"
-                    disabled={formStatus === 'submitting'}
-                    className="btn btn-lg w-full bg-[#4f46e5] text-[#f9fafb] border-2 border-[#4f46e5] hover:bg-[#14b8a6] hover:border-[#14b8a6] hover:text-[#f9fafb] shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
-                  >
-                    {formStatus === 'submitting' ? (
-                      <span className="flex items-center justify-center">
-                        <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        Sending...
-                      </span>
-                    ) : (
-                      t('send')
+                  <div className="space-y-4">
+                    {formStatus !== 'success' && (
+                      <button
+                        type="submit"
+                        disabled={formStatus === 'submitting'}
+                        className="btn btn-lg w-full bg-[#4f46e5] text-[#f9fafb] border-2 border-[#4f46e5] hover:bg-[#14b8a6] hover:border-[#14b8a6] hover:text-[#f9fafb] shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:scale-100"
+                      >
+                        {formStatus === 'submitting' ? (
+                          <span className="flex items-center justify-center">
+                            <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                            </svg>
+                            {t('sending')}
+                          </span>
+                        ) : (
+                          t('send')
+                        )}
+                      </button>
                     )}
-                  </button>
+
+                    {/* Form Status Messages */}
+                    {formStatus === 'success' && (
+                      <div className="flex items-center gap-2 text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-800">
+                        <svg className="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                        <div>
+                          <p className="font-medium">{t('form.successTitle')}</p>
+                          <p className="text-sm text-green-600/80 dark:text-green-400/80">{t('form.successMessage')}</p>
+                        </div>
+                      </div>
+                    )}
+
+                    {formStatus === 'error' && (
+                      <div className="flex items-center gap-2 text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg border border-red-200 dark:border-red-800">
+                        <svg className="h-5 w-5 flex-shrink-0" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                        </svg>
+                        <div>
+                          <p className="font-medium">{t('form.errorTitle')}</p>
+                          <p className="text-sm text-red-600/80 dark:text-red-400/80">{t('form.errorMessage')}</p>
+                        </div>
+                      </div>
+                    )}
+                  </div>
                 </form>
               </div>
             </AnimatedSection>
