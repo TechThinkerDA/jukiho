@@ -23,6 +23,7 @@ interface TechNodeProps {
   technology: Technology;
   onClick: (tech: Technology) => void;
   isSelected: boolean;
+  key: string;
 }
 
 interface CategoryGroupProps {
@@ -32,6 +33,7 @@ interface CategoryGroupProps {
   angle: number;
   onClick: (tech: Technology) => void;
   selectedTech: Technology | null;
+  key: string;
 }
 
 // Define technology categories and items
@@ -79,7 +81,7 @@ const technologies: TechCategory[] = [
 ];
 
 // Node component representing a technology
-const TechNode: React.FC<TechNodeProps> = ({ position, technology, onClick, isSelected }) => {
+const TechNode: React.FC<TechNodeProps> = ({ position, technology, onClick, isSelected, key }) => {
   const meshRef = useRef<THREE.Mesh | null>(null);
   const [hovered, setHovered] = useState(false);
   
@@ -97,7 +99,7 @@ const TechNode: React.FC<TechNodeProps> = ({ position, technology, onClick, isSe
   });
 
   return (
-    <group position={position}>
+    <group position={position} key={key}>
       <Sphere
         ref={meshRef}
         args={[0.5, 32, 32]}
@@ -132,7 +134,7 @@ const TechNode: React.FC<TechNodeProps> = ({ position, technology, onClick, isSe
 };
 
 // Category group component
-const CategoryGroup: React.FC<CategoryGroupProps> = ({ category, items, radius, angle, onClick, selectedTech }) => {
+const CategoryGroup: React.FC<CategoryGroupProps> = ({ category, items, radius, angle, onClick, selectedTech , key}) => {
   const groupRef = useRef<THREE.Group | null>(null);
   const positions: [number, number, number][] = [];
   
@@ -153,7 +155,7 @@ const CategoryGroup: React.FC<CategoryGroupProps> = ({ category, items, radius, 
   });
 
   return (
-    <group ref={groupRef} key={`group-${category}`}>
+    <group ref={groupRef} key={key}>
       <Text
         key={`text-${category}`}
         position={[radius * 1.3 * Math.cos(angle), 0, radius * 1.3 * Math.sin(angle)]}
@@ -168,6 +170,7 @@ const CategoryGroup: React.FC<CategoryGroupProps> = ({ category, items, radius, 
       </Text>
       {items.map((tech, index) => (
         <TechNode
+          key={`${category}-${tech.name}-${index}`}
           position={positions[index]}
           technology={tech}
           onClick={onClick}
@@ -198,6 +201,7 @@ const TechScene = () => {
         const angle = (index / technologies.length) * Math.PI * 2;
         return (
           <CategoryGroup
+            key={`category-${techCategory.category}`}
             category={techCategory.category}
             items={techCategory.items}
             radius={8}
