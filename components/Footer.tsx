@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { FiGithub, FiLinkedin, FiMail, FiCode, FiCpu, FiServer, FiLayers, FiDatabase, FiHeart } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import { ProtectedEmail } from './ui/ProtectedEmail';
 import { LocalizedLink } from './LocalizedLink';
 

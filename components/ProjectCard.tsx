@@ -3,8 +3,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { LocalizedLink } from './LocalizedLink';
-import { ProjectVisualizer } from './ProjectVisualizer';
-import { AdvancedProjectVisualizer } from './AdvancedProjectVisualizer';
 import { Tag } from './ui/Tag';
 
 interface ProjectCardProps {
@@ -22,12 +20,7 @@ export function ProjectCard({ id, title, description, tags, colors, image, visua
     <LocalizedLink href={`/projects/${id}`} className="block no-underline">
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg border border-gray-200 dark:border-gray-700">
       <div className="relative">
-        {visualizerType ? (
-          <AdvancedProjectVisualizer
-            projectType={visualizerType}
-            height={200}
-          />
-        ) : image ? (
+        {image && (
           <div className="relative w-full overflow-hidden bg-gray-50 dark:bg-gray-900 p-2">
             <div className="w-full aspect-[16/10]">
               <Image
@@ -39,12 +32,6 @@ export function ProjectCard({ id, title, description, tags, colors, image, visua
               />
             </div>
           </div>
-        ) : (
-          <ProjectVisualizer
-            title={title}
-            colors={colors}
-            height={200}
-          />
         )}
       </div>
       <div className="p-6">

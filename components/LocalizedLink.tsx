@@ -3,20 +3,16 @@
 import React from 'react';
 import Link from 'next/link';
 import { useCurrentLocale } from '../lib/useCurrentLocale';
-import { defaultLanguage, createLocalizedPath } from '../lib/i18n-config';
+import { createLocalizedPath } from '../lib/i18n-config';
 
 interface LocalizedLinkProps {
   href: string;
   children: React.ReactNode;
   className?: string;
   onClick?: () => void;
-  [key: string]: any; // Pre ostatné props
+  [key: string]: any;
 }
 
-/**
- * Komponent pre lokalizované odkazy
- * Automaticky pridáva aktuálny jazyk do URL
- */
 export const LocalizedLink: React.FC<LocalizedLinkProps> = ({
   href,
   children,
@@ -26,9 +22,7 @@ export const LocalizedLink: React.FC<LocalizedLinkProps> = ({
 }) => {
   const currentLocale = useCurrentLocale();
 
-  // Ak href začína s /, je to interný odkaz a potrebujeme pridať jazyk
   if (href.startsWith('/')) {
-    // Vytvor lokalizovanú cestu
     const localizedHref = createLocalizedPath(href, currentLocale);
 
     return (
@@ -44,7 +38,6 @@ export const LocalizedLink: React.FC<LocalizedLinkProps> = ({
     );
   }
 
-  // Pre externé odkazy alebo špeciálne URL (napr. #, mailto:) použi normálny Link
   return (
     <Link
       href={href}

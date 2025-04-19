@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AnimatedSection } from '../../components/ui/AnimatedSection';
 import { FixedRichTextEditor } from '../../components/ui/FixedRichTextEditor';
 import { ProtectedEmail } from '../../components/ui/ProtectedEmail';
-import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiLinkedin, FiMail } from 'react-icons/fi';
 
 export default function ContactPage() {
   const [mounted, setMounted] = useState(false);
@@ -96,17 +96,17 @@ export default function ContactPage() {
             {/* Contact Form */}
             <AnimatedSection className="lg:w-2/3" delay={0.1}>
               <div className="bg-white dark:bg-gray-800/30 rounded-lg p-8 shadow-md border border-[#e5e7eb] dark:border-gray-700">
-                <h2 className="text-2xl font-bold mb-6 text-[#111827] dark:text-[#f9fafb]">Send Me a Message</h2>
+                <h2 className="text-2xl font-bold mb-6 text-[#111827] dark:text-[#f9fafb]">{t('form.reachOut')}</h2>
 
                 {formStatus === 'success' ? (
                   <div className="bg-green-100 dark:bg-green-900/50 text-green-800 dark:text-green-200 p-4 rounded-lg mb-6 border border-green-200 dark:border-green-800">
-                    <p className="font-medium">Thank you for your message!</p>
-                    <p>I'll get back to you as soon as possible.</p>
+                    <p className="font-medium">{t('form.successTitle')}</p>
+                    <p>{t('form.successMessage')}</p>
                   </div>
                 ) : formStatus === 'error' ? (
                   <div className="bg-red-100 dark:bg-red-900/50 text-red-800 dark:text-red-200 p-4 rounded-lg mb-6 border border-red-200 dark:border-red-800">
-                    <p className="font-medium">There was an error sending your message.</p>
-                    <p>Please try again or contact me directly via email.</p>
+                    <p className="font-medium">{t('form.errorTitle')}</p>
+                    <p>{t('form.errorMessage')}</p>
                   </div>
                 ) : null}
 
@@ -216,7 +216,7 @@ export default function ContactPage() {
                   <h3 className="font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">{t('connectWithMe')}</h3>
                   <div className="flex space-x-4">
                     <a
-                      href="https://www.linkedin.com/in/juraj-kicko-horbal"
+                      href="https://www.linkedin.com/juraj-kicko-horbal"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-[#4f46e5] dark:bg-gray-700/50 hover:bg-[#14b8a6] dark:hover:bg-[#14b8a6]/50 text-[#f9fafb] p-3 rounded-full transition-colors"

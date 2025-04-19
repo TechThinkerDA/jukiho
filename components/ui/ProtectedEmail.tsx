@@ -7,27 +7,28 @@ interface ProtectedEmailProps {
   username: string;
   domain: string;
   className?: string;
+  iconClassName?: string; // Added this prop
 }
 
 export const ProtectedEmail: React.FC<ProtectedEmailProps> = ({
   username,
   domain,
-  className = ""
+  className = "",
+  iconClassName = ""
 }) => {
   const { t } = useTranslation('common');
-  // State for copy icon
-  const [copyIcon, setCopyIcon] = useState('⧉'); // clipboard icon
+  const [copyIcon, setCopyIcon] = useState('⧉');
 
   // Email protection function
   const copyEmail = () => {
     const email = `${username}@${domain}`;
 
     navigator.clipboard.writeText(email).then(() => {
-      setCopyIcon('✓'); // checkmark icon
-      setTimeout(() => setCopyIcon('⧉'), 2000); // revert back after 2 seconds
+      setCopyIcon('✓');
+      setTimeout(() => setCopyIcon('⧉'), 2000);
     }, () => {
-      setCopyIcon('⨉'); // error icon
-      setTimeout(() => setCopyIcon('⧉'), 2000); // revert back after 2 seconds
+      setCopyIcon('⨉');
+      setTimeout(() => setCopyIcon('⧉'), 2000);
     });
   };
 
@@ -42,7 +43,7 @@ export const ProtectedEmail: React.FC<ProtectedEmailProps> = ({
       <button
         onClick={copyEmail}
         title={t('email.copyToClipboard')}
-        className={`${className} hover:text-[#4f46e5] dark:hover:text-[#14b8a6] transition-colors duration-200 min-w-[24px] text-center ml-2`}
+        className={`hover:text-gray-50 dark:hover:text-[#14b8a6] transition-colors duration-200 min-w-[24px] text-center ${iconClassName}`}
       >
         {copyIcon}
       </button>

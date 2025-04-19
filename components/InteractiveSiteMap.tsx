@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
-import { FiZoomIn, FiZoomOut, FiMaximize } from 'react-icons/fi';
+import { FiMaximize, FiZoomIn, FiZoomOut } from 'react-icons/fi';
+import type { NodeSingular } from 'cytoscape';
 
 interface SiteNode {
   id: string;
@@ -47,7 +47,7 @@ const InteractiveSiteMap: React.FC<InteractiveSiteMapProps> = ({ nodes, edges })
                   'font-size': '14px',
                   'text-outline-color': '#4f46e5',
                   'text-outline-width': 2,
-                  'width': function(node) {
+                  'width': function(node: NodeSingular) {
                     // Get the label text
                     const label = node.data('label');
                     // Calculate width based on text length, with a minimum width
@@ -56,10 +56,8 @@ const InteractiveSiteMap: React.FC<InteractiveSiteMapProps> = ({ nodes, edges })
                   'height': 40,
                   'shape': 'roundrectangle',
                   'text-max-width': '120px',
-                  'text-overflow-wrap': 'ellipsis',
-                  'padding': '5px',
-                  'text-halign': 'center',
-                  'text-valign': 'center'
+                  'text-wrap': 'wrap',
+                  'padding': '5px'
                 }
               },
               {
@@ -105,7 +103,7 @@ const InteractiveSiteMap: React.FC<InteractiveSiteMapProps> = ({ nodes, edges })
           });
 
           // Add click event to navigate to the page
-          cyRef.current.on('tap', 'node', function(evt: any) {
+          cyRef.current.on('tap', 'node', function(evt: { target: NodeSingular }) {
             const node = evt.target;
             const path = node.data('path');
             if (path) {
@@ -114,7 +112,7 @@ const InteractiveSiteMap: React.FC<InteractiveSiteMapProps> = ({ nodes, edges })
           });
 
           // Add hover effects
-          cyRef.current.on('mouseover', 'node', function(evt: any) {
+          cyRef.current.on('mouseover', 'node', function(evt: { target: NodeSingular }) {
             const node = evt.target;
             node.style({
               'background-color': '#14b8a6',
@@ -131,7 +129,7 @@ const InteractiveSiteMap: React.FC<InteractiveSiteMapProps> = ({ nodes, edges })
             });
           });
 
-          cyRef.current.on('mouseout', 'node', function(evt: any) {
+          cyRef.current.on('mouseout', 'node', function(evt: { target: NodeSingular }) {
             const node = evt.target;
             if (!node.selected()) {
               node.style({

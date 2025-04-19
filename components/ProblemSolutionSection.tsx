@@ -4,8 +4,30 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
+// Define types for our translation objects
+interface ProblemSolutionTranslations {
+  title: string;
+  subtitle: string;
+  problemTitle: string;
+  problemDescription: string;
+  problemSummary: string;
+  problemPoints: string[];
+  solutionTitle: string;
+  solutionDescription: string;
+  solutionSummary: string;
+  solutionPoints: string[];
+  resultsTitle: string;
+  timeReduction: string;
+  costReduction: string;
+  satisfactionIncrease: string;
+}
+
 export const ProblemSolutionSection: React.FC = () => {
   const { t } = useTranslation('problemSolution');
+
+  // Type assertion for translation arrays
+  const problemPoints = t<'problemPoints', { returnObjects: true }, string[]>('problemPoints', { returnObjects: true });
+  const solutionPoints = t<'solutionPoints', { returnObjects: true }, string[]>('solutionPoints', { returnObjects: true });
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
@@ -83,7 +105,7 @@ export const ProblemSolutionSection: React.FC = () => {
               <div className="md:w-1/2 md:pl-12 pl-2">
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-4 md:p-6 shadow-md">
                   <ul className="space-y-3">
-                    {t('problemPoints', { returnObjects: true }).map((point, index) => (
+                    {problemPoints.map((point, index) => (
                       <li key={index} className="flex items-start">
                         <span className="text-red-500 mr-2 flex-shrink-0">•</span>
                         <span className="text-base md:text-lg">{point}</span>
@@ -102,7 +124,7 @@ export const ProblemSolutionSection: React.FC = () => {
               <div className="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1 pl-2 md:pl-0">
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-4 md:p-6 shadow-md">
                   <ul className="space-y-3 md:text-right">
-                    {t('solutionPoints', { returnObjects: true }).map((point, index) => (
+                    {solutionPoints.map((point, index) => (
                       <li key={index} className="flex items-start md:justify-end">
                         <span className="md:order-2 text-green-500 md:ml-2 mr-2 md:mr-0 flex-shrink-0">•</span>
                         <span className="md:order-1 text-base md:text-lg">{point}</span>

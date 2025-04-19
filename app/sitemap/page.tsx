@@ -1,9 +1,30 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { AnimatedSection } from '../../components/ui/AnimatedSection';
 import dynamic from 'next/dynamic';
+
+// Define interfaces for the site structure
+interface SiteNode {
+  id: string;
+  label: string;
+  path: string;
+}
+
+interface SiteEdge {
+  source: string;
+  target: string;
+}
+
+interface SiteStructureItem {
+  name: string;
+  path: string;
+  children: Array<{
+    name: string;
+    path: string;
+  }>;
+}
 
 // Dynamically import the InteractiveSiteMap component with no SSR
 const InteractiveSiteMap = dynamic(
@@ -12,7 +33,7 @@ const InteractiveSiteMap = dynamic(
 );
 
 // Define the site structure
-const siteStructure = [
+const siteStructure: SiteStructureItem[] = [
   {
     name: 'Home',
     path: '/',
@@ -70,9 +91,9 @@ const siteStructure = [
 ];
 
 // Prepare data for Cytoscape
-const prepareGraphData = () => {
-  const nodes = [];
-  const edges = [];
+const prepareGraphData = (): { nodes: SiteNode[]; edges: SiteEdge[] } => {
+  const nodes: SiteNode[] = [];
+  const edges: SiteEdge[] = [];
 
   // Add main nodes
   siteStructure.forEach(section => {

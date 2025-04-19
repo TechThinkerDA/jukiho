@@ -1,12 +1,41 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Text, OrbitControls, useTexture, Sphere, Html } from '@react-three/drei';
+import { Html, OrbitControls, Sphere, Text } from '@react-three/drei';
 import * as THREE from 'three';
 
+// Define types for our technology items
+interface Technology {
+  name: string;
+  color: string;
+  icon: string;
+}
+
+interface TechCategory {
+  category: string;
+  items: Technology[];
+}
+
+// Props interfaces
+interface TechNodeProps {
+  position: [number, number, number];
+  technology: Technology;
+  onClick: (tech: Technology) => void;
+  isSelected: boolean;
+}
+
+interface CategoryGroupProps {
+  category: string;
+  items: Technology[];
+  radius: number;
+  angle: number;
+  onClick: (tech: Technology) => void;
+  selectedTech: Technology | null;
+}
+
 // Define technology categories and items
-const technologies = [
+const technologies: TechCategory[] = [
   {
     category: "Languages",
     items: [
@@ -50,8 +79,8 @@ const technologies = [
 ];
 
 // Node component representing a technology
-const TechNode = ({ position, technology, onClick, isSelected }) => {
-  const meshRef = useRef();
+const TechNode: React.FC<TechNodeProps> = ({ position, technology, onClick, isSelected }) => {
+  const meshRef = useRef<THREE.Mesh | null>(null);
   const [hovered, setHovered] = useState(false);
   
   // Animate on hover and selection
@@ -103,9 +132,9 @@ const TechNode = ({ position, technology, onClick, isSelected }) => {
 };
 
 // Category group component
-const CategoryGroup = ({ category, items, radius, angle, onClick, selectedTech }) => {
-  const groupRef = useRef();
-  const positions = [];
+const CategoryGroup: React.FC<CategoryGroupProps> = ({ category, items, radius, angle, onClick, selectedTech }) => {
+  const groupRef = useRef<THREE.Group | null>(null);
+  const positions: [number, number, number][] = [];
   
   // Calculate positions in a circular pattern
   for (let i = 0; i < items.length; i++) {

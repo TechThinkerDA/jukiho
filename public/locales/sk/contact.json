@@ -15,5 +15,13 @@
   "messagePlaceholder": "Napíšte svoju správu tu...",
   "messageRequired": "Prosím, zadajte správu",
   "contactInfo": "Kontaktné informácie",
-  "connectWithMe": "Spojte sa so mnou"
+  "connectWithMe": "Spojte sa so mnou",
+  "form": {
+    "reachOut": "Neváhajte ma kontaktovať",
+    "message": "Vaša správa",
+    "successTitle": "Ďakujem za vašu správu!",
+    "successMessage": "Odpoviem vám čo najskôr.",
+    "errorTitle": "Pri odosielaní správy sa vyskytla chyba.",
+    "errorMessage": "Prosím, skúste to znova alebo ma kontaktujte priamo emailom."
+  }
 }

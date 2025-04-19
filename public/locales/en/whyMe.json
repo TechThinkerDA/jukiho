@@ -3,15 +3,46 @@
   "reasons": [
     {
       "title": "Connecting Tech with Business",
-      "description": "I can connect the technical world with real business problems. I understand not only code but also business processes and user needs."
+      "description": "Connect the technical world with real business problems. Understand not only code but also business processes and user needs.",
+      "descriptions": [
+        "connect the technical world with real business problems",
+        "understand not only code but also business processes and user needs"
+      ],
+      "descriptions0": [
+        "Understanding technical domain",
+        "Understanding business needs",
+        "Bridging tech and business",
+        "Focus on user requirements"
+      ]
     },
     {
       "title": "Experience with Various Projects",
-      "description": "I have experience with greenfield projects as well as refactoring legacy systems. I can design a solution tailored to your needs."
+      "description": "Experience with greenfield projects as well as refactoring legacy systems. Design a solution tailored to your needs.",
+      "descriptions0": [
+        "experience with greenfield projects",
+        "refactoring legacy systems",
+        "design a solution tailored to your needs"
+      ],
+      "descriptions": [
+        "New project development",
+        "Legacy system modernization",
+        "Custom solution design",
+        "Enterprise-level projects"
+      ]
     },
     {
       "title": "Sustainable and Extensible Solutions",
-      "description": "I focus on sustainable, extensible solutions that will work for years and adapt to changing requirements."
+      "description": "Focus on sustainable, extensible solutions that will work for years and adapt to changing requirements.",
+      "descriptions0":[
+        "focus on sustainable, extensible solutions",
+        "focus on sustainable, extensible solutions"
+      ],
+      "descriptions": [
+        "Long-term maintainability",
+        "Scalable architectures",
+        "Future-proof solutions",
+        "Adaptable to changes"
+      ]
     }
   ],
   "callToAction": {

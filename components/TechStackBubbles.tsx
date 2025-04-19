@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 interface TechBubble {
@@ -23,7 +23,7 @@ export function TechStackBubbles({ height = 300, className = '' }: TechStackBubb
   const [bubblePositions, setBubblePositions] = useState<Record<string, { x: number, y: number }>>({});
 
   // Define tech bubbles
-  const techBubbles: TechBubble[] = [
+  const techBubbles = useMemo(() => [
     { 
       id: 'r', 
       name: 'R', 
@@ -108,7 +108,7 @@ export function TechStackBubbles({ height = 300, className = '' }: TechStackBubb
       category: 'tool',
       size: 55
     }
-  ];
+  ], []);
 
   // Update dimensions on resize
   useEffect(() => {
@@ -147,7 +147,7 @@ export function TechStackBubbles({ height = 300, className = '' }: TechStackBubb
     });
 
     setBubblePositions(positions);
-  }, [dimensions]);
+  }, [dimensions, techBubbles]);
 
   // Get color based on category
   const getCategoryColor = (category: string) => {

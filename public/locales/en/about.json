@@ -145,5 +145,40 @@
       "description": "Frontend development, responsive UIs, modern frameworks",
       "items": ["React", "Next.js", "Server-Side Rendering (SSR)", "Single-Page Applications (SPA)", "UI/UX Implementation"]
     }
+  },
+  "workExperience": {
+    "bachelor": "Bachelor's degree",
+    "engineer": "Engineer's degree"
+  },
+  "projects": {
+    "description": "Project description"
+  },
+  "education": {
+    "bachelorDegree": "Bachelor's degree",
+    "engineerDegree": "Engineer's degree"
+  },
+  "workExperience": {
+    "teamLeader": "Team Leader",
+    "responsibilities": {
+      "title": "Responsibilities"
+    }
+  },
+  "projects": {
+    "personalProjects": "Personal Projects"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "languages": "Programming Languages",
+    "frameworks": "Frameworks & Tools",
+    "infrastructure": "Infrastructure & DevOps",
+    "pythonDesc": "Odoo, Data Analysis, API Integration",
+    "javaDesc": "Spring Boot, JPA/Hibernate, Microservices",
+    "csharpDesc": "ASP.NET Core, Entity Framework, WPF",
+    "odooDesc": "Module Development, Customization",
+    "springDesc": "REST APIs, Microservices",
+    "reactDesc": "Next.js, Redux, TypeScript",
+    "dockerDesc": "Containerization, Compose",
+    "cicdDesc": "Jenkins, GitHub Actions",
+    "cloudDesc": "AWS, Azure"
   }
 }

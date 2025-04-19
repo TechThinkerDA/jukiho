@@ -5,8 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
-import { FiArrowLeft, FiGithub, FiExternalLink } from 'react-icons/fi';
-import { AdvancedProjectVisualizer } from '../../../components/AdvancedProjectVisualizer';
+import { FiArrowLeft, FiExternalLink, FiGithub } from 'react-icons/fi';
 import { AnimatedSection } from '../../../components/ui/AnimatedSection';
 import { Tag } from '../../../components/ui/Tag';
 import { Project } from '../../../types';
@@ -14,7 +13,7 @@ import { getProjectByIdAction } from '../actions';
 
 export default function ProjectDetailPage() {
   const params = useParams();
-  const projectId = params.id as string;
+  const projectId = params?.id as string;
   const { t } = useTranslation('projects');
 
   const [project, setProject] = useState<Project | null>(null);
@@ -49,9 +48,9 @@ export default function ProjectDetailPage() {
   if (!project) {
     return (
       <div className="py-12 text-center">
-        <h1 className="text-4xl font-bold mb-6 text-[#111827] dark:text-[#f9fafb]">{t('detail.projectNotFound')}</h1>
+        <h1 className="text-4xl font-bold mb-6 text-[#111827] dark:text-[#f9fafb]">{t('errors.projectNotFound')}</h1>
         <p className="text-xl text-[#111827]/80 dark:text-[#f9fafb]/80 mb-8">
-          {t('detail.projectNotFoundDesc')}
+          {t('errors.projectNotFoundDesc')}
         </p>
         <Link href="/projects" className="btn bg-[#4f46e5] text-[#f9fafb] border-2 border-[#4f46e5] hover:bg-[#14b8a6] hover:border-[#14b8a6] hover:text-[#f9fafb] shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
           <FiArrowLeft className="mr-2" />
@@ -88,14 +87,16 @@ export default function ProjectDetailPage() {
           <AnimatedSection>
             <div className="relative w-full rounded-lg overflow-hidden bg-gray-50 dark:bg-gray-900 flex justify-center items-center">
               <div className="w-full h-auto aspect-auto py-8">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-auto max-h-[80vh] object-contain mx-auto scale-105 shadow-md"
-                  width={1200}
-                  height={800}
-                  priority
-                />
+                {project.image && (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-auto max-h-[80vh] object-contain mx-auto scale-105 shadow-md"
+                    width={1200}
+                    height={800}
+                    priority
+                  />
+                )}
               </div>
             </div>
           </AnimatedSection>
@@ -142,7 +143,7 @@ export default function ProjectDetailPage() {
 
                   {project.testimonial && (
                     <div className="mt-6 p-6 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600 italic">
-                      <p className="mb-4">"{project.testimonial.text}"</p>
+                      <p className="mb-4">&quot;{project.testimonial.text}&quot;</p>
                       <p className="font-semibold">
                         {project.testimonial.author}
                         {project.testimonial.position && (
@@ -158,13 +159,15 @@ export default function ProjectDetailPage() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {project.screenshots.map((screenshot, index) => (
                           <div key={index} className="relative h-48 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700">
-                            <Image
-                              src={screenshot}
-                              alt={`${project.title} screenshot ${index + 1}`}
-                              fill
-                              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                              className="object-cover"
-                            />
+                            {screenshot && (
+                              <Image
+                                src={screenshot}
+                                alt={`${project.title} screenshot ${index + 1}`}
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className="object-cover"
+                              />
+                            )}
                           </div>
                         ))}
                       </div>

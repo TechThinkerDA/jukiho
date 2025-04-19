@@ -1,14 +1,13 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 import { AnimatedSection } from '../../components/ui/AnimatedSection';
 import { AnimatedCard } from '../../components/ui/Card';
 import { Tag } from '../../components/ui/Tag';
 import { Project } from '../../types';
-import { getProjectsAction, seedProjectsAction } from './actions';
+import { getProjectsAction } from './actions';
 import { filterTags, getTagDisplayName } from '../../data/filterTags';
 
 // Helper function to determine project type based on tags
@@ -169,13 +168,15 @@ export default function ProjectsPage() {
                   >
                     <div className="relative w-full mb-4 rounded overflow-hidden bg-gray-50 dark:bg-gray-900 p-2">
                       <div className="w-full aspect-[16/9]">
-                        <Image
-                          src={project.image}
-                          alt={project.title}
-                          fill
-                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                          className="w-full h-full object-contain scale-105 shadow-md hover:brightness-110 hover:contrast-110 hover:shadow-lg transition-all duration-300"
-                        />
+                        {project.image && (
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className="w-full h-full object-contain scale-105 shadow-md hover:brightness-110 hover:contrast-110 hover:shadow-lg transition-all duration-300"
+                          />
+                        )}
                       </div>
                     </div>
                     <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">{project.description}</p>

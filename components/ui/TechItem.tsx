@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { AnimatedSection } from './AnimatedSection';
-import { FiChevronRight, FiCheck, FiExternalLink } from 'react-icons/fi';
+import { FiCheck, FiChevronRight, FiExternalLink } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 
 interface TechItemProps {

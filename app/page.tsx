@@ -1,21 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import { LocalizedCTA } from '../components/ui/LocalizedCTA';
-import { TranslatedText, TranslatedHtml } from '../components/TranslatedContent';
+import { TranslatedText } from '../components/TranslatedContent';
 import { AnimatedSection } from '../components/ui/AnimatedSection';
 import { AnimatedCard } from '../components/ui/Card';
-import { getProjectsAction, seedProjectsAction } from './projects/actions';
-import { Project } from '../types';
+import { getProjectsAction } from './projects/actions';
 import { Tag } from '../components/ui/Tag';
 import { ITHeroGeometric } from '../components/ITHeroGeometric';
 import { ProblemSolutionSection } from '../components/ProblemSolutionSection';
 import { DevelopmentPhasesSection } from '../components/DevelopmentPhasesSection';
-import { TechStackSection } from '../components/TechStackSection';
 import { WhyMeSection } from '../components/WhyMeSection';
-import { DevProcessVisualization } from '../components/DevProcessVisualization';
-import AIDevVisualization from '../components/AIDevVisualization';
-import { AdvancedProjectVisualizer } from '../components/AdvancedProjectVisualizer';
-import AIFlowWrapper from '../components/AIFlowWrapper';
 
 export default async function HomePage() {
   // Get all projects
@@ -62,13 +56,15 @@ export default async function HomePage() {
               >
                 <div className="relative w-full mb-4 rounded overflow-hidden bg-gray-50 dark:bg-gray-900 p-2">
                   <div className="w-full aspect-[16/9]">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="w-full h-full object-contain scale-105 shadow-md hover:brightness-110 hover:contrast-110 hover:shadow-lg transition-all duration-300"
-                    />
+                    {project.image && (
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="w-full h-full object-contain scale-105 shadow-md hover:brightness-110 hover:contrast-110 hover:shadow-lg transition-all duration-300"
+                        />
+                    )}
                   </div>
                 </div>
                 <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">{project.description}</p>
@@ -123,7 +119,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">Odoo ERP</span>
-                      <span className="text-[#14b8a6] dark:text-[#14b8a6] font-bold group-hover:animate-pulse">Expert</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 transition-colors duration-200 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#14b8a6] to-[#14b8a6] h-3 rounded-full relative group-hover:animate-width-95 origin-left" style={{ width: '95%' }}>
@@ -135,7 +130,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">Module Development</span>
-                      <span className="text-[#14b8a6] dark:text-[#14b8a6] font-bold group-hover:animate-pulse">Advanced</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#14b8a6] to-[#14b8a6] h-3 rounded-full relative group-hover:animate-width-90 origin-left" style={{ width: '90%' }}>
@@ -147,7 +141,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">PostgreSQL</span>
-                      <span className="text-[#14b8a6] dark:text-[#14b8a6] font-bold group-hover:animate-pulse">Proficient</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#14b8a6] to-[#14b8a6] h-3 rounded-full relative group-hover:animate-width-85 origin-left" style={{ width: '85%' }}>
@@ -159,7 +152,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">API Integration</span>
-                      <span className="text-[#14b8a6] dark:text-[#14b8a6] font-bold group-hover:animate-pulse">Advanced</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#14b8a6] to-[#14b8a6] h-3 rounded-full relative group-hover:animate-width-90 origin-left" style={{ width: '90%' }}>
@@ -189,7 +181,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">Spring Boot</span>
-                      <span className="text-[#6366f1] dark:text-[#6366f1] font-bold group-hover:animate-pulse">Expert</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 transition-colors duration-200 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#6366f1] to-[#6366f1] h-3 rounded-full relative group-hover:animate-width-95 origin-left" style={{ width: '95%' }}>
@@ -201,7 +192,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">Microservices</span>
-                      <span className="text-[#6366f1] dark:text-[#6366f1] font-bold group-hover:animate-pulse">Advanced</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#6366f1] to-[#6366f1] h-3 rounded-full relative group-hover:animate-width-90 origin-left" style={{ width: '90%' }}>
@@ -213,7 +203,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">JPA/Hibernate</span>
-                      <span className="text-[#6366f1] dark:text-[#6366f1] font-bold group-hover:animate-pulse">Advanced</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#6366f1] to-[#6366f1] h-3 rounded-full relative group-hover:animate-width-90 origin-left" style={{ width: '90%' }}>
@@ -225,7 +214,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">JavaFX</span>
-                      <span className="text-[#6366f1] dark:text-[#6366f1] font-bold group-hover:animate-pulse">Proficient</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#6366f1] to-[#6366f1] h-3 rounded-full relative group-hover:animate-width-85 origin-left" style={{ width: '85%' }}>
@@ -254,7 +242,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">ASP.NET Core</span>
-                      <span className="text-[#8b5cf6] dark:text-[#8b5cf6] font-bold group-hover:animate-pulse">Advanced</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#8b5cf6] to-[#8b5cf6] h-3 rounded-full relative group-hover:animate-width-90 origin-left" style={{ width: '90%' }}>
@@ -266,7 +253,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">REST APIs</span>
-                      <span className="text-[#8b5cf6] dark:text-[#8b5cf6] font-bold group-hover:animate-pulse">Advanced</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#8b5cf6] to-[#8b5cf6] h-3 rounded-full relative group-hover:animate-width-90 origin-left" style={{ width: '90%' }}>
@@ -278,7 +264,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">.NET WPF</span>
-                      <span className="text-[#8b5cf6] dark:text-[#8b5cf6] font-bold group-hover:animate-pulse">Proficient</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#8b5cf6] to-[#8b5cf6] h-3 rounded-full relative group-hover:animate-width-85 origin-left" style={{ width: '85%' }}>
@@ -290,7 +275,6 @@ export default async function HomePage() {
                   <li>
                     <div className="flex justify-between mb-1">
                       <span className="font-medium text-[#111827]/80 dark:text-[#f9fafb]/80">SOAP</span>
-                      <span className="text-[#8b5cf6] dark:text-[#8b5cf6] font-bold group-hover:animate-pulse">Intermediate</span>
                     </div>
                     <div className="w-full bg-[#e5e7eb] rounded-full h-3 dark:bg-gray-700 overflow-hidden">
                       <div className="bg-gradient-to-r from-[#8b5cf6] to-[#8b5cf6] h-3 rounded-full relative group-hover:animate-width-80 origin-left" style={{ width: '80%' }}>

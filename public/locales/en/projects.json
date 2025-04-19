@@ -48,5 +48,8 @@
     "testimonial": "Testimonial",
     "demoCredentials": "Demo Credentials",
     "technologiesUsedIntro": "This project was built using a variety of technologies including"
+  },
+  "errors": {
+    "projectNotFound": "Project not found"
   }
 }

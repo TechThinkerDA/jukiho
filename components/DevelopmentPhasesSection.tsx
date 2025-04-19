@@ -4,6 +4,17 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 
+// Define interfaces for our translation types
+interface Phase {
+  title: string;
+  items: string[];
+}
+
+interface DevelopmentPhaseWithIcon extends Phase {
+  id: number;
+  icon: JSX.Element;
+}
+
 export const DevelopmentPhasesSection: React.FC = () => {
   const { t } = useTranslation('developmentPhases');
 
@@ -44,8 +55,8 @@ export const DevelopmentPhasesSection: React.FC = () => {
     </svg>
   ];
 
-  // Get phases from translations
-  const phases = t('phases', { returnObjects: true }).map((phase, index) => ({
+  // Get phases from translations with proper typing
+  const phases: DevelopmentPhaseWithIcon[] = (t('phases', { returnObjects: true }) as Phase[]).map((phase, index) => ({
     id: index + 1,
     title: phase.title,
     icon: phaseIcons[index],

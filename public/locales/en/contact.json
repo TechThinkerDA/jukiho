@@ -15,5 +15,13 @@
   "messagePlaceholder": "Write your message here...",
   "messageRequired": "Please enter a message",
   "contactInfo": "Contact Information",
-  "connectWithMe": "Connect With Me"
+  "connectWithMe": "Connect With Me",
+  "form": {
+    "reachOut": "Don't hesitate to reach out",
+    "message": "Your message",
+    "successTitle": "Thank you for your message!",
+    "successMessage": "I'll get back to you as soon as possible.",
+    "errorTitle": "There was an error sending your message.",
+    "errorMessage": "Please try again or contact me directly via email."
+  }
 }

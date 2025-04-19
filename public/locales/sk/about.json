@@ -98,7 +98,7 @@
       "title": "Inžiniersky titul",
       "period": "2015 - 2017",
       "institution": "Technická univerzita v Košiciach, Slovensko",
-      "description": "Pokročilé štúdium informatiky a softvérového inžinierstva, nadväzujúce na základy položené počas bakalárskeho programu."
+      "description": "Pokročilé štúdium v oblasti informatiky a softvérového inžinierstva, nadväzujúce na základy položené počas bakalárskeho programu."
     },
     "bachelor": {
       "title": "Bakalársky titul",
@@ -145,5 +145,20 @@
       "description": "Frontend vývoj, responzívne UI, moderné frameworky",
       "items": ["React", "Next.js", "Server-Side Rendering (SSR)", "Single-Page Applications (SPA)", "UI/UX Implementácia"]
     }
+  },
+  "skills": {
+    "title": "Technické zručnosti",
+    "languages": "Programovacie jazyky",
+    "frameworks": "Frameworky a nástroje",
+    "infrastructure": "Infraštruktúra a DevOps",
+    "pythonDesc": "Odoo, analýza dát, API integrácie",
+    "javaDesc": "Spring Boot, JPA/Hibernate, mikroslužby",
+    "csharpDesc": "ASP.NET Core, Entity Framework, WPF",
+    "odooDesc": "Vývoj modulov, prispôsobenie",
+    "springDesc": "REST API, mikroslužby",
+    "reactDesc": "Next.js, Redux, TypeScript",
+    "dockerDesc": "Kontajnerizácia, Compose",
+    "cicdDesc": "Jenkins, GitHub Actions",
+    "cloudDesc": "AWS, Azure"
   }
 }

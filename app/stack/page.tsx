@@ -2,7 +2,6 @@
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { AnimatedSection } from '../../components/ui/AnimatedSection';
 import { TechItem } from '../../components/ui/TechItem';
 import { FiCode, FiDatabase, FiServer, FiTool } from 'react-icons/fi';
 

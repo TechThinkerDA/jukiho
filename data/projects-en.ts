@@ -70,7 +70,7 @@ export const projectsEn: Project[] = [
   {
     id: 'financial-solutions-platform',
     title: 'Financial Solutions Platform',
-    description: 'Internal FinTech application enabling car dealers to efficiently compare and manage leasing and insurance offers from multiple financial institutions. Features include real-time offer calculations, integrated application submissions, and dynamic UI tailored for in-branch use.',
+    description: 'Internal FinTech application enabling car sales to efficiently compare and manage leasing and insurance offers from multiple financial institutions. Features include real-time offer calculations, integrated application submissions, and dynamic UI tailored for in-branch use.',
     image: '/images/projects/fin.png',
     tags: ['ASP.NET Core', 'C#', 'REST API', 'SOAP', 'FinTech', 'Leasing', 'Insurance'],
     link: '',

@@ -1,15 +1,12 @@
 import { Project } from '../types';
 import { projectsEn } from './projects-en';
 import { projectsSk } from './projects-sk';
-import { projectsDe } from './projects-de';
 
 // Helper function to get projects based on language
 export const getProjectsByLanguage = (language: string): Project[] => {
   switch (language) {
     case 'sk':
       return projectsSk;
-    case 'de':
-      return projectsDe;
     case 'en':
     default:
       return projectsEn;
@@ -87,7 +84,7 @@ export const projects: Project[] = [
   {
     id: 'financial-solutions-platform',
     title: 'Financial Solutions Platform',
-    description: 'Internal FinTech application enabling car dealers to efficiently compare and manage leasing and insurance offers from multiple financial institutions. Features include real-time offer calculations, integrated application submissions, and dynamic UI tailored for in-branch use.',
+    description: 'Internal FinTech application enabling car sales to efficiently compare and manage leasing and insurance offers from multiple financial institutions. Features include real-time offer calculations, integrated application submissions, and dynamic UI tailored for in-branch use.',
     image: '/images/projects/fin.png',
     tags: ['ASP.NET Core', 'C#', 'REST API', 'SOAP', 'FinTech', 'Leasing', 'Insurance'],
     link: '',
