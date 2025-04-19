@@ -43,11 +43,33 @@ export const WhyMeSection: React.FC = () => {
   ];
 
   // Get reasons from translations
-  const reasons = t('reasons', { returnObjects: true }).map((reason, index) => ({
-    title: reason.title,
-    description: reason.description,
-    icon: reasonIcons[index]
-  }));
+  const reasonsData = t('reasons', { returnObjects: true });
+
+  // Check if reasonsData is an array before mapping
+  const reasons = Array.isArray(reasonsData)
+    ? reasonsData.map((reason, index) => ({
+        title: reason.title,
+        description: reason.description,
+        icon: reasonIcons[index % reasonIcons.length]
+      }))
+    : [
+        // Fallback data if translations are missing
+        {
+          title: 'Connecting Tech with Business',
+          description: 'Connect the technical world with real business problems. Understand not only code but also business processes and user needs.',
+          icon: reasonIcons[0]
+        },
+        {
+          title: 'Experience with Various Projects',
+          description: 'Experience with greenfield projects as well as refactoring legacy systems. Design a solution tailored to your needs.',
+          icon: reasonIcons[1]
+        },
+        {
+          title: 'Sustainable and Extensible Solutions',
+          description: 'Focus on sustainable, extensible solutions that will work for years and adapt to changing requirements.',
+          icon: reasonIcons[2]
+        }
+      ];
 
   return (
     <section id="why-me" className="py-20 bg-white dark:bg-gray-800">

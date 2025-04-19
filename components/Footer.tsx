@@ -120,7 +120,7 @@ export const Footer: React.FC = () => {
           {/* Copyright */}
           <div className="text-center pt-6 border-t border-gray-200 dark:border-gray-700">
             <p className="text-gray-500 dark:text-gray-400 text-sm">
-              {tCommon('footer.copyright').replace('2025', new Date().getFullYear().toString()).replace('JuKiHo', 'Juraj Kicko Horbaľ')}
+              {tCommon('footer.copyright').replace('2025', new Date().getFullYear().toString())}
             </p>
           </div>
         </div>

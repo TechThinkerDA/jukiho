@@ -25,15 +25,14 @@ interface TranslatedHtmlProps {
 export const TranslatedHtml: React.FC<TranslatedHtmlProps> = ({
   translationKey,
   values,
-  as: Component = 'div',
+  as = 'div',
   className,
   ns
 }) => {
   const { t } = useTranslation(ns);
-  return (
-    <Component
-      className={className}
-      dangerouslySetInnerHTML={{ __html: t(translationKey, values) }}
-    />
-  );
+
+  return React.createElement(as, {
+    className,
+    dangerouslySetInnerHTML: { __html: t(translationKey, values) }
+  });
 };

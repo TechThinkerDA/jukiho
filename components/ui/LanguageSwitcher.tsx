@@ -8,11 +8,13 @@ import { createLocalizedPath, defaultLanguage, languages } from '../../lib/i18n-
 
 const languageNames: Record<Language, string> = {
   en: 'English',
+  de: 'Deutsch',
   sk: 'Slovenčina'
 };
 
 const languageFlags: Record<Language, string> = {
   en: 'EN',
+  de: 'DE',
   sk: 'SK'
 };
 
@@ -31,9 +33,9 @@ export const LanguageSwitcher: React.FC = () => {
       return;
     }
 
-    const newPath = createLocalizedPath(pathname, language);
+    const newPath = createLocalizedPath(pathname || '/', language);
 
-    const query = searchParams.toString();
+    const query = searchParams?.toString() || '';
     const newUrl = query ? `${newPath}?${query}` : newPath;
 
     setIsOpen(false);

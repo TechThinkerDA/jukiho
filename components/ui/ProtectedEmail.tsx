@@ -2,12 +2,13 @@
 
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { FiCopy, FiCheck, FiX } from 'react-icons/fi';
 
 interface ProtectedEmailProps {
   username: string;
   domain: string;
   className?: string;
-  iconClassName?: string; // Added this prop
+  iconClassName?: string;
 }
 
 export const ProtectedEmail: React.FC<ProtectedEmailProps> = ({
@@ -17,23 +18,34 @@ export const ProtectedEmail: React.FC<ProtectedEmailProps> = ({
   iconClassName = ""
 }) => {
   const { t } = useTranslation('common');
-  const [copyIcon, setCopyIcon] = useState('⧉');
+  const [copyStatus, setCopyStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   // Email protection function
   const copyEmail = () => {
     const email = `${username}@${domain}`;
 
     navigator.clipboard.writeText(email).then(() => {
-      setCopyIcon('✓');
-      setTimeout(() => setCopyIcon('⧉'), 2000);
+      setCopyStatus('success');
+      setTimeout(() => setCopyStatus('idle'), 2000);
     }, () => {
-      setCopyIcon('⨉');
-      setTimeout(() => setCopyIcon('⧉'), 2000);
+      setCopyStatus('error');
+      setTimeout(() => setCopyStatus('idle'), 2000);
     });
   };
 
+  const renderIcon = () => {
+    switch (copyStatus) {
+      case 'success':
+        return <FiCheck className="text-green-500 dark:text-green-400" />;
+      case 'error':
+        return <FiX className="text-red-500 dark:text-red-400" />;
+      default:
+        return <FiCopy className="text-gray-500 dark:text-gray-400" />;
+    }
+  };
+
   return (
-    <div className="flex items-center">
+    <div className="flex items-center gap-2">
       <a
         href={`mailto:${username}@${domain}`}
         className={className}
@@ -43,9 +55,10 @@ export const ProtectedEmail: React.FC<ProtectedEmailProps> = ({
       <button
         onClick={copyEmail}
         title={t('email.copyToClipboard')}
-        className={`hover:text-gray-50 dark:hover:text-[#14b8a6] transition-colors duration-200 min-w-[24px] text-center ${iconClassName}`}
+        className={`p-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-indigo-600 dark:hover:text-[#14b8a6] transition-all duration-300 hover:scale-110 ${iconClassName}`}
+        aria-label={t('email.copyToClipboard')}
       >
-        {copyIcon}
+        {renderIcon()}
       </button>
     </div>
   );

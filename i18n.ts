@@ -51,6 +51,7 @@ import deLab from './public/locales/de/lab.json';
 import deContact from './public/locales/de/contact.json';
 import deAi from './public/locales/de/ai.json';
 import deHeroVersions from './public/locales/de/heroVersions.json';
+import deWhyMe from './public/locales/de/whyMe.json';
 
 // the translations
 const resources = {
@@ -80,6 +81,7 @@ const resources = {
     lab: deLab,
     contact: deContact,
     ai: deAi,
+    whyMe: deWhyMe,
     heroVersions: deHeroVersions
   },
   sk: {

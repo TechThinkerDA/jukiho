@@ -153,8 +153,9 @@ const CategoryGroup: React.FC<CategoryGroupProps> = ({ category, items, radius, 
   });
 
   return (
-    <group ref={groupRef}>
+    <group ref={groupRef} key={`group-${category}`}>
       <Text
+        key={`text-${category}`}
         position={[radius * 1.3 * Math.cos(angle), 0, radius * 1.3 * Math.sin(angle)]}
         fontSize={0.5}
         color="#ffffff"
@@ -167,7 +168,6 @@ const CategoryGroup: React.FC<CategoryGroupProps> = ({ category, items, radius, 
       </Text>
       {items.map((tech, index) => (
         <TechNode
-          key={tech.name}
           position={positions[index]}
           technology={tech}
           onClick={onClick}
@@ -180,9 +180,9 @@ const CategoryGroup: React.FC<CategoryGroupProps> = ({ category, items, radius, 
 
 // Main scene component
 const TechScene = () => {
-  const [selectedTech, setSelectedTech] = useState(null);
+  const [selectedTech, setSelectedTech] = useState<Technology | null>(null);
   
-  const handleTechClick = (tech) => {
+  const handleTechClick = (tech: Technology) => {
     setSelectedTech(tech === selectedTech ? null : tech);
   };
 
@@ -198,7 +198,6 @@ const TechScene = () => {
         const angle = (index / technologies.length) * Math.PI * 2;
         return (
           <CategoryGroup
-            key={techCategory.category}
             category={techCategory.category}
             items={techCategory.items}
             radius={8}

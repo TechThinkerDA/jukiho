@@ -11,6 +11,16 @@ interface FixedRichTextEditorProps {
   required?: boolean;
 }
 
+// Add CSS for placeholder
+const placeholderStyles = `
+  [contenteditable]:empty:before {
+    content: attr(data-placeholder);
+    color: #9ca3af;
+    font-style: italic;
+    pointer-events: none;
+  }
+`;
+
 export const FixedRichTextEditor: React.FC<FixedRichTextEditorProps> = ({
   value,
   onChange,
@@ -38,7 +48,7 @@ export const FixedRichTextEditor: React.FC<FixedRichTextEditorProps> = ({
   }, [value]);
 
   // Handle toolbar button clicks
-  const handleCommand = (command: string, value: string | null = null) => {
+  const handleCommand = (command: string, value?: string) => {
     // Focus the editor first to ensure commands work properly
     if (editorRef.current) {
       editorRef.current.focus();
@@ -87,6 +97,7 @@ export const FixedRichTextEditor: React.FC<FixedRichTextEditorProps> = ({
 
   return (
     <div className="fixed-rich-text-editor">
+      <style dangerouslySetInnerHTML={{ __html: placeholderStyles }} />
       <div className="toolbar flex flex-wrap gap-2 p-2 bg-[#f9fafb] dark:bg-gray-700 border border-[#e5e7eb] dark:border-gray-600 rounded-t-lg">
         <button
           type="button"
@@ -115,7 +126,10 @@ export const FixedRichTextEditor: React.FC<FixedRichTextEditorProps> = ({
         <div className="w-px h-6 bg-[#e5e7eb] dark:bg-gray-600 mx-1"></div>
         <button
           type="button"
-          onClick={() => handleCommand('createLink', prompt('Enter link URL', 'https://'))}
+          onClick={() => {
+            const url = prompt('Enter link URL', 'https://');
+            if (url) handleCommand('createLink', url);
+          }}
           className="p-1 rounded hover:bg-[#e5e7eb] dark:hover:bg-gray-600"
           title="Insert Link"
         >
@@ -128,9 +142,8 @@ export const FixedRichTextEditor: React.FC<FixedRichTextEditorProps> = ({
         id={id}
         contentEditable
         onInput={handleInput}
-        className="min-h-[200px] p-4 bg-white dark:bg-gray-800 text-[#111827] dark:text-[#f9fafb] border border-t-0 border-[#e5e7eb] dark:border-gray-600 rounded-b-lg focus:outline-none"
-        placeholder={placeholder}
-
+        className="min-h-[200px] p-4 bg-white dark:bg-gray-800 text-[#111827] dark:text-[#f9fafb] border border-t-0 border-[#e5e7eb] dark:border-gray-600 rounded-b-lg focus:outline-none relative"
+        data-placeholder={placeholder}
         onBlur={(e) => {
           // Add placeholder behavior
           if (e.currentTarget.innerHTML === '') {

@@ -1,0 +1,22 @@
+{
+  "title": "Warum ich?",
+  "reasons": [
+    {
+      "title": "Verbindung von Technik und Business",
+      "description": "Ich verbinde die technische Welt mit realen Geschäftsproblemen. Ich verstehe nicht nur Code, sondern auch Geschäftsprozesse und Benutzerbedürfnisse."
+    },
+    {
+      "title": "Erfahrung mit verschiedenen Projekten",
+      "description": "Ich habe Erfahrung mit Greenfield-Projekten sowie mit der Refaktorisierung von Legacy-Systemen. Ich entwerfe eine Lösung, die auf Ihre Bedürfnisse zugeschnitten ist."
+    },
+    {
+      "title": "Nachhaltige und erweiterbare Lösungen",
+      "description": "Ich konzentriere mich auf nachhaltige, erweiterbare Lösungen, die über Jahre hinweg funktionieren und sich an veränderte Anforderungen anpassen."
+    }
+  ],
+  "callToAction": {
+    "title": "Suchen Sie einen Systemarchitekten, der Ihr Geschäft versteht?",
+    "description": "Lassen Sie uns gemeinsam eine Lösung entwickeln, die Ihnen hilft, zu wachsen und Ihre Prozesse zu optimieren.",
+    "button": "Kontaktieren Sie mich"
+  }
+}
