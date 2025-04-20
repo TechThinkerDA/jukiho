@@ -109,15 +109,10 @@ const resources = {
   }
 };
 
-// Inicializácia i18n
 i18n
-  // Použitie react-i18next
   .use(initReactI18next)
-  // Použitie backend pre načítavanie prekladov
   .use(Backend)
-  // Použitie detektora jazyka
   .use(LanguageDetector)
-  // Inicializácia
   .init({
     resources,
     fallbackLng: defaultLanguage,
@@ -125,25 +120,18 @@ i18n
     interpolation: {
       escapeValue: false // nie je potrebné pre React, ktorý escapuje automaticky
     },
-    // Nastavenia pre SSR
     react: {
       useSuspense: false,
       transWrapTextNodes: '',
       transSupportBasicHtmlNodes: true,
       transKeepBasicHtmlNodesFor: ['br', 'strong', 'i', 'p', 'a', 'span', 'em', 'b']
     },
-    // Použitie namespaces
     ns: ['common', 'home', 'about', 'projects', 'stack', 'skills', 'lab', 'contact', 'ai', 'whyMe', 'techStack', 'developmentPhases', 'problemSolution', 'heroVersions', 'experience', 'privacy'],
     defaultNS: 'common',
-    // Detekcia jazyka
     detection: {
-      // Priorita detekcie
-      order: ['path', 'cookie', 'htmlTag', 'navigator'],
-      // Názov cookie
+      order: ['path', 'htmlTag', 'cookie', 'navigator'],
       lookupCookie: 'i18next',
-      // Cesta v URL
       lookupFromPathIndex: 0,
-      // Cache jazyka
       caches: ['cookie']
     }
   });

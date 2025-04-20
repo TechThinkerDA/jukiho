@@ -49,10 +49,10 @@ export const CookieSettings: React.FC<CookieSettingsProps> = ({ isOpen, onClose 
   const saveSettings = () => {
     // Save settings to localStorage
     localStorage.setItem('cookieConsent', JSON.stringify(settings));
-    
-    // Apply cookie settings
+
+    // Get current language
     const language = document.documentElement.lang || 'en';
-    
+
     // Language cookie handling
     if (settings.preferences) {
       // If preferences are enabled, set a persistent cookie
@@ -61,10 +61,10 @@ export const CookieSettings: React.FC<CookieSettingsProps> = ({ isOpen, onClose 
       // Otherwise set a session cookie
       setCookie('i18next', language, 0);
     }
-    
+
     // Close the dialog
     onClose();
-    
+
     // Reload the page to apply changes
     window.location.reload();
   };
@@ -76,13 +76,15 @@ export const CookieSettings: React.FC<CookieSettingsProps> = ({ isOpen, onClose 
       analytics: true,
       marketing: true
     };
-    
+
     localStorage.setItem('cookieConsent', JSON.stringify(allSettings));
-    
-    // Apply cookie settings
+
+    // Get current language
     const language = document.documentElement.lang || 'en';
+
+    // Set cookie
     setCookie('i18next', language, 30);
-    
+
     onClose();
     window.location.reload();
   };
@@ -93,13 +95,13 @@ export const CookieSettings: React.FC<CookieSettingsProps> = ({ isOpen, onClose 
     <div className="fixed inset-0 z-50 overflow-y-auto">
       <div className="flex items-center justify-center min-h-screen px-4">
         <div className="fixed inset-0 bg-black bg-opacity-50 transition-opacity" onClick={onClose}></div>
-        
+
         <div className="relative bg-white dark:bg-gray-800 rounded-lg max-w-lg w-full mx-auto shadow-xl p-6 z-10">
           <div className="flex justify-between items-start">
             <h2 className="text-xl font-bold text-gray-800 dark:text-white">
               {t('cookies.settingsTitle')}
             </h2>
-            <button 
+            <button
               onClick={onClose}
               className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
             >
@@ -108,12 +110,12 @@ export const CookieSettings: React.FC<CookieSettingsProps> = ({ isOpen, onClose 
               </svg>
             </button>
           </div>
-          
+
           <div className="mt-4">
             <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
               {t('cookies.settingsDescription')}
             </p>
-            
+
             <div className="space-y-4 mt-6">
               {/* Essential Cookies - Always enabled */}
               <div className="flex items-start">
@@ -135,7 +137,7 @@ export const CookieSettings: React.FC<CookieSettingsProps> = ({ isOpen, onClose 
                   </p>
                 </div>
               </div>
-              
+
               {/* Preferences Cookies */}
               <div className="flex items-start">
                 <div className="flex items-center h-5">
@@ -156,7 +158,7 @@ export const CookieSettings: React.FC<CookieSettingsProps> = ({ isOpen, onClose 
                   </p>
                 </div>
               </div>
-              
+
               {/* Analytics Cookies */}
               <div className="flex items-start">
                 <div className="flex items-center h-5">
@@ -177,7 +179,7 @@ export const CookieSettings: React.FC<CookieSettingsProps> = ({ isOpen, onClose 
                   </p>
                 </div>
               </div>
-              
+
               {/* Marketing Cookies */}
               <div className="flex items-start">
                 <div className="flex items-center h-5">
@@ -199,7 +201,7 @@ export const CookieSettings: React.FC<CookieSettingsProps> = ({ isOpen, onClose 
                 </div>
               </div>
             </div>
-            
+
             <div className="flex flex-wrap gap-3 mt-8 justify-end">
               <button
                 onClick={saveSettings}

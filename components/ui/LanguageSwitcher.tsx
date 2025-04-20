@@ -28,7 +28,11 @@ export const LanguageSwitcher: React.FC = () => {
   useEffect(() => {
     // Ensure we have a valid language, defaulting to 'en' if not
     const lang = (i18n.language as Language) || defaultLanguage;
-    setCurrentLanguage(languages.includes(lang as Language) ? lang as Language : defaultLanguage);
+    const validLang = languages.includes(lang as Language) ? lang as Language : defaultLanguage;
+    setCurrentLanguage(validLang);
+
+    // Update HTML lang attribute to ensure browsers correctly identify the language
+    document.documentElement.setAttribute('lang', validLang);
   }, [i18n.language]);
 
   const handleLanguageChange = (language: Language) => {
@@ -54,9 +58,14 @@ export const LanguageSwitcher: React.FC = () => {
       setCookie('i18next', language, 0);
     }
 
+    // Force update HTML lang attribute immediately
+    document.documentElement.setAttribute('lang', language);
+
+    // Then change i18n language
     i18n.changeLanguage(language);
     setCurrentLanguage(language);
 
+    // Navigate to the new URL
     router.replace(newUrl, { scroll: false });
   };
 
