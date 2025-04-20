@@ -87,6 +87,11 @@ const siteStructure: SiteStructureItem[] = [
     name: 'Site Map',
     path: '/sitemap',
     children: []
+  },
+  {
+    name: 'Privacy Policy',
+    path: '/privacy-policy',
+    children: []
   }
 ];
 

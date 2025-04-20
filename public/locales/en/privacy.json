@@ -1,0 +1,70 @@
+{
+  "title": "Privacy Policy",
+  "subtitle": "This Privacy Policy describes how your personal information is collected, used, and shared when you use our website.",
+  "dataCollection": {
+    "title": "Information We Collect",
+    "description": "When you visit the website, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. Additionally, as you browse the website, we collect information about the individual web pages that you view, what websites or search terms referred you to the website, and information about how you interact with the website. We refer to this automatically-collected information as 'Device Information'. When you contact us through the contact form, we collect the following personal information:",
+    "items": {
+      "name": "Your name",
+      "email": "Your email address",
+      "message": "The content of your message"
+    }
+  },
+  "dataUsage": {
+    "title": "How We Use Your Information",
+    "description": "We use the information that we collect to:",
+    "items": {
+      "communication": "Communicate with you, including responding to your inquiries",
+      "improvement": "Improve and optimize our website (for example, by generating analytics about how our customers browse and interact with the website)"
+    }
+  },
+  "dataStorage": {
+    "title": "Data Storage",
+    "description": "Your personal information is stored securely and is retained only for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements."
+  },
+  "dataSharing": {
+    "title": "Sharing Your Information",
+    "description": "We do not share your personal information with third parties except as necessary to provide the services you have requested or as required by law."
+  },
+  "userRights": {
+    "title": "Your Rights",
+    "description": "If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below. Additionally, you have the following rights:",
+    "items": {
+      "access": "The right to access your personal data",
+      "correction": "The right to request correction of your personal data",
+      "deletion": "The right to request deletion of your personal data",
+      "restriction": "The right to request restriction of processing of your personal data",
+      "objection": "The right to object to processing of your personal data",
+      "portability": "The right to data portability"
+    }
+  },
+  "cookies": {
+    "title": "Cookies",
+    "description": "Cookies are small pieces of data stored on your device. We use cookies to enhance your experience on our website. You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible or not function properly.",
+    "types": {
+      "title": "Types of Cookies We Use",
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "These cookies are necessary for the website to function properly. They enable basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies."
+      },
+      "preferences": {
+        "title": "Preference Cookies",
+        "description": "These cookies enable the website to remember information that changes the way the website behaves or looks, like your preferred language or the region you are in."
+      }
+    },
+    "management": {
+      "title": "Managing Cookies",
+      "description": "You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access cookies. You can also change your cookie preferences at any time by clicking on the 'Cookie Settings' link in the footer of our website."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at contact@jukiho.com."
+  },
+  "updates": {
+    "title": "Changes",
+    "description": "We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons."
+  },
+  "lastUpdated": "Last updated:",
+  "updateDate": "May 15, 2024"
+}

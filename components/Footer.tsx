@@ -1,17 +1,21 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
 import { ProtectedEmail } from './ui/ProtectedEmail';
 import { LocalizedLink } from './LocalizedLink';
+import { deleteCookie } from '../utils/cookieManager';
+import { CookieSettings } from './CookieSettings';
 
 export const Footer: React.FC = () => {
   const { t: tCommon } = useTranslation('common');
   const { t: tContact } = useTranslation('contact');
+  const [showCookieSettings, setShowCookieSettings] = useState(false);
 
   return (
-    <footer className="mt-20 relative overflow-hidden">
+    <>
+      <footer className="mt-20 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 z-0 opacity-5">
         <div className="absolute top-0 left-0 w-64 h-64 rounded-full bg-indigo-500 -translate-x-1/2 -translate-y-1/2"></div>
@@ -117,8 +121,22 @@ export const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Copyright */}
+          {/* Legal Links */}
           <div className="text-center pt-6 border-t border-gray-200 dark:border-gray-700">
+            <div className="mb-4 flex flex-wrap gap-4 justify-center">
+              <LocalizedLink
+                href="/privacy-policy"
+                className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 text-sm"
+              >
+                {tCommon('footer.privacyPolicy')}
+              </LocalizedLink>
+              <button
+                onClick={() => setShowCookieSettings(true)}
+                className="text-gray-500 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 text-sm cursor-pointer"
+              >
+                {tCommon('cookies.settings')}
+              </button>
+            </div>
             <p className="text-gray-500 dark:text-gray-400 text-sm">
               {tCommon('footer.copyright').replace('2025', new Date().getFullYear().toString())}
             </p>
@@ -126,5 +144,11 @@ export const Footer: React.FC = () => {
         </div>
       </div>
     </footer>
+
+    <CookieSettings
+      isOpen={showCookieSettings}
+      onClose={() => setShowCookieSettings(false)}
+    />
+    </>
   );
 };

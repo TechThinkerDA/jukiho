@@ -5,6 +5,7 @@ import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import { Language } from '../../types';
 import { createLocalizedPath, defaultLanguage, languages } from '../../lib/i18n-config';
+import { setCookie, hasFullConsent } from '../../utils/cookieManager';
 
 const languageNames: Record<Language, string> = {
   en: 'English',
@@ -44,8 +45,14 @@ export const LanguageSwitcher: React.FC = () => {
 
     setIsOpen(false);
 
-    // Set cookie with longer expiration and proper attributes
-    document.cookie = `i18next=${language}; path=/; max-age=${60 * 60 * 24 * 30}; SameSite=Lax`;
+    // Set cookie based on user consent
+    if (hasFullConsent()) {
+      // If user has given full consent, set a persistent cookie (30 days)
+      setCookie('i18next', language, 30);
+    } else {
+      // Otherwise set a session cookie that expires when the browser is closed
+      setCookie('i18next', language, 0);
+    }
 
     i18n.changeLanguage(language);
     setCurrentLanguage(language);

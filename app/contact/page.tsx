@@ -5,12 +5,13 @@ import { useTranslation } from 'react-i18next';
 import { AnimatedSection } from '../../components/ui/AnimatedSection';
 import { FixedRichTextEditor } from '../../components/ui/FixedRichTextEditor';
 import { ProtectedEmail } from '../../components/ui/ProtectedEmail';
+import { LocalizedLink } from '../../components/LocalizedLink';
 import { FiLinkedin, FiMail } from 'react-icons/fi';
 
 export default function ContactPage() {
   const [mounted, setMounted] = useState(false);
   const { t } = useTranslation('contact');
-  
+
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -165,6 +166,12 @@ export default function ContactPage() {
                     {editorTouched && (formData.message === '<p><br></p>' || formData.message === '') && (
                       <p className="text-red-500 text-sm mt-1">{t('messageRequired') || 'Please enter a message'}</p>
                     )}
+                    <p className="text-gray-500 dark:text-gray-400 text-xs mt-2">
+                      {t('privacyNotice') || 'By submitting this form, you agree to our'}{' '}
+                      <LocalizedLink href="/privacy-policy" className="text-indigo-600 dark:text-indigo-400 hover:underline">
+                        {t('privacyPolicy') || 'Privacy Policy'}
+                      </LocalizedLink>.
+                    </p>
                   </div>
 
                   <div className="space-y-4">

@@ -3,6 +3,7 @@
 import React from 'react';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { CookieConsent } from './CookieConsent';
 import '../i18n';
 
 
@@ -18,6 +19,7 @@ const ClientLayout: React.FC<ClientLayoutProps> = ({ children }) => {
         {children}
       </main>
       <Footer />
+      <CookieConsent />
     </>
   );
 };

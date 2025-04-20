@@ -15,5 +15,15 @@
   "messagePlaceholder": "Schreiben Sie Ihre Nachricht hier...",
   "messageRequired": "Bitte geben Sie eine Nachricht ein",
   "contactInfo": "Kontaktinformationen",
-  "connectWithMe": "Verbinde dich mit mir"
+  "connectWithMe": "Verbinde dich mit mir",
+  "privacyNotice": "Durch das Absenden dieses Formulars stimmen Sie unserer",
+  "privacyPolicy": "Datenschutzrichtlinie",
+  "form": {
+    "reachOut": "Zögern Sie nicht, mich zu kontaktieren",
+    "message": "Ihre Nachricht",
+    "successTitle": "Vielen Dank für Ihre Nachricht!",
+    "successMessage": "Ich werde mich so schnell wie möglich bei Ihnen melden.",
+    "errorTitle": "Beim Senden Ihrer Nachricht ist ein Fehler aufgetreten.",
+    "errorMessage": "Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt per E-Mail."
+  }
 }

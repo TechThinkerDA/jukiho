@@ -7,7 +7,8 @@
     "stack": "Tech Stack",
     "lab": "Lab",
     "contact": "Contact",
-    "sitemap": "Sitemap"
+    "sitemap": "Sitemap",
+    "privacyPolicy": "Privacy Policy"
   },
   "email": {
     "copyToClipboard": "Copy email to clipboard"
@@ -16,6 +17,38 @@
     "copyright": "© 2025 Juraj Kicko Horbaľ. All rights reserved.",
     "philosophyTitle1": "Technology makes sense",
     "philosophyTitle2": "when it solves real problems.",
-    "contactText": "Have a project or need assistance? Don't hesitate to reach out."
+    "contactText": "Have a project or need assistance? Don't hesitate to reach out.",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "cookies": {
+    "title": "This website uses cookies",
+    "message": "We use cookies to enhance your browsing experience, personalize content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
+    "learnMore": "Learn more in our",
+    "privacyPolicy": "Privacy Policy",
+    "acceptAll": "Accept All",
+    "acceptEssential": "Essential Only",
+    "settings": "Cookie Settings",
+    "settingsTitle": "Cookie Preferences",
+    "settingsDescription": "You can choose which cookies you want to allow. These settings can be changed at any time, but this might affect the functionality of the website.",
+    "saveSettings": "Save Settings",
+    "categories": {
+      "essential": {
+        "title": "Essential Cookies",
+        "description": "These cookies are necessary for the website to function properly and cannot be disabled."
+      },
+      "preferences": {
+        "title": "Preference Cookies",
+        "description": "These cookies allow the website to remember choices you make (such as your preferred language) and provide enhanced features."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "These cookies help us understand how visitors interact with our website, helping us improve our services and user experience."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "These cookies are used to track visitors across websites to display relevant advertisements."
+      }
+    }
   }
 }

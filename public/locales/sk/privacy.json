@@ -1,0 +1,70 @@
+{
+  "title": "Ochrana osobných údajov",
+  "subtitle": "Táto politika ochrany osobných údajov popisuje, ako sú vaše osobné údaje zhromažďované, používané a zdieľané pri používaní našej webovej stránky.",
+  "dataCollection": {
+    "title": "Informácie, ktoré zhromažďujeme",
+    "description": "Keď navštívite webovú stránku, automaticky zhromažďujeme určité informácie o vašom zariadení, vrátane informácií o vašom webovom prehliadači, IP adrese, časovom pásme a niektorých cookies, ktoré sú nainštalované na vašom zariadení. Okrem toho, keď prehliadate webovú stránku, zhromažďujeme informácie o jednotlivých webových stránkach, ktoré si prezeráte, o webových stránkach alebo vyhľadávacích výrazoch, ktoré vás na webovú stránku odkázali, a informácie o tom, ako interagujete s webovou stránkou. Tieto automaticky zhromažďované informácie označujeme ako 'Informácie o zariadení'. Keď nás kontaktujete prostredníctvom kontaktného formulára, zhromažďujeme nasledujúce osobné údaje:",
+    "items": {
+      "name": "Vaše meno",
+      "email": "Vašu e-mailovú adresu",
+      "message": "Obsah vašej správy"
+    }
+  },
+  "dataUsage": {
+    "title": "Ako používame vaše informácie",
+    "description": "Zhromaždené informácie používame na:",
+    "items": {
+      "communication": "Komunikáciu s vami, vrátane odpovedí na vaše otázky",
+      "improvement": "Zlepšovanie a optimalizáciu našej webovej stránky (napríklad generovaním analytických údajov o tom, ako naši zákazníci prehliadajú a interagujú s webovou stránkou)"
+    }
+  },
+  "dataStorage": {
+    "title": "Uchovávanie údajov",
+    "description": "Vaše osobné údaje sú bezpečne uložené a uchovávané len po dobu potrebnú na splnenie účelov, pre ktoré boli zhromaždené, vrátane účelov splnenia akýchkoľvek právnych, účtovných alebo vykazovacích požiadaviek."
+  },
+  "dataSharing": {
+    "title": "Zdieľanie vašich informácií",
+    "description": "Vaše osobné údaje nezdieľame s tretími stranami, s výnimkou prípadov, keď je to potrebné na poskytnutie služieb, ktoré ste požadovali, alebo keď to vyžaduje zákon."
+  },
+  "userRights": {
+    "title": "Vaše práva",
+    "description": "Ak ste obyvateľom Európy, máte právo na prístup k osobným údajom, ktoré o vás máme, a požiadať, aby vaše osobné údaje boli opravené, aktualizované alebo vymazané. Ak si chcete toto právo uplatniť, kontaktujte nás prostredníctvom kontaktných údajov uvedených nižšie. Okrem toho máte nasledujúce práva:",
+    "items": {
+      "access": "Právo na prístup k vašim osobným údajom",
+      "correction": "Právo požadovať opravu vašich osobných údajov",
+      "deletion": "Právo požadovať vymazanie vašich osobných údajov",
+      "restriction": "Právo požadovať obmedzenie spracúvania vašich osobných údajov",
+      "objection": "Právo namietať proti spracúvaniu vašich osobných údajov",
+      "portability": "Právo na prenosnosť údajov"
+    }
+  },
+  "cookies": {
+    "title": "Cookies",
+    "description": "Cookies sú malé kúsky údajov uložené vo vašom zariadení. Cookies používame na zlepšenie vášho zážitku na našej webovej stránke. Svoj prehliadač môžete nastaviť tak, aby odmietol všetky alebo niektoré cookies prehliadača, alebo aby vás upozornil, keď webové stránky nastavujú alebo pristupujú ku cookies. Ak cookies zakážete alebo odmietnete, upozorňujeme, že niektoré časti tejto webovej stránky sa môžu stať neprístupnými alebo nemusia správne fungovať.",
+    "types": {
+      "title": "Typy cookies, ktoré používame",
+      "essential": {
+        "title": "Nevyhnutné cookies",
+        "description": "Tieto cookies sú potrebné pre správne fungovanie webovej stránky. Umožňujú základné funkcie, ako je navigácia stránok a prístup k zabezpečeným častiam webovej stránky. Webová stránka nemôže správne fungovať bez týchto cookies."
+      },
+      "preferences": {
+        "title": "Preferenčné cookies",
+        "description": "Tieto cookies umožňujú webovej stránke zapamätať si informácie, ktoré menia spôsob, akým sa webová stránka správa alebo vyzerá, ako napríklad váš preferovaný jazyk alebo región, v ktorom sa nachádzate."
+      }
+    },
+    "management": {
+      "title": "Správa cookies",
+      "description": "Svoj prehliadač môžete nastaviť tak, aby odmietol všetky alebo niektoré cookies prehliadača, alebo aby vás upozornil, keď webové stránky nastavujú alebo pristupujú ku cookies. Svoje preferencie cookies môžete kedykoľvek zmeniť kliknutím na odkaz 'Nastavenia cookies' v päte našej webovej stránky."
+    }
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "description": "Pre viac informácií o našich postupoch ochrany osobných údajov, ak máte otázky alebo ak chcete podať sťažnosť, kontaktujte nás e-mailom na adrese contact@jukiho.com."
+  },
+  "updates": {
+    "title": "Zmeny",
+    "description": "Túto politiku ochrany osobných údajov môžeme z času na čas aktualizovať, napríklad z dôvodu zmien našich postupov alebo z iných prevádzkových, právnych alebo regulačných dôvodov."
+  },
+  "lastUpdated": "Posledná aktualizácia:",
+  "updateDate": "15. mája 2024"
+}

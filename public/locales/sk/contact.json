@@ -16,6 +16,8 @@
   "messageRequired": "Prosím, zadajte správu",
   "contactInfo": "Kontaktné informácie",
   "connectWithMe": "Spojte sa so mnou",
+  "privacyNotice": "Odoslaním tohto formulára súhlasíte s našimi",
+  "privacyPolicy": "Zásadami ochrany osobných údajov",
   "form": {
     "reachOut": "Neváhajte ma kontaktovať",
     "message": "Vaša správa",

@@ -24,6 +24,7 @@ import enTechStack from './public/locales/en/techStack.json';
 import enDevelopmentPhases from './public/locales/en/developmentPhases.json';
 import enProblemSolution from './public/locales/en/problemSolution.json';
 import enHeroVersions from './public/locales/en/heroVersions.json';
+import enPrivacy from './public/locales/en/privacy.json';
 
 // Import Slovak page-specific translations
 import skHome from './public/locales/sk/home.json';
@@ -40,6 +41,7 @@ import skDevelopmentPhases from './public/locales/sk/developmentPhases.json';
 import skProblemSolution from './public/locales/sk/problemSolution.json';
 import skHeroVersions from './public/locales/sk/heroVersions.json';
 import skExperience from './public/locales/sk/experience.json';
+import skPrivacy from './public/locales/sk/privacy.json';
 
 // Import German page-specific translations
 import deHome from './public/locales/de/home.json';
@@ -52,6 +54,7 @@ import deContact from './public/locales/de/contact.json';
 import deAi from './public/locales/de/ai.json';
 import deHeroVersions from './public/locales/de/heroVersions.json';
 import deWhyMe from './public/locales/de/whyMe.json';
+import dePrivacy from './public/locales/de/privacy.json';
 
 // the translations
 const resources = {
@@ -69,7 +72,8 @@ const resources = {
     techStack: enTechStack,
     developmentPhases: enDevelopmentPhases,
     problemSolution: enProblemSolution,
-    heroVersions: enHeroVersions
+    heroVersions: enHeroVersions,
+    privacy: enPrivacy
   },
   de: {
     common: deCommon,
@@ -82,7 +86,8 @@ const resources = {
     contact: deContact,
     ai: deAi,
     whyMe: deWhyMe,
-    heroVersions: deHeroVersions
+    heroVersions: deHeroVersions,
+    privacy: dePrivacy
   },
   sk: {
     common: skCommon,
@@ -99,7 +104,8 @@ const resources = {
     developmentPhases: skDevelopmentPhases,
     problemSolution: skProblemSolution,
     heroVersions: skHeroVersions,
-    experience: skExperience
+    experience: skExperience,
+    privacy: skPrivacy
   }
 };
 
@@ -127,7 +133,7 @@ i18n
       transKeepBasicHtmlNodesFor: ['br', 'strong', 'i', 'p', 'a', 'span', 'em', 'b']
     },
     // Použitie namespaces
-    ns: ['common', 'home', 'about', 'projects', 'stack', 'skills', 'lab', 'contact', 'ai', 'whyMe', 'techStack', 'developmentPhases', 'problemSolution', 'heroVersions', 'experience'],
+    ns: ['common', 'home', 'about', 'projects', 'stack', 'skills', 'lab', 'contact', 'ai', 'whyMe', 'techStack', 'developmentPhases', 'problemSolution', 'heroVersions', 'experience', 'privacy'],
     defaultNS: 'common',
     // Detekcia jazyka
     detection: {

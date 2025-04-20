@@ -1,0 +1,70 @@
+{
+  "title": "Datenschutzrichtlinie",
+  "subtitle": "Diese Datenschutzrichtlinie beschreibt, wie Ihre persönlichen Daten erfasst, verwendet und weitergegeben werden, wenn Sie unsere Website nutzen.",
+  "dataCollection": {
+    "title": "Informationen, die wir sammeln",
+    "description": "Wenn Sie die Website besuchen, erfassen wir automatisch bestimmte Informationen über Ihr Gerät, einschließlich Informationen über Ihren Webbrowser, Ihre IP-Adresse, Ihre Zeitzone und einige der Cookies, die auf Ihrem Gerät installiert sind. Während Sie die Website durchsuchen, sammeln wir außerdem Informationen über die einzelnen Webseiten, die Sie ansehen, welche Websites oder Suchbegriffe Sie auf die Website verwiesen haben, und Informationen darüber, wie Sie mit der Website interagieren. Wir bezeichnen diese automatisch gesammelten Informationen als 'Geräteinformationen'. Wenn Sie uns über das Kontaktformular kontaktieren, erfassen wir die folgenden persönlichen Daten:",
+    "items": {
+      "name": "Ihren Namen",
+      "email": "Ihre E-Mail-Adresse",
+      "message": "Den Inhalt Ihrer Nachricht"
+    }
+  },
+  "dataUsage": {
+    "title": "Wie wir Ihre Informationen verwenden",
+    "description": "Wir verwenden die gesammelten Informationen, um:",
+    "items": {
+      "communication": "Mit Ihnen zu kommunizieren, einschließlich der Beantwortung Ihrer Anfragen",
+      "improvement": "Unsere Website zu verbessern und zu optimieren (zum Beispiel durch die Erstellung von Analysen darüber, wie unsere Kunden die Website durchsuchen und mit ihr interagieren)"
+    }
+  },
+  "dataStorage": {
+    "title": "Datenspeicherung",
+    "description": "Ihre persönlichen Daten werden sicher gespeichert und nur so lange aufbewahrt, wie es für die Zwecke, für die sie erhoben wurden, erforderlich ist, einschließlich der Erfüllung gesetzlicher, buchhalterischer oder berichtspflichtiger Anforderungen."
+  },
+  "dataSharing": {
+    "title": "Weitergabe Ihrer Informationen",
+    "description": "Wir geben Ihre persönlichen Daten nicht an Dritte weiter, außer wenn dies zur Erbringung der von Ihnen angeforderten Dienstleistungen erforderlich ist oder gesetzlich vorgeschrieben ist."
+  },
+  "userRights": {
+    "title": "Ihre Rechte",
+    "description": "Wenn Sie in Europa ansässig sind, haben Sie das Recht, auf persönliche Daten, die wir über Sie gespeichert haben, zuzugreifen und zu verlangen, dass Ihre persönlichen Daten korrigiert, aktualisiert oder gelöscht werden. Wenn Sie dieses Recht ausüben möchten, kontaktieren Sie uns bitte über die unten angegebenen Kontaktinformationen. Darüber hinaus haben Sie die folgenden Rechte:",
+    "items": {
+      "access": "Das Recht auf Zugang zu Ihren persönlichen Daten",
+      "correction": "Das Recht, die Berichtigung Ihrer persönlichen Daten zu verlangen",
+      "deletion": "Das Recht, die Löschung Ihrer persönlichen Daten zu verlangen",
+      "restriction": "Das Recht, die Einschränkung der Verarbeitung Ihrer persönlichen Daten zu verlangen",
+      "objection": "Das Recht, der Verarbeitung Ihrer persönlichen Daten zu widersprechen",
+      "portability": "Das Recht auf Datenübertragbarkeit"
+    }
+  },
+  "cookies": {
+    "title": "Cookies",
+    "description": "Cookies sind kleine Datenstücke, die auf Ihrem Gerät gespeichert werden. Wir verwenden Cookies, um Ihr Erlebnis auf unserer Website zu verbessern. Sie können Ihren Browser so einstellen, dass er alle oder einige Browser-Cookies ablehnt oder Sie benachrichtigt, wenn Websites Cookies setzen oder darauf zugreifen. Wenn Sie Cookies deaktivieren oder ablehnen, beachten Sie bitte, dass einige Teile dieser Website möglicherweise nicht zugänglich sind oder nicht richtig funktionieren.",
+    "types": {
+      "title": "Arten von Cookies, die wir verwenden",
+      "essential": {
+        "title": "Essentielle Cookies",
+        "description": "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich. Sie ermöglichen grundlegende Funktionen wie die Seitennavigation und den Zugriff auf geschützte Bereiche der Website. Die Website kann ohne diese Cookies nicht richtig funktionieren."
+      },
+      "preferences": {
+        "title": "Präferenz-Cookies",
+        "description": "Diese Cookies ermöglichen es der Website, sich Informationen zu merken, die die Art und Weise ändern, wie sich die Website verhält oder aussieht, wie z.B. Ihre bevorzugte Sprache oder die Region, in der Sie sich befinden."
+      }
+    },
+    "management": {
+      "title": "Verwaltung von Cookies",
+      "description": "Sie können Ihren Browser so einstellen, dass er alle oder einige Browser-Cookies ablehnt oder Sie benachrichtigt, wenn Websites Cookies setzen oder darauf zugreifen. Sie können Ihre Cookie-Einstellungen auch jederzeit ändern, indem Sie auf den Link 'Cookie-Einstellungen' im Fußbereich unserer Website klicken."
+    }
+  },
+  "contact": {
+    "title": "Kontaktieren Sie uns",
+    "description": "Für weitere Informationen über unsere Datenschutzpraktiken, wenn Sie Fragen haben oder wenn Sie eine Beschwerde einreichen möchten, kontaktieren Sie uns bitte per E-Mail unter contact@jukiho.com."
+  },
+  "updates": {
+    "title": "Änderungen",
+    "description": "Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren, um beispielsweise Änderungen unserer Praktiken oder aus anderen betrieblichen, rechtlichen oder regulatorischen Gründen widerzuspiegeln."
+  },
+  "lastUpdated": "Zuletzt aktualisiert:",
+  "updateDate": "15. Mai 2024"
+}

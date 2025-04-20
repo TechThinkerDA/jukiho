@@ -16,6 +16,8 @@
   "messageRequired": "Please enter a message",
   "contactInfo": "Contact Information",
   "connectWithMe": "Connect With Me",
+  "privacyNotice": "By submitting this form, you agree to our",
+  "privacyPolicy": "Privacy Policy",
   "form": {
     "reachOut": "Don't hesitate to reach out",
     "message": "Your message",

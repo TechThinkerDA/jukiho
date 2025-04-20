@@ -7,7 +7,8 @@
     "stack": "Tech Stack",
     "lab": "Labor",
     "contact": "Kontakt",
-    "sitemap": "Sitemap"
+    "sitemap": "Sitemap",
+    "privacyPolicy": "Datenschutzrichtlinie"
   },
   "email": {
     "copyToClipboard": "E-Mail in die Zwischenablage kopieren"
@@ -16,6 +17,38 @@
     "copyright": "© 2025 Juraj Kicko Horbaľ. Alle Rechte vorbehalten.",
     "philosophyTitle1": "Technologie macht Sinn,",
     "philosophyTitle2": "wenn sie echte Probleme löst.",
-    "contactText": "Haben Sie ein Projekt oder benötigen Sie Unterstützung? Zögern Sie nicht, mich zu kontaktieren."
+    "contactText": "Haben Sie ein Projekt oder benötigen Sie Unterstützung? Zögern Sie nicht, mich zu kontaktieren.",
+    "legal": "Rechtliches",
+    "privacyPolicy": "Datenschutzrichtlinie"
+  },
+  "cookies": {
+    "title": "Diese Website verwendet Cookies",
+    "message": "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, Inhalte zu personalisieren und unseren Verkehr zu analysieren. Durch Klicken auf 'Alle akzeptieren' stimmen Sie der Verwendung von Cookies zu.",
+    "learnMore": "Weitere Informationen finden Sie in unserer",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "acceptAll": "Alle akzeptieren",
+    "acceptEssential": "Nur essenzielle",
+    "settings": "Cookie-Einstellungen",
+    "settingsTitle": "Cookie-Einstellungen",
+    "settingsDescription": "Sie können wählen, welche Cookies Sie zulassen möchten. Diese Einstellungen können jederzeit geändert werden, dies kann jedoch die Funktionalität der Website beeinträchtigen.",
+    "saveSettings": "Einstellungen speichern",
+    "categories": {
+      "essential": {
+        "title": "Essentielle Cookies",
+        "description": "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich und können nicht deaktiviert werden."
+      },
+      "preferences": {
+        "title": "Präferenz-Cookies",
+        "description": "Diese Cookies ermöglichen es der Website, sich an Ihre Entscheidungen zu erinnern (wie Ihre bevorzugte Sprache) und erweiterte Funktionen bereitzustellen."
+      },
+      "analytics": {
+        "title": "Analyse-Cookies",
+        "description": "Diese Cookies helfen uns zu verstehen, wie Besucher mit unserer Website interagieren, und helfen uns, unsere Dienste und Benutzererfahrung zu verbessern."
+      },
+      "marketing": {
+        "title": "Marketing-Cookies",
+        "description": "Diese Cookies werden verwendet, um Besucher über Websites hinweg zu verfolgen, um relevante Werbung anzuzeigen."
+      }
+    }
   }
 }
