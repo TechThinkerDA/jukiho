@@ -26,6 +26,24 @@
     "title": "Zdieľanie vašich informácií",
     "description": "Vaše osobné údaje nezdieľame s tretími stranami, s výnimkou prípadov, keď je to potrebné na poskytnutie služieb, ktoré ste požadovali, alebo keď to vyžaduje zákon."
   },
+  "legalBasis": {
+    "title": "Právny základ spracúvania",
+    "description": "Vaše osobné údaje spracúvame na základe nasledujúcich právnych základov:",
+    "items": {
+      "consent": "Váš súhlas, ktorý môžete kedykoľvek odvolať",
+      "contract": "Plnenie zmluvy s vami alebo vykonanie opatrení na vašu žiadosť pred uzavretím zmluvy",
+      "legal": "Plnenie našich zákonných povinností",
+      "legitimate": "Naše oprávnené záujmy, ako je zlepšovanie našich služieb a poskytovanie lepšej používateľskej skúsenosti"
+    }
+  },
+  "dataRetention": {
+    "title": "Uchovanie údajov",
+    "description": "Vaše osobné údaje budeme uchovávať len po dobu potrebnú na účely stanovené v týchto Zásadách ochrany osobných údajov. Vaše informácie budeme uchovávať a používať v rozsahu potrebnom na splnenie našich zákonných povinností, riešenie sporov a presadzovanie našich zásad."
+  },
+  "dataTransfer": {
+    "title": "Medzinárodné prenosy údajov",
+    "description": "Vaše informácie môžu byť prenesané a uchovávané na počítačoch umiestnených mimo vášho štátu, provincie, krajiny alebo inej vládnej jurisdikcie, kde sa zákony o ochrane údajov môžu líšiť od zákonov vašej jurisdikcie. Ak sa nachádzate mimo Európskej únie a rozhodnete sa poskytnúť nám informácie, upozorňujeme, že údaje prenesané do Európskej únie spracúvame tam."
+  },
   "userRights": {
     "title": "Vaše práva",
     "description": "Ak ste obyvateľom Európy, máte právo na prístup k osobným údajom, ktoré o vás máme, a požiadať, aby vaše osobné údaje boli opravené, aktualizované alebo vymazané. Ak si chcete toto právo uplatniť, kontaktujte nás prostredníctvom kontaktných údajov uvedených nižšie. Okrem toho máte nasledujúce práva:",
@@ -36,6 +54,14 @@
       "restriction": "Právo požadovať obmedzenie spracúvania vašich osobných údajov",
       "objection": "Právo namietať proti spracúvaniu vašich osobných údajov",
       "portability": "Právo na prenosnosť údajov"
+    },
+    "exercising": {
+      "title": "Uplatnenie vašich práv",
+      "description": "Ak si chcete uplatniť svoje práva, kontaktujte nás pomocou informácií uvedených v časti Kontakt. Na vašu žiadosť odpovieme do 30 dní. Za určitých okolností vás môžeme požiadať o overenie vašej identity pred tým, ako budeme môcť konať na základe vašej žiadosti."
+    },
+    "complaint": {
+      "title": "Právo podať sťažnosť",
+      "description": "Ak nie ste spokojní s našou odpoveďou alebo sa domnievaťe, že spracúvame vaše osobné údaje v rozpore so zákonom, máte právo podať sťažnosť dozornému orgánu v členskom štáte EÚ, v ktorom máte obvyklý pobyt, miesto výkonu práce alebo miesto ýajného porušenia."
     }
   },
   "cookies": {
@@ -50,6 +76,14 @@
       "preferences": {
         "title": "Preferenčné cookies",
         "description": "Tieto cookies umožňujú webovej stránke zapamätať si informácie, ktoré menia spôsob, akým sa webová stránka správa alebo vyzerá, ako napríklad váš preferovaný jazyk alebo región, v ktorom sa nachádzate."
+      },
+      "analytics": {
+        "title": "Analytické cookies",
+        "description": "Tieto cookies nám pomáhajú porozumieť, ako návštevníci interagujú s našou webovou stránkou, čo nám pomáha zlepšovať naše služby a používateľskú skúsenosť."
+      },
+      "marketing": {
+        "title": "Marketingové cookies",
+        "description": "Tieto cookies sa používajú na sledovanie návštevníkov na rôznych webových stránkach s cieľom zobrazovať relevantné reklamné oznámenia."
       }
     },
     "management": {
@@ -59,11 +93,28 @@
   },
   "contact": {
     "title": "Kontaktujte nás",
-    "description": "Pre viac informácií o našich postupoch ochrany osobných údajov, ak máte otázky alebo ak chcete podať sťažnosť, kontaktujte nás e-mailom na adrese contact@jukiho.com."
+    "description": "Pre viac informácií o našich postupoch ochrany osobných údajov, ak máte otázky alebo ak chcete podať sťažnosť, kontaktujte nás e-mailom na adrese contact@jukiho.com.",
+    "dpo": {
+      "title": "Zodpovedná osoba pre ochranu osobných údajov",
+      "description": "Pre akékoľvek otázky týkajúce sa ochrany údajov môžete kontaktovať našu zodpovednú osobu na adrese dpo@jukiho.com."
+    },
+    "controller": {
+      "title": "Prevádzkovateľ osobných údajov",
+      "description": "Juraj Kicko Horbaľ je prevádzkovateľom zodpovedným za vaše osobné údaje.",
+      "details": "Kontaktné údaje: contact@jukiho.com"
+    }
   },
   "updates": {
     "title": "Zmeny",
-    "description": "Túto politiku ochrany osobných údajov môžeme z času na čas aktualizovať, napríklad z dôvodu zmien našich postupov alebo z iných prevádzkových, právnych alebo regulačných dôvodov."
+    "description": "Túto politiku ochrany osobných údajov môžeme z času na čas aktualizovať, napríklad z dôvodu zmien našich postupov alebo z iných prevádzkových, právnych alebo regulačných dôvodov. Keď zverejníme zmeny tejto politiky, aktualizujeme dátum 'Posledná aktualizácia' v dolnej časti tejto stránky. Ak vykonáme významné zmeny tejto politiky, budeme vás informovať prostredníctvom výrazného upozornenia na našej webovej stránke alebo zaslaním e-mailového upozornenia."
+  },
+  "childrenPrivacy": {
+    "title": "Ochrana osobných údajov detí",
+    "description": "Naša webová stránka nie je určená pre deti mladšie ako 16 rokov. Vedome nezhromažďujeme osobné údaje od detí mladších ako 16 rokov. Ak ste rodič alebo zákonný zástupca a viete, že vaše dieťa nám poskytlo osobné údaje, kontaktujte nás, aby sme mohli vykonať potrebné kroky."
+  },
+  "thirdPartyLinks": {
+    "title": "Odkazy na tretie strany",
+    "description": "Naša webová stránka môže obsahovať odkazy na iné webové stránky, ktoré neprevádzkujeme my. Ak kliknete na odkaz tretej strany, budete presmerovaní na stránku tejto tretej strany. Dôrazne vám odporúčame, aby ste si prečítali Zásady ochrany osobných údajov každej stránky, ktorú navštívite. Nemáme kontrolu nad obsahom, zásadami ochrany osobných údajov alebo postupmi webových stránok alebo služieb tretích strán a nepreberame za ne žiadnu zodpovednosť."
   },
   "lastUpdated": "Posledná aktualizácia:",
   "updateDate": "15. mája 2024"

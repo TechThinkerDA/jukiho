@@ -56,6 +56,21 @@ export default function PrivacyPolicyPage() {
               <h2>{t('dataSharing.title')}</h2>
               <p>{t('dataSharing.description')}</p>
 
+              <h2>{t('legalBasis.title')}</h2>
+              <p>{t('legalBasis.description')}</p>
+              <ul>
+                <li>{t('legalBasis.items.consent')}</li>
+                <li>{t('legalBasis.items.contract')}</li>
+                <li>{t('legalBasis.items.legal')}</li>
+                <li>{t('legalBasis.items.legitimate')}</li>
+              </ul>
+
+              <h2>{t('dataRetention.title')}</h2>
+              <p>{t('dataRetention.description')}</p>
+
+              <h2>{t('dataTransfer.title')}</h2>
+              <p>{t('dataTransfer.description')}</p>
+
               <h2>{t('userRights.title')}</h2>
               <p>{t('userRights.description')}</p>
               <ul>
@@ -67,6 +82,12 @@ export default function PrivacyPolicyPage() {
                 <li>{t('userRights.items.portability')}</li>
               </ul>
 
+              <h3>{t('userRights.exercising.title')}</h3>
+              <p>{t('userRights.exercising.description')}</p>
+
+              <h3>{t('userRights.complaint.title')}</h3>
+              <p>{t('userRights.complaint.description')}</p>
+
               <h2>{t('cookies.title')}</h2>
               <p>{t('cookies.description')}</p>
 
@@ -77,11 +98,30 @@ export default function PrivacyPolicyPage() {
               <h4>{t('cookies.types.preferences.title')}</h4>
               <p>{t('cookies.types.preferences.description')}</p>
 
+              <h4>{t('cookies.types.analytics.title')}</h4>
+              <p>{t('cookies.types.analytics.description')}</p>
+
+              <h4>{t('cookies.types.marketing.title')}</h4>
+              <p>{t('cookies.types.marketing.description')}</p>
+
               <h3>{t('cookies.management.title')}</h3>
               <p>{t('cookies.management.description')}</p>
 
+              <h2>{t('childrenPrivacy.title')}</h2>
+              <p>{t('childrenPrivacy.description')}</p>
+
+              <h2>{t('thirdPartyLinks.title')}</h2>
+              <p>{t('thirdPartyLinks.description')}</p>
+
               <h2>{t('contact.title')}</h2>
               <p>{t('contact.description')}</p>
+
+              <h3>{t('contact.dpo.title')}</h3>
+              <p>{t('contact.dpo.description')}</p>
+
+              <h3>{t('contact.controller.title')}</h3>
+              <p>{t('contact.controller.description')}</p>
+              <p>{t('contact.controller.details')}</p>
 
               <h2>{t('updates.title')}</h2>
               <p>{t('updates.description')}</p>

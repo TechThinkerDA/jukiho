@@ -26,6 +26,24 @@
     "title": "Sharing Your Information",
     "description": "We do not share your personal information with third parties except as necessary to provide the services you have requested or as required by law."
   },
+  "legalBasis": {
+    "title": "Legal Basis for Processing",
+    "description": "We process your personal data on the following legal bases:",
+    "items": {
+      "consent": "Your consent, which you can withdraw at any time",
+      "contract": "The performance of a contract with you or to take steps at your request before entering into a contract",
+      "legal": "Compliance with our legal obligations",
+      "legitimate": "Our legitimate interests, such as improving our services and providing a better user experience"
+    }
+  },
+  "dataRetention": {
+    "title": "Data Retention",
+    "description": "We will retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our legal obligations, resolve disputes, and enforce our policies."
+  },
+  "dataTransfer": {
+    "title": "International Data Transfers",
+    "description": "Your information may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ from those of your jurisdiction. If you are located outside the European Union and choose to provide information to us, please note that we transfer the data to the European Union and process it there."
+  },
   "userRights": {
     "title": "Your Rights",
     "description": "If you are a European resident, you have the right to access personal information we hold about you and to ask that your personal information be corrected, updated, or deleted. If you would like to exercise this right, please contact us through the contact information below. Additionally, you have the following rights:",
@@ -36,6 +54,14 @@
       "restriction": "The right to request restriction of processing of your personal data",
       "objection": "The right to object to processing of your personal data",
       "portability": "The right to data portability"
+    },
+    "exercising": {
+      "title": "Exercising Your Rights",
+      "description": "To exercise your rights, please contact us using the information provided in the Contact section. We will respond to your request within 30 days. In certain circumstances, we may ask you to verify your identity before we can act on your request."
+    },
+    "complaint": {
+      "title": "Right to Complain",
+      "description": "If you are not satisfied with our response or believe we are processing your personal data not in accordance with the law, you have the right to lodge a complaint with a supervisory authority in the EU member state of your habitual residence, place of work, or place of the alleged infringement."
     }
   },
   "cookies": {
@@ -50,6 +76,14 @@
       "preferences": {
         "title": "Preference Cookies",
         "description": "These cookies enable the website to remember information that changes the way the website behaves or looks, like your preferred language or the region you are in."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "description": "These cookies help us understand how visitors interact with our website, helping us improve our services and user experience."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "description": "These cookies are used to track visitors across websites to display relevant advertisements."
       }
     },
     "management": {
@@ -59,11 +93,28 @@
   },
   "contact": {
     "title": "Contact Us",
-    "description": "For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at contact@jukiho.com."
+    "description": "For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at contact@jukiho.com.",
+    "dpo": {
+      "title": "Data Protection Officer",
+      "description": "You can contact our Data Protection Officer at dpo@jukiho.com for any questions related to data protection."
+    },
+    "controller": {
+      "title": "Data Controller",
+      "description": "Juraj Kicko Horbaľ is the data controller responsible for your personal data.",
+      "details": "Contact details: contact@jukiho.com"
+    }
   },
   "updates": {
     "title": "Changes",
-    "description": "We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons."
+    "description": "We may update this privacy policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal or regulatory reasons. When we post changes to this policy, we will revise the 'Last Updated' date at the bottom of this page. If we make significant changes to this policy, we will notify you through a prominent notice on our website or by sending you an email notification."
+  },
+  "childrenPrivacy": {
+    "title": "Children's Privacy",
+    "description": "Our website is not intended for children under 16 years of age. We do not knowingly collect personal information from children under 16. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we can take necessary actions."
+  },
+  "thirdPartyLinks": {
+    "title": "Third-Party Links",
+    "description": "Our website may contain links to other websites that are not operated by us. If you click on a third-party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services."
   },
   "lastUpdated": "Last updated:",
   "updateDate": "May 15, 2024"
