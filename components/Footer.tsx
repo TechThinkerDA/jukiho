@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
                   <FiLinkedin size={20} />
                 </a>
                 <a
-                  href="https://github.com/jukiho"
+                  href="https://github.com/TechThinkerDA"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-300 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 hover:scale-110"

@@ -6,7 +6,7 @@ import { AnimatedSection } from '../../components/ui/AnimatedSection';
 import { FixedRichTextEditor } from '../../components/ui/FixedRichTextEditor';
 import { ProtectedEmail } from '../../components/ui/ProtectedEmail';
 import { LocalizedLink } from '../../components/LocalizedLink';
-import { FiLinkedin, FiMail } from 'react-icons/fi';
+import { FiLinkedin, FiMail, FiGithub } from 'react-icons/fi';
 
 export default function ContactPage() {
   const [mounted, setMounted] = useState(false);
@@ -254,6 +254,15 @@ export default function ContactPage() {
                       aria-label="LinkedIn"
                     >
                       <FiLinkedin size={20} />
+                    </a>
+                    <a
+                      href="https://github.com/TechThinkerDA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-[#4f46e5] dark:bg-gray-700/50 hover:bg-[#14b8a6] dark:hover:bg-[#14b8a6]/50 text-[#f9fafb] p-3 rounded-full transition-colors"
+                      aria-label="GitHub"
+                    >
+                      <FiGithub size={20} />
                     </a>
                   </div>
                 </div>
