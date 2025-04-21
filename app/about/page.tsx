@@ -265,11 +265,15 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">{t('personalProjectsItems.odoo.title')}</h3>
                 <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">{t('personalProjectsItems.odoo.description')}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {Array.isArray(t('personalProjectsItems.odoo.technologies', { returnObjects: true }))
-                    ? t('personalProjectsItems.odoo.technologies', { returnObjects: true }).map((tech: string, index: number) => (
-                        <Tag key={index} color="info" label={tech} />
-                      ))
-                    : null}
+                  {(() => {
+                    const techItems = t('personalProjectsItems.odoo.technologies', { returnObjects: true });
+                    return Array.isArray(techItems)
+                      ? techItems.map((tech, index) => {
+                          const techStr = typeof tech === 'string' ? tech : String(tech);
+                          return <Tag key={index} color="info" label={techStr} />;
+                        })
+                      : null;
+                  })()}
                 </div>
               </div>
             </div>
@@ -279,11 +283,15 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">{t('personalProjectsItems.corda.title')}</h3>
                 <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">{t('personalProjectsItems.corda.description')}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {Array.isArray(t('personalProjectsItems.corda.technologies', { returnObjects: true }))
-                    ? t('personalProjectsItems.corda.technologies', { returnObjects: true }).map((tech: string, index: number) => (
-                        <Tag key={index} color="info" label={tech} />
-                      ))
-                    : null}
+                  {(() => {
+                    const techItems = t('personalProjectsItems.corda.technologies', { returnObjects: true });
+                    return Array.isArray(techItems)
+                      ? techItems.map((tech, index) => {
+                          const techStr = typeof tech === 'string' ? tech : String(tech);
+                          return <Tag key={index} color="info" label={techStr} />;
+                        })
+                      : null;
+                  })()}
                 </div>
               </div>
             </div>
@@ -293,11 +301,15 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">{t('personalProjectsItems.python.title')}</h3>
                 <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">{t('personalProjectsItems.python.description')}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {Array.isArray(t('personalProjectsItems.python.technologies', { returnObjects: true }))
-                    ? t('personalProjectsItems.python.technologies', { returnObjects: true }).map((tech: string, index: number) => (
-                        <Tag key={index} color="info" label={tech} />
-                      ))
-                    : null}
+                  {(() => {
+                    const techItems = t('personalProjectsItems.python.technologies', { returnObjects: true });
+                    return Array.isArray(techItems)
+                      ? techItems.map((tech, index) => {
+                          const techStr = typeof tech === 'string' ? tech : String(tech);
+                          return <Tag key={index} color="info" label={techStr} />;
+                        })
+                      : null;
+                  })()}
                 </div>
               </div>
             </div>

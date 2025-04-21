@@ -26,24 +26,24 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       title: 'JuKiHo - Web & Software Development',
       description: 'Professional IT developer portfolio showcasing web and software development projects',
       keywords: 'web development, software development, frontend, backend, full-stack, developer',
-      ogImage: '/images/og-image-en.jpg'
+      ogImage: '/images/og-image-en.png'
     },
     'sk': {
       title: 'JuKiHo - Vývoj webových a softvérových riešení',
       description: 'Profesionálne portfólio IT vývojára prezentujúce projekty vývoja webových a softvérových riešení',
       keywords: 'vývoj webových stránok, vývoj softvéru, frontend, backend, full-stack, vývojár',
-      ogImage: '/images/og-image-sk.jpg'
+      ogImage: '/images/og-image-sk.png'
     },
     'de': {
       title: 'JuKiHo - Web & Software Entwicklung',
       description: 'Professionelles IT-Entwickler-Portfolio mit Web- und Softwareentwicklungsprojekten',
       keywords: 'Webentwicklung, Softwareentwicklung, Frontend, Backend, Full-Stack, Entwickler',
-      ogImage: '/images/og-image-de.jpg'
+      ogImage: '/images/og-image-de.png'
     }
   };
 
   // Fallback image if language-specific one doesn't exist
-  const ogImage = languageMetadata[lang]?.ogImage || '/images/og-image.jpg';
+  const ogImage = languageMetadata[lang]?.ogImage || '/images/og-image.png';
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://jukiho.com';
 
   return {
