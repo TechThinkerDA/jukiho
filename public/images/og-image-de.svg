@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)" />
+  
+  <!-- Decorative elements -->
+  <rect x="50" y="50" width="1100" height="530" stroke="white" stroke-opacity="0.2" stroke-width="2" fill="none" />
+  <rect x="70" y="70" width="1060" height="490" stroke="white" stroke-opacity="0.1" stroke-width="1" fill="none" />
+  
+  <!-- Logo -->
+  <circle cx="200" cy="200" r="100" fill="white" />
+  <text x="200" y="230" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="#4f46e5">JKH</text>
+  
+  <!-- Title -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white" filter="url(#shadow)">JuKiHo</text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="36" font-weight="normal" text-anchor="middle" fill="white">Web &amp; Software Entwicklung</text>
+  
+  <!-- Tagline -->
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="white" opacity="0.8">Technologie ist ein Werkzeug. Lösungen kommen aus dem Geist.</text>
+  
+  <!-- Language indicator -->
+  <circle cx="1100" cy="100" r="40" fill="white" opacity="0.2" />
+  <text x="1100" y="110" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">DE</text>
+</svg>
