@@ -23,8 +23,8 @@
   <text x="200" y="230" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="#4f46e5">JKH</text>
   
   <!-- Title -->
-  <text x="600" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white" filter="url(#shadow)">JuKiHo</text>
-  <text x="600" y="380" font-family="Arial, sans-serif" font-size="36" font-weight="normal" text-anchor="middle" fill="white">Web &amp; Software Development</text>
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="white" filter="url(#shadow)">Juraj Kicko Horbaľ</text>
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="36" font-weight="normal" text-anchor="middle" fill="white">Software Architecture &amp; Development</text>
   
   <!-- Tagline -->
   <text x="600" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="normal" text-anchor="middle" fill="white" opacity="0.8">Technology is a tool. Solutions come from the mind.</text>
