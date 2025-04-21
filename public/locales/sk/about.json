@@ -8,7 +8,7 @@
   "whoIAm": "Kto som",
   "bioLine1": "Skúsený softvérový architekt a full stack vývojár so zameraním na Python, Java, C# a React. Špecializujem sa na backendové systémy, data mining a vývoj modulov pre platformy.",
   "bioLine2": "Hlboko zapálený pre vylepšovanie a inováciu systémov. Vždy dychtivý integrovať najnovšie technológie a riešiť komplexné výzvy, kombinujem analytický prístup s pozornosťou k detailom.",
-  "softSkillsLabel": "Mäkké zručnosti",
+  "softSkillsLabel": "Zručnosti",
   "softSkills": "inovatívny, tímovo orientovaný, analytický, adaptabilný, kritické myslenie",
   "interestsLabel": "Záujmy",
   "interests": "fintech, AI",
@@ -43,7 +43,7 @@
     },
     "java": {
       "title": "Java + React Developer",
-      "period": "2021 - 2024",
+      "period": "2021 - 2023",
       "teamRole": "Team Leader (2P)",
       "description": "Kompletný redizajn Bloomreach.com pomocou Bloomreach Content CMS. Projekt sa zameriaval na vylepšenie backendovej infraštruktúry webstránky pre zabezpečenie plynulého používateľského zážitku a podporu jej rozsiahlych potrieb správy obsahu.",
       "responsibilities": [

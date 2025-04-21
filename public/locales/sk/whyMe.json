@@ -2,12 +2,12 @@
   "title": "Prečo ja?",
   "reasons": [
     {
-      "title": "Prepájam technický svet s biznisom",
-      "description": "Viem prepájať technický svet s reálnymi biznis problémami. Rozumiem nielen kódu, ale aj biznis procesom a potrebám používateľov."
+      "title": "Prepájam technický svet s podnikateľským",
+      "description": "Viem prepájať technický svet s reálnymi podnikateľskými problémami. Rozumiem nielen kódu, ale aj podnikateľským procesom a potrebám používateľov."
     },
     {
       "title": "Skúsenosti s rôznymi typmi projektov",
-      "description": "Mám skúsenosti s greenfield projektami aj refaktoringom starých systémov. Viem navrhnúť riešenie na mieru vašim potrebám."
+      "description": "Mám skúsenosti s novými projektami (greenfield) aj refaktoringom starých systémov. Viem navrhnúť riešenie na mieru vašim potrebám."
     },
     {
       "title": "Udržateľné a rozšíriteľné riešenia",
@@ -15,7 +15,7 @@
     }
   ],
   "callToAction": {
-    "title": "Hľadáte systémového architekta, ktorý rozumie vášmu biznisu?",
+    "title": "Hľadáte systémového architekta, ktorý rozumie vášmu podnikaniu?",
     "description": "Poďme spolu vytvoriť riešenie, ktoré vám pomôže rásť a zefektívniť vaše procesy.",
     "button": "Kontaktujte ma"
   }

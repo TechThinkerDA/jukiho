@@ -67,13 +67,13 @@ export const ITHeroGeometric: React.FC = () => {
   }, [mounted]);
 
   if (!mounted) {
-    return <div className="h-[80vh]"></div>;
+    return <div className="min-h-[500px] md:h-[80vh]"></div>;
   }
 
   return (
     <section
       ref={sectionRef}
-      className="relative h-[80vh] overflow-hidden rounded-xl shadow-sm border border-[#e5e7eb] dark:border-gray-700 mb-8"
+      className="relative min-h-[500px] md:h-[80vh] overflow-hidden rounded-xl shadow-sm border border-[#e5e7eb] dark:border-gray-700 mb-8"
     >
       {/* Background with gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#f1f5f9] to-[#e2e8f0] dark:from-[#0f172a] dark:to-[#1e293b] transition-colors duration-200">
@@ -81,34 +81,34 @@ export const ITHeroGeometric: React.FC = () => {
         <div className="absolute inset-0 overflow-hidden">
           {/* Triangles */}
           <div
-            className="absolute w-64 h-64 bg-blue-100 dark:bg-blue-900/20 rotate-45 rounded-3xl"
+            className="absolute w-40 h-40 md:w-64 md:h-64 bg-blue-100 dark:bg-blue-900/20 rotate-45 rounded-3xl"
             style={{
-              left: `calc(10% + ${(mousePosition.x - 50) * -0.1}px)`,
-              top: `calc(20% + ${(mousePosition.y - 50) * -0.1}px)`,
+              left: `calc(5% + ${(mousePosition.x - 50) * -0.1}px)`,
+              top: `calc(15% + ${(mousePosition.y - 50) * -0.1}px)`,
               transition: 'left 0.3s ease-out, top 0.3s ease-out'
             }}
           ></div>
           <div
-            className="absolute w-48 h-48 bg-indigo-100 dark:bg-indigo-900/20 rotate-12 rounded-3xl"
+            className="absolute w-32 h-32 md:w-48 md:h-48 bg-indigo-100 dark:bg-indigo-900/20 rotate-12 rounded-3xl"
             style={{
-              right: `calc(15% + ${(mousePosition.x - 50) * 0.1}px)`,
-              top: `calc(15% + ${(mousePosition.y - 50) * -0.1}px)`,
+              right: `calc(5% + ${(mousePosition.x - 50) * 0.1}px)`,
+              top: `calc(10% + ${(mousePosition.y - 50) * -0.1}px)`,
               transition: 'right 0.3s ease-out, top 0.3s ease-out'
             }}
           ></div>
           <div
-            className="absolute w-56 h-56 bg-purple-100 dark:bg-purple-900/20 -rotate-12 rounded-3xl"
+            className="absolute w-36 h-36 md:w-56 md:h-56 bg-purple-100 dark:bg-purple-900/20 -rotate-12 rounded-3xl"
             style={{
-              left: `calc(20% + ${(mousePosition.x - 50) * -0.1}px)`,
-              bottom: `calc(10% + ${(mousePosition.y - 50) * 0.1}px)`,
+              left: `calc(10% + ${(mousePosition.x - 50) * -0.1}px)`,
+              bottom: `calc(5% + ${(mousePosition.y - 50) * 0.1}px)`,
               transition: 'left 0.3s ease-out, bottom 0.3s ease-out'
             }}
           ></div>
           <div
-            className="absolute w-72 h-72 bg-teal-100 dark:bg-teal-900/20 rotate-30 rounded-3xl"
+            className="absolute w-44 h-44 md:w-72 md:h-72 bg-teal-100 dark:bg-teal-900/20 rotate-30 rounded-3xl"
             style={{
-              right: `calc(10% + ${(mousePosition.x - 50) * 0.1}px)`,
-              bottom: `calc(15% + ${(mousePosition.y - 50) * 0.1}px)`,
+              right: `calc(5% + ${(mousePosition.x - 50) * 0.1}px)`,
+              bottom: `calc(10% + ${(mousePosition.y - 50) * 0.1}px)`,
               transition: 'right 0.3s ease-out, bottom 0.3s ease-out'
             }}
           ></div>
@@ -116,12 +116,12 @@ export const ITHeroGeometric: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center justify-center h-full">
-        <div className="container mx-auto px-4 text-center">
+      <div className="relative z-10 flex items-center justify-center h-full py-8 md:py-0">
+        <div className="container mx-auto px-4 text-center overflow-y-auto max-h-full">
           <div className="animate-fade-in-down">
             <h1
               ref={titleRef}
-              className="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-teal-500 dark:from-indigo-400 dark:to-teal-400 inline-block transition-transform duration-300 py-2"
+              className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-teal-500 dark:from-indigo-400 dark:to-teal-400 inline-block transition-transform duration-300 py-2"
               style={{ transformStyle: 'preserve-3d' }}
             >
               <span className="block">{t('heroTitle').split('.')[0]}.</span>
@@ -130,14 +130,14 @@ export const ITHeroGeometric: React.FC = () => {
           </div>
 
           <div className="animate-fade-in-up">
-            <p className="text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
               {t('heroSubtitle')}
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-4 justify-center animate-fade-in">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center animate-fade-in">
             <button
-                className="btn btn-lg bg-transparent text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-400 dark:hover:border-gray-600 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                className="btn px-4 py-2 sm:btn-lg bg-transparent text-gray-700 dark:text-gray-300 border-2 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-400 dark:hover:border-gray-600 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
                 onClick={() => {
                   document.getElementById('problem-solution')?.scrollIntoView({ behavior: 'smooth' });
                 }}
@@ -148,7 +148,7 @@ export const ITHeroGeometric: React.FC = () => {
               href="/contact"
               variant="primary"
               size="lg"
-              className="btn btn-lg bg-indigo-600 text-white border-2 border-indigo-600 hover:bg-teal-500 hover:border-teal-500 hover:text-white shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+              className="btn px-4 py-2 sm:btn-lg bg-indigo-600 text-white border-2 border-indigo-600 hover:bg-teal-500 hover:border-teal-500 hover:text-white shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
             >
               {t('contactMe')}
             </LocalizedCTA>

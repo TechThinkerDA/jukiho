@@ -41,7 +41,7 @@ export default function AboutPage() {
                 <a
                   href="/files/juraj_kicko_horbal.pdf"
                   download
-                  className="inline-flex items-center px-4 py-2 bg-[#4f46e5] dark:bg-[#14b8a6] text-white rounded-md hover:bg-[#4338ca] dark:hover:bg-[#0d9488] transition-colors duration-200 no-underline"
+                  className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#4f46e5] hover:bg-[#4338ca] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4f46e5]"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -262,37 +262,42 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-[#f9fafb] dark:bg-gray-700 rounded-lg overflow-hidden shadow-sm border border-[#e5e7eb] dark:border-gray-700 transition-all duration-300 hover:shadow-md hover:border-[#4f46e5] dark:hover:border-[#14b8a6]">
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">Odoo Development</h3>
-                <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">Development of custom Odoo extensions for manufacturing, HR, purchasing, sales, invoicing, inventory valuation, and integration with external services.</p>
+                <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">{t('personalProjectsItems.odoo.title')}</h3>
+                <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">{t('personalProjectsItems.odoo.description')}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Tag color="info" label="Python" />
-                  <Tag color="info" label="Odoo" />
-                  <Tag color="info" label="XML" />
-                  <Tag color="info" label="API Integration" />
+                  {Array.isArray(t('personalProjectsItems.odoo.technologies', { returnObjects: true }))
+                    ? t('personalProjectsItems.odoo.technologies', { returnObjects: true }).map((tech: string, index: number) => (
+                        <Tag key={index} color="info" label={tech} />
+                      ))
+                    : null}
                 </div>
               </div>
             </div>
 
             <div className="bg-[#f9fafb] dark:bg-gray-700 rounded-lg overflow-hidden shadow-sm border border-[#e5e7eb] dark:border-gray-700 transition-all duration-300 hover:shadow-md hover:border-[#4f46e5] dark:hover:border-[#14b8a6]">
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">Corda Blockchain Development</h3>
-                <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">Explored distributed ledger technology using Corda, creating a CorDapp for supply chain tracking.</p>
+                <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">{t('personalProjectsItems.corda.title')}</h3>
+                <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">{t('personalProjectsItems.corda.description')}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Tag color="info" label="Kotlin" />
-                  <Tag color="info" label="Corda" />
-                  <Tag color="info" label="Blockchain" />
+                  {Array.isArray(t('personalProjectsItems.corda.technologies', { returnObjects: true }))
+                    ? t('personalProjectsItems.corda.technologies', { returnObjects: true }).map((tech: string, index: number) => (
+                        <Tag key={index} color="info" label={tech} />
+                      ))
+                    : null}
                 </div>
               </div>
             </div>
 
             <div className="bg-[#f9fafb] dark:bg-gray-700 rounded-lg overflow-hidden shadow-sm border border-[#e5e7eb] dark:border-gray-700 transition-all duration-300 hover:shadow-md hover:border-[#4f46e5] dark:hover:border-[#14b8a6]">
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">Python AI Development</h3>
-                <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">Explored neural networks in Python, creating scripts for stock exchange data analysis and model training.</p>
+                <h3 className="text-xl font-bold mb-4 text-[#111827] dark:text-[#f9fafb]">{t('personalProjectsItems.python.title')}</h3>
+                <p className="text-[#111827]/80 dark:text-[#f9fafb]/80 mb-4">{t('personalProjectsItems.python.description')}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  <Tag color="info" label="Python" />
-                  <Tag color="info" label="AI" />
-                  <Tag color="info" label="Data Analysis" />
+                  {Array.isArray(t('personalProjectsItems.python.technologies', { returnObjects: true }))
+                    ? t('personalProjectsItems.python.technologies', { returnObjects: true }).map((tech: string, index: number) => (
+                        <Tag key={index} color="info" label={tech} />
+                      ))
+                    : null}
                 </div>
               </div>
             </div>

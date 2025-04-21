@@ -1,15 +1,15 @@
 {
-  "title": "Stack & skúsenosti",
+  "title": "Technológie & skúsenosti",
   "subtitle": "Technológie, s ktorými pracujem a ktoré využívam pri návrhu a implementácii riešení.",
   "note": "Technológia je len nástroj. Kľúč je v správnej architektúre.",
   "highlights": [
     {
-      "title": "Biznis & Technológie",
-      "description": "Viem prepájať technický svet s reálnymi biznis problémami a navrhovať riešenia, ktoré prinášajú hodnotu."
+      "title": "Podnikanie & Technológie",
+      "description": "Viem prepájať technický svet s reálnymi podnikateľskými problémami a navrhovať riešenia, ktoré prinášajú hodnotu."
     },
     {
       "title": "Nové & Staré systémy",
-      "description": "Mám skúsenosti s greenfield projektami aj refaktoringom starých systémov, ktoré potrebujú modernizáciu."
+      "description": "Mám skúsenosti s novými projektami (greenfield) aj refaktoringom starých systémov, ktoré potrebujú modernizáciu."
     },
     {
       "title": "Udržateľné riešenia",
