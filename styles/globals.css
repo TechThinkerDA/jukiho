@@ -2,8 +2,6 @@
 
 @import 'tailwindcss';
 
-/* Dark mode styles removed */
-
 /* Custom styles for SimpleRichTextEditor */
 [contenteditable] {
   outline: none;
@@ -46,34 +44,34 @@
 
 @layer base {
     h1 {
-        @apply text-4xl font-bold tracking-tight sm:text-5xl text-gray-800 transition-colors duration-200;
+        @apply text-4xl font-bold tracking-tight sm:text-5xl text-gray-800 dark:text-white transition-colors duration-200;
     }
 
     h2 {
-        @apply text-2xl font-bold sm:text-3xl text-gray-800 transition-colors duration-200;
+        @apply text-2xl font-bold sm:text-3xl text-gray-800 dark:text-white transition-colors duration-200;
     }
 
     h3 {
-        @apply text-xl font-bold text-gray-800 transition-colors duration-200;
+        @apply text-xl font-bold text-gray-800 dark:text-white transition-colors duration-200;
     }
 
     a:not(.btn):not(.no-underline) {
-        @apply underline transition-all hover:opacity-80 text-[#4f46e5];
+        @apply underline transition-all hover:opacity-80 text-[#4f46e5] dark:text-indigo-400;
     }
 
     :not(pre) > code {
-        @apply px-1 py-0.5 font-mono rounded bg-gray-100 text-sky-700 transition-colors duration-200;
+        @apply px-1 py-0.5 font-mono rounded bg-gray-100 dark:bg-gray-800 text-sky-700 dark:text-sky-300 transition-colors duration-200;
         font-size: 0.9em;
     }
 
     body {
-        @apply bg-gray-50 text-gray-700 transition-colors duration-200 text-base;
+        @apply bg-gray-50 dark:bg-gray-900 text-gray-700 dark:text-gray-300 transition-colors duration-200 text-base;
         font-size: 1.125rem;
     }
 
     /* Pridajme základné štýly pre všetky komponenty */
     * {
-        @apply border-gray-200;
+        @apply border-gray-200 dark:border-gray-700;
     }
 }
 
@@ -227,13 +225,13 @@
     }
 
     .btn {
-        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-all duration-300 cursor-pointer bg-sky-500 text-white shadow-sm;
+        @apply inline-flex items-center justify-center gap-2 font-bold text-center no-underline transition-all duration-300 cursor-pointer bg-sky-500 dark:bg-sky-600 text-white shadow-sm;
         padding: var(--btn-py, 0.875rem) var(--btn-px, 1.25rem);
         font-size: var(--btn-font-size, 0.875rem);
         border-radius: var(--btn-border-radius, 0.5rem);
 
         &:hover {
-            @apply bg-sky-600 transform scale-[1.02] shadow-md;
+            @apply bg-sky-600 dark:bg-sky-700 transform scale-[1.02] shadow-md;
         }
 
         &:active {
@@ -241,11 +239,11 @@
         }
 
         &:focus-visible {
-            @apply outline-none ring-2 ring-sky-300 ring-offset-2 ring-offset-white;
+            @apply outline-none ring-2 ring-sky-300 dark:ring-sky-400 ring-offset-2 ring-offset-white dark:ring-offset-gray-900;
         }
 
         &:disabled {
-            @apply cursor-default text-gray-400 bg-gray-700 transform-none opacity-70;
+            @apply cursor-default text-gray-400 dark:text-gray-500 bg-gray-700 dark:bg-gray-600 transform-none opacity-70;
         }
     }
 

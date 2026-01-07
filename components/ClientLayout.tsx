@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { CookieConsent } from './CookieConsent';
+import { ThemeProvider } from './ThemeProvider';
 import '../i18n';
 
 
@@ -14,9 +15,11 @@ interface ClientLayoutProps {
 
 const ClientLayout: React.FC<ClientLayoutProps> = ({ children }) => {
   const { i18n } = useTranslation();
+  const [mounted, setMounted] = useState(false);
 
   // Ensure HTML lang attribute is set correctly on initial render and language changes
   useEffect(() => {
+    setMounted(true);
     // Force language detection and update HTML lang attribute
     const detectAndSetLanguage = () => {
       // Get language from URL path if available
@@ -58,14 +61,16 @@ const ClientLayout: React.FC<ClientLayoutProps> = ({ children }) => {
   }, [i18n]);
 
   return (
-    <>
+    <ThemeProvider>
       <Header />
-      <main className="flex-grow container mx-auto px-4 py-8 bg-gray-50">
-        {children}
+      <main className="flex-grow w-full bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
+        <div className="container mx-auto px-4 py-8">
+          {children}
+        </div>
       </main>
-      <Footer />
-      <CookieConsent />
-    </>
+      {mounted && <Footer />}
+      {mounted && <CookieConsent />}
+    </ThemeProvider>
   );
 };
 
