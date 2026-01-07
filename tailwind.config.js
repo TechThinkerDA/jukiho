@@ -6,7 +6,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './styles/**/*.css',
   ],
-  // darkMode removed
   theme: {
     fontSize: {
       xs: '0.875rem',
